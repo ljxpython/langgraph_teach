@@ -1,0 +1,10 @@
+[
+  {
+    "name": "course_collection",
+    "description": "有关课程的相关信息"
+  },
+  {
+    "name": "LangChainCollection",
+    "description": "有关智能体的相关信息"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": {
+      "path": "./src/rag_chat/chat/agent_rag.py:agent"
+    }
+  },
+  "env": ".env",
+  "image_distro": "wolfi"
+}
