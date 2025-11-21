@@ -10,7 +10,9 @@
 
 ## 学习顺序
 creat_agent,tool,mcp -> 可以查看 src/ui_test_demo
+
 学习ReAct模式可以看下src/ReAct_demo
+
 graph -> 可以查看 src/graphs_examples
 
 rag相关: 
@@ -24,12 +26,17 @@ rag相关:
     可以看下src/rag_chat 和src/mcp_server_rag 
     
 
-
 ## easy_rag_server
+
+一个简易的rag后台管理系统+前端+对话系统 ，后续应该还会有v2的版本
+
+
 
 
 ## 微信交流
-lijiaxin1030470148
+<img src="./assets/image-20251121180714902.png" alt="image-20251121180714902" style="zoom:50%;" />
+
+
 
 
 
