@@ -368,3 +368,9 @@ uploads
 **/migrations
 migrations
 /.langgraph_api
+/data
+src/anything_rag_demo/output
+src/anything_rag_demo/rag_storage
+src/anything_rag_demo/existing_lightrag_storage
+IMPLEMENTATION_PLAN.md
+output

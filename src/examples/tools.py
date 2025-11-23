@@ -110,8 +110,11 @@ def get_mcp_server_chart_tools():
 
 
 # https://app.tavily.com/home
-os.environ["TAVILY_API_KEY"] = "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"
-# # pin install langchain-tavily
-from langchain_tavily import TavilySearch
+# os.environ["TAVILY_API_KEY"] = "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"
+# # # pin install langchain-tavily
+# from langchain_tavily import TavilySearch
+#
+# toolSearch = TavilySearch(max_results=2)
 
-toolSearch = TavilySearch(max_results=2)
+if __name__ == '__main__':
+    print(get_weather.invoke({"city": "北京"}))

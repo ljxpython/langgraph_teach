@@ -1,7 +1,7 @@
 from langgraph.prebuilt import create_react_agent
 from langchain.agents import create_agent
 from src.llms import get_default_model
-from tools import get_weather, get_zhipu_search_mcp_tools, get_tavily_search_tools, toolSearch, \
+from src.examples.tools import get_weather, get_zhipu_search_mcp_tools, get_tavily_search_tools, toolSearch, \
     get_playwright_mcp_tools, get_chrome_devtools_mcp_tools, get_chrome_mcp_tools, get_mcp_server_chart_tools, \
     save_test_cases_to_excel
 
