@@ -1,0 +1,419 @@
+{
+  "Full Fine-Tuning<SEP>Prompt Learning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969358,
+    "update_time": 1763969358,
+    "_id": "Full Fine-Tuning<SEP>Prompt Learning"
+  },
+  "BERT<SEP>Sentiment Analysis Task": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969359,
+    "update_time": 1763969359,
+    "_id": "BERT<SEP>Sentiment Analysis Task"
+  },
+  "Prefix-Tuning<SEP>Prompt Learning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969359,
+    "update_time": 1763969359,
+    "_id": "Prefix-Tuning<SEP>Prompt Learning"
+  },
+  "Full Fine-Tuning<SEP>Prompt-Tuning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525",
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 2,
+    "create_time": 1763969359,
+    "update_time": 1763969359,
+    "_id": "Full Fine-Tuning<SEP>Prompt-Tuning"
+  },
+  "Prompt Learning<SEP>Prompt-Tuning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969360,
+    "update_time": 1763969360,
+    "_id": "Prompt Learning<SEP>Prompt-Tuning"
+  },
+  "MLP<SEP>Prefix-Tuning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525",
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 2,
+    "create_time": 1763969360,
+    "update_time": 1763969360,
+    "_id": "MLP<SEP>Prefix-Tuning"
+  },
+  "Prefix-Tuning<SEP>Prompt-Tuning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525",
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 2,
+    "create_time": 1763969361,
+    "update_time": 1763969361,
+    "_id": "Prefix-Tuning<SEP>Prompt-Tuning"
+  },
+  "P-Tuning<SEP>Prompt Learning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969361,
+    "update_time": 1763969361,
+    "_id": "P-Tuning<SEP>Prompt Learning"
+  },
+  "Fill-in-the-blank Task<SEP>Sentiment Analysis Task": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969361,
+    "update_time": 1763969361,
+    "_id": "Fill-in-the-blank Task<SEP>Sentiment Analysis Task"
+  },
+  "器<SEP>通用知识星球": {
+    "chunk_ids": [
+      "chunk-0d0f1dd17108a46bc9eb7b014ed694bd"
+    ],
+    "count": 1,
+    "create_time": 1763969361,
+    "update_time": 1763969361,
+    "_id": "器<SEP>通用知识星球"
+  },
+  "P-Tuning v2<SEP>Prompt Learning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969362,
+    "update_time": 1763969362,
+    "_id": "P-Tuning v2<SEP>Prompt Learning"
+  },
+  "Prefix-Tuning<SEP>Virtual Tokens": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969362,
+    "update_time": 1763969362,
+    "_id": "Prefix-Tuning<SEP>Virtual Tokens"
+  },
+  "知识星球<SEP>通用": {
+    "chunk_ids": [
+      "chunk-0d0f1dd17108a46bc9eb7b014ed694bd"
+    ],
+    "count": 1,
+    "create_time": 1763969362,
+    "update_time": 1763969362,
+    "_id": "知识星球<SEP>通用"
+  },
+  "P-tuning<SEP>Prompt Encoder": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969362,
+    "update_time": 1763969362,
+    "_id": "P-tuning<SEP>Prompt Encoder"
+  },
+  "Downstream Tasks<SEP>Prompt Learning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969362,
+    "update_time": 1763969362,
+    "_id": "Downstream Tasks<SEP>Prompt Learning"
+  },
+  "P-tuning v2<SEP>Prefix-tuning": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969363,
+    "update_time": 1763969363,
+    "_id": "P-tuning v2<SEP>Prefix-tuning"
+  },
+  "器<SEP>通用": {
+    "chunk_ids": [
+      "chunk-0d0f1dd17108a46bc9eb7b014ed694bd"
+    ],
+    "count": 1,
+    "create_time": 1763969363,
+    "update_time": 1763969363,
+    "_id": "器<SEP>通用"
+  },
+  "P-tuning v2<SEP>Prompt Tuning": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969363,
+    "update_time": 1763969363,
+    "_id": "P-tuning v2<SEP>Prompt Tuning"
+  },
+  "Pre-trained Model<SEP>Prompt Learning": {
+    "chunk_ids": [
+      "chunk-fd95b50939db31ada6dd9a1db4bf5525"
+    ],
+    "count": 1,
+    "create_time": 1763969364,
+    "update_time": 1763969364,
+    "_id": "Pre-trained Model<SEP>Prompt Learning"
+  },
+  "GPT-3<SEP>In-Context Learning": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969364,
+    "update_time": 1763969364,
+    "_id": "GPT-3<SEP>In-Context Learning"
+  },
+  "P-tuning v2<SEP>Verbalizer": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969364,
+    "update_time": 1763969364,
+    "_id": "P-tuning v2<SEP>Verbalizer"
+  },
+  "BERT<SEP>GPT-3": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969365,
+    "update_time": 1763969365,
+    "_id": "BERT<SEP>GPT-3"
+  },
+  "LSTM<SEP>Prompt Encoder": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969365,
+    "update_time": 1763969365,
+    "_id": "LSTM<SEP>Prompt Encoder"
+  },
+  "P-tuning<SEP>P-tuning v2": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969365,
+    "update_time": 1763969365,
+    "_id": "P-tuning<SEP>P-tuning v2"
+  },
+  "Few-Shot Learning<SEP>GPT-3": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969366,
+    "update_time": 1763969366,
+    "_id": "Few-Shot Learning<SEP>GPT-3"
+  },
+  "Multi-Task Learning<SEP>P-tuning v2": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969366,
+    "update_time": 1763969366,
+    "_id": "Multi-Task Learning<SEP>P-tuning v2"
+  },
+  "MLP<SEP>Prompt Encoder": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969366,
+    "update_time": 1763969366,
+    "_id": "MLP<SEP>Prompt Encoder"
+  },
+  "Named Entity Recognition<SEP>Sequence Labeling Tasks": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969366,
+    "update_time": 1763969366,
+    "_id": "Named Entity Recognition<SEP>Sequence Labeling Tasks"
+  },
+  "GPT-3<SEP>Zero-Shot Learning": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969366,
+    "update_time": 1763969366,
+    "_id": "GPT-3<SEP>Zero-Shot Learning"
+  },
+  "Prefix<SEP>Prefix-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969367,
+    "update_time": 1763969367,
+    "_id": "Prefix<SEP>Prefix-Tuning"
+  },
+  "Classification Head<SEP>P-tuning v2": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969367,
+    "update_time": 1763969367,
+    "_id": "Classification Head<SEP>P-tuning v2"
+  },
+  "LSTM<SEP>Prompt-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969367,
+    "update_time": 1763969367,
+    "_id": "LSTM<SEP>Prompt-Tuning"
+  },
+  "Full Fine-Tuning<SEP>Prefix-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969368,
+    "update_time": 1763969368,
+    "_id": "Full Fine-Tuning<SEP>Prefix-Tuning"
+  },
+  "BERT<SEP>P-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969368,
+    "update_time": 1763969368,
+    "_id": "BERT<SEP>P-Tuning"
+  },
+  "Prompt Ensembling<SEP>Prompt-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969368,
+    "update_time": 1763969368,
+    "_id": "Prompt Ensembling<SEP>Prompt-Tuning"
+  },
+  "Fine-tuning<SEP>P-tuning v2": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969369,
+    "update_time": 1763969369,
+    "_id": "Fine-tuning<SEP>P-tuning v2"
+  },
+  "GPT<SEP>Prefix-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969369,
+    "update_time": 1763969369,
+    "_id": "GPT<SEP>Prefix-Tuning"
+  },
+  "Continuous Prompts<SEP>Prompt-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969370,
+    "update_time": 1763969370,
+    "_id": "Continuous Prompts<SEP>Prompt-Tuning"
+  },
+  "MLP<SEP>Training Stability": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969370,
+    "update_time": 1763969370,
+    "_id": "MLP<SEP>Training Stability"
+  },
+  "P-tuning v2<SEP>Sequence Labeling Tasks": {
+    "chunk_ids": [
+      "chunk-09a1fb296afcab610f9ab16988f2c5f3"
+    ],
+    "count": 1,
+    "create_time": 1763969370,
+    "update_time": 1763969370,
+    "_id": "P-tuning v2<SEP>Sequence Labeling Tasks"
+  },
+  "Discrete Prompts<SEP>Prefix-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969370,
+    "update_time": 1763969370,
+    "_id": "Discrete Prompts<SEP>Prefix-Tuning"
+  },
+  "GPT<SEP>P-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969371,
+    "update_time": 1763969371,
+    "_id": "GPT<SEP>P-Tuning"
+  },
+  "Catastrophic Forgetting<SEP>Full Fine-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969371,
+    "update_time": 1763969371,
+    "_id": "Catastrophic Forgetting<SEP>Full Fine-Tuning"
+  },
+  "GPT-3<SEP>In Context Learning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969371,
+    "update_time": 1763969371,
+    "_id": "GPT-3<SEP>In Context Learning"
+  },
+  "Prefix-Tuning<SEP>Sequence Length": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969372,
+    "update_time": 1763969372,
+    "_id": "Prefix-Tuning<SEP>Sequence Length"
+  },
+  "Parameter Efficiency<SEP>Prefix-Tuning": {
+    "chunk_ids": [
+      "chunk-5f2957c82a9261835874879783ba0ae5"
+    ],
+    "count": 1,
+    "create_time": 1763969373,
+    "update_time": 1763969373,
+    "_id": "Parameter Efficiency<SEP>Prefix-Tuning"
+  }
+}

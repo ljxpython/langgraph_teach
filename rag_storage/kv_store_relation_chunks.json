@@ -1,0 +1,344 @@
+{
+  "LLM-based Agent Composition<SEP>Lilian Weng": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807938,
+    "update_time": 1763807938,
+    "_id": "LLM-based Agent Composition<SEP>Lilian Weng"
+  },
+  "ConversationBufferMemory<SEP>LangChain": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807938,
+    "update_time": 1763807938,
+    "_id": "ConversationBufferMemory<SEP>LangChain"
+  },
+  "ConversationBufferWindowMemory<SEP>LangChain": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "ConversationBufferWindowMemory<SEP>LangChain"
+  },
+  "ConversationBufferMemory<SEP>Telecom Company Customer Service": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "ConversationBufferMemory<SEP>Telecom Company Customer Service"
+  },
+  "ConversationEntityMemory<SEP>LangChain": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "ConversationEntityMemory<SEP>LangChain"
+  },
+  "ConversationBufferWindowMemory<SEP>E-commerce Platform": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "ConversationBufferWindowMemory<SEP>E-commerce Platform"
+  },
+  "LLM Application Full Stack Development<SEP>Mo Er Suo": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "LLM Application Full Stack Development<SEP>Mo Er Suo"
+  },
+  "ConversationKGMemory<SEP>LangChain": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "ConversationKGMemory<SEP>LangChain"
+  },
+  "ConversationEntityMemory<SEP>Legal Consultation": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807939,
+    "update_time": 1763807939,
+    "_id": "ConversationEntityMemory<SEP>Legal Consultation"
+  },
+  "Lilian Weng<SEP>OpenAI": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807940,
+    "update_time": 1763807940,
+    "_id": "Lilian Weng<SEP>OpenAI"
+  },
+  "Mo Er Suo<SEP>Xiao Li": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807940,
+    "update_time": 1763807940,
+    "_id": "Mo Er Suo<SEP>Xiao Li"
+  },
+  "ChatOpenAI<SEP>GPT-3.5-turbo": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807940,
+    "update_time": 1763807940,
+    "_id": "ChatOpenAI<SEP>GPT-3.5-turbo"
+  },
+  "ConversationSummaryMemory<SEP>LangChain": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807940,
+    "update_time": 1763807940,
+    "_id": "ConversationSummaryMemory<SEP>LangChain"
+  },
+  "ConversationKGMemory<SEP>Medical Consultation": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807940,
+    "update_time": 1763807940,
+    "_id": "ConversationKGMemory<SEP>Medical Consultation"
+  },
+  "Customer Service Chatbot<SEP>Telecom Company Customer Service": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807940,
+    "update_time": 1763807940,
+    "_id": "Customer Service Chatbot<SEP>Telecom Company Customer Service"
+  },
+  "ChatOpenAI<SEP>ConversationEntityMemory": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807941,
+    "update_time": 1763807941,
+    "_id": "ChatOpenAI<SEP>ConversationEntityMemory"
+  },
+  "E-commerce Platform<SEP>Product Consultation": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807941,
+    "update_time": 1763807941,
+    "_id": "E-commerce Platform<SEP>Product Consultation"
+  },
+  "ConversationSummaryMemory<SEP>Educational Tutoring": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807941,
+    "update_time": 1763807941,
+    "_id": "ConversationSummaryMemory<SEP>Educational Tutoring"
+  },
+  "Bill Inquiry<SEP>Customer Service Chatbot": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807941,
+    "update_time": 1763807941,
+    "_id": "Bill Inquiry<SEP>Customer Service Chatbot"
+  },
+  "小李<SEP>莫尔索": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807941,
+    "update_time": 1763807941,
+    "_id": "小李<SEP>莫尔索"
+  },
+  "Battery Life<SEP>Product Consultation": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "Battery Life<SEP>Product Consultation"
+  },
+  "ConversationSummaryBufferMemory<SEP>Technical Support Scenario": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "ConversationSummaryBufferMemory<SEP>Technical Support Scenario"
+  },
+  "ConversationSummaryMemory<SEP>Educational Tutoring Scenario": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "ConversationSummaryMemory<SEP>Educational Tutoring Scenario"
+  },
+  "ConversationTokenBufferMemory<SEP>Financial Advisory Scenario": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "ConversationTokenBufferMemory<SEP>Financial Advisory Scenario"
+  },
+  "Customer Service Chatbot<SEP>Network Connection Issues": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "Customer Service Chatbot<SEP>Network Connection Issues"
+  },
+  "News Event Understanding<SEP>VectorStoreRetrieverMemory": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "News Event Understanding<SEP>VectorStoreRetrieverMemory"
+  },
+  "Delivery Methods<SEP>Product Consultation": {
+    "chunk_ids": [
+      "chunk-1d6f70ce3cb0ea8300e98138eafee571"
+    ],
+    "count": 1,
+    "create_time": 1763807942,
+    "update_time": 1763807942,
+    "_id": "Delivery Methods<SEP>Product Consultation"
+  },
+  "ConversationChain<SEP>PromptTemplate": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807943,
+    "update_time": 1763807943,
+    "_id": "ConversationChain<SEP>PromptTemplate"
+  },
+  "Educational Tutoring Scenario<SEP>Quadratic Equations": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807943,
+    "update_time": 1763807943,
+    "_id": "Educational Tutoring Scenario<SEP>Quadratic Equations"
+  },
+  "Software Fault Troubleshooting<SEP>Technical Support Scenario": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807943,
+    "update_time": 1763807943,
+    "_id": "Software Fault Troubleshooting<SEP>Technical Support Scenario"
+  },
+  "Chroma<SEP>VectorStoreRetrieverMemory": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807943,
+    "update_time": 1763807943,
+    "_id": "Chroma<SEP>VectorStoreRetrieverMemory"
+  },
+  "Financial Advisory Scenario<SEP>Stock Market Trends": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807943,
+    "update_time": 1763807943,
+    "_id": "Financial Advisory Scenario<SEP>Stock Market Trends"
+  },
+  "Economic Summit<SEP>News Event Understanding": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807944,
+    "update_time": 1763807944,
+    "_id": "Economic Summit<SEP>News Event Understanding"
+  },
+  "Financial Advisory Scenario<SEP>Investment Portfolio Allocation": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807944,
+    "update_time": 1763807944,
+    "_id": "Financial Advisory Scenario<SEP>Investment Portfolio Allocation"
+  },
+  "ConversationChain<SEP>VectorStoreRetrieverMemory": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807945,
+    "update_time": 1763807945,
+    "_id": "ConversationChain<SEP>VectorStoreRetrieverMemory"
+  },
+  "Chroma<SEP>OpenAIEmbeddings": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807945,
+    "update_time": 1763807945,
+    "_id": "Chroma<SEP>OpenAIEmbeddings"
+  },
+  "Hot Pot<SEP>VectorStoreRetrieverMemory": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807945,
+    "update_time": 1763807945,
+    "_id": "Hot Pot<SEP>VectorStoreRetrieverMemory"
+  },
+  "VectorStoreRetrieverMemory<SEP>Wrestling Matches": {
+    "chunk_ids": [
+      "chunk-b8ed43b094533527831732f14af49e7e"
+    ],
+    "count": 1,
+    "create_time": 1763807946,
+    "update_time": 1763807946,
+    "_id": "VectorStoreRetrieverMemory<SEP>Wrestling Matches"
+  }
+}

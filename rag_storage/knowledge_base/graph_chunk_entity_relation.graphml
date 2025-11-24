@@ -1,0 +1,1498 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Prompt Learning">
+  <data key="d0">Prompt Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">A method that provides context and task-related information to help models better understand requirements and generate correct outputs, aiming to minimize the number of fine-tuned parameters and computational complexity.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967005</data>
+  <data key="d6"></data>
+</node>
+<node id="Full Fine-Tuning">
+  <data key="d0">Full Fine-Tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A fine-tuning method that updates all parameters of the model.&lt;SEP&gt;A method that fine-tunes all parameters of a pre-trained model, considered inefficient for specific downstream tasks.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967005</data>
+  <data key="d6"></data>
+</node>
+<node id="Prefix-Tuning">
+  <data key="d0">Prefix-Tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A fine-tuning method that adds trainable prefix tokens to the input and only updates the parameters of these prefixes.&lt;SEP&gt;A method that constructs task-related virtual tokens as a prefix before input tokens, updating only the prefix parameters while keeping other Transformer parameters fixed.&lt;SEP&gt;A method that adds tunable prompt tokens at each layer of the input, which P-tuning v2 adopts for deep prompt encoding.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891&lt;SEP&gt;chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967006</data>
+  <data key="d6"></data>
+</node>
+<node id="Prompt-Tuning">
+  <data key="d0">Prompt-Tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A fine-tuning method that adds continuous prompt vectors only at the input layer and updates parameters through backpropagation.&lt;SEP&gt;A method for fine-tuning prompts, with differences compared to Prefix-tuning and fine-tuning discussed in the text.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967006</data>
+  <data key="d6"></data>
+</node>
+<node id="P-Tuning">
+  <data key="d0">P-Tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A method for constructing prompts for large models to improve performance on downstream tasks.&lt;SEP&gt;A method introduced to address specific needs, with its approach, advantages, and disadvantages detailed.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967006</data>
+  <data key="d6"></data>
+</node>
+<node id="P-Tuning V2">
+  <data key="d0">P-Tuning V2</data>
+  <data key="d1">method</data>
+  <data key="d2">An updated version of P-Tuning, developed to meet new requirements, with its own approach, advantages, and disadvantages.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967006</data>
+  <data key="d6"></data>
+</node>
+<node id="Pre-trained Model">
+  <data key="d0">Pre-trained Model</data>
+  <data key="d1">concept</data>
+  <data key="d2">A model that has been previously trained on a large dataset, used as a base for further fine-tuning or prompting methods.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967006</data>
+  <data key="d6"></data>
+</node>
+<node id="Downstream Task">
+  <data key="d0">Downstream Task</data>
+  <data key="d1">concept</data>
+  <data key="d2">Specific tasks that pre-trained models are adapted to perform, such as question answering or sentiment analysis.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967006</data>
+  <data key="d6"></data>
+</node>
+<node id="Sentiment Analysis">
+  <data key="d0">Sentiment Analysis</data>
+  <data key="d1">task</data>
+  <data key="d2">A task where models classify the sentiment of a sentence, often converted into a fill-in-the-blank task using prompts.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967007</data>
+  <data key="d6"></data>
+</node>
+<node id="Question Answering">
+  <data key="d0">Question Answering</data>
+  <data key="d1">task</data>
+  <data key="d2">A task where models generate correct answers based on questions or topic descriptions provided in the prompt.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967007</data>
+  <data key="d6"></data>
+</node>
+<node id="MLP Structure">
+  <data key="d0">MLP Structure</data>
+  <data key="d1">method</data>
+  <data key="d2">A structure added in front of the prefix layer in Prefix-Tuning, used to decompose the prefix into smaller dimensions.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967008</data>
+  <data key="d6"></data>
+</node>
+<node id="AiGC Interview Guide">
+  <data key="d0">AiGC Interview Guide</data>
+  <data key="d1">content</data>
+  <data key="d2">A source document titled "AiGC Interview Guide" from which the information on Prompt Learning is derived.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967008</data>
+  <data key="d6"></data>
+</node>
+<node id="Tranquil and Far-reaching">
+  <data key="d0">Tranquil and Far-reaching</data>
+  <data key="d1">person</data>
+  <data key="d2">The author or contributor named "Tranquil and Far-reaching" associated with the content.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967008</data>
+  <data key="d6"></data>
+</node>
+<node id="BERT">
+  <data key="d0">BERT</data>
+  <data key="d1">model</data>
+  <data key="d2">A bidirectional language model used for comparison with GPT in NLU tasks.&lt;SEP&gt;A bidirectional language model that performs better than GPT-3 on natural language understanding tasks.&lt;SEP&gt;A pre-trained model mentioned in the context of learning associations between prompts and sentence sentiment in sentiment analysis tasks.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891&lt;SEP&gt;chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967008</data>
+  <data key="d6"></data>
+</node>
+<node id="Virtual Tokens">
+  <data key="d0">Virtual Tokens</data>
+  <data key="d1">concept</data>
+  <data key="d2">Task-related tokens constructed before the input tokens, serving as a Prefix.&lt;SEP&gt;Task-related tokens constructed before input tokens used in Prefix-Tuning as part of the prefix.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="Transformer">
+  <data key="d0">Transformer</data>
+  <data key="d1">model</data>
+  <data key="d2">A model architecture where parameters are fixed during Prefix-Tuning training.&lt;SEP&gt;A model architecture whose parameters are kept fixed during Prefix-Tuning, with only the prefix parameters being updated.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="Discrete Prompts">
+  <data key="d0">Discrete Prompts</data>
+  <data key="d1">method</data>
+  <data key="d2">Manually designed prompts added to the model, which are costly and not very effective.&lt;SEP&gt;Manually designed prompts noted for their sensitivity to changes and suboptimal performance compared to learned methods.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="Automated Discrete Prompt Search">
+  <data key="d0">Automated Discrete Prompt Search</data>
+  <data key="d1">method</data>
+  <data key="d2">An automated method for searching discrete prompts, noted for its high cost and potential suboptimal results.</data>
+  <data key="d3">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="Prefix">
+  <data key="d0">Prefix</data>
+  <data key="d1">concept</data>
+  <data key="d2">A sequence of virtual tokens prepended to the input, with parameters updated during training while other Transformer parameters remain fixed.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="MLP">
+  <data key="d0">MLP</data>
+  <data key="d1">method</data>
+  <data key="d2">A structure added before the Prefix layer to decompose the Prefix into lower-dimensional input and output, used to prevent training instability.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="LSTM">
+  <data key="d0">LSTM</data>
+  <data key="d1">method</data>
+  <data key="d2">Used to model the correlation between prompt vectors in Prompt-Tuning.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967009</data>
+  <data key="d6"></data>
+</node>
+<node id="GPT">
+  <data key="d0">GPT</data>
+  <data key="d1">method</data>
+  <data key="d2">An autoregressive modeling architecture served by Prefix-Tuning.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967010</data>
+  <data key="d6"></data>
+</node>
+<node id="NLG Tasks">
+  <data key="d0">NLG Tasks</data>
+  <data key="d1">concept</data>
+  <data key="d2">Natural Language Generation tasks, for which Prefix-Tuning is effective.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967010</data>
+  <data key="d6"></data>
+</node>
+<node id="NLU Tasks">
+  <data key="d0">NLU Tasks</data>
+  <data key="d1">concept</data>
+  <data key="d2">Natural Language Understanding tasks, where Prompt-Tuning may perform poorly on normal-sized pre-trained models.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967010</data>
+  <data key="d6"></data>
+</node>
+<node id="Prompt Ensembling">
+  <data key="d0">Prompt Ensembling</data>
+  <data key="d1">method</data>
+  <data key="d2">Training different prompts for the same task in a single batch, equivalent to training different models at lower cost.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967010</data>
+  <data key="d6"></data>
+</node>
+<node id="Training Instability">
+  <data key="d0">Training Instability</data>
+  <data key="d1">concept</data>
+  <data key="d2">A problem that can occur when directly updating Prefix parameters, which the MLP structure helps to prevent.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967011</data>
+  <data key="d6"></data>
+</node>
+<node id="Parameter Efficient">
+  <data key="d0">Parameter Efficient</data>
+  <data key="d1">concept</data>
+  <data key="d2">A characteristic of prompt methods that save memory but do not necessarily speed up training.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967011</data>
+  <data key="d6"></data>
+</node>
+<node id="Training Efficient">
+  <data key="d0">Training Efficient</data>
+  <data key="d1">concept</data>
+  <data key="d2">The desired goal of saving training time, which current prompt methods often do not achieve.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967011</data>
+  <data key="d6"></data>
+</node>
+<node id="Sequence Labeling Tasks">
+  <data key="d0">Sequence Labeling Tasks</data>
+  <data key="d1">concept</data>
+  <data key="d2">Difficult tasks that existing prompt tuning methods cannot handle effectively.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967011</data>
+  <data key="d6"></data>
+</node>
+<node id="In Context Learning">
+  <data key="d0">In Context Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">GPT-3's approach using manually constructed templates for downstream tasks.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967011</data>
+  <data key="d6"></data>
+</node>
+<node id="GPT-3">
+  <data key="d0">GPT-3</data>
+  <data key="d1">method</data>
+  <data key="d2">A large language model that uses manually constructed templates for in-context learning, with performance sensitive to template variations.&lt;SEP&gt;A model that uses manually constructed templates for in-context learning, with performance sensitive to template design.</data>
+  <data key="d3">chunk-c833b09cb6d1c7dc95291a0ed54a7891&lt;SEP&gt;chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967012</data>
+  <data key="d6"></data>
+</node>
+<node id="P-tuning">
+  <data key="d0">P-tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A method that converts prompts into learnable embedding layers and uses a prompt encoder to model dependencies between pseudo tokens and provide better initialization.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967012</data>
+  <data key="d6"></data>
+</node>
+<node id="P-tuning v2">
+  <data key="d0">P-tuning v2</data>
+  <data key="d1">method</data>
+  <data key="d2">An improved prompt tuning method that uses deep prompt encoding, removes reparameterization encoders, employs task-specific prompt lengths, incorporates multi-task learning, and abandons verbalizers for traditional classification paradigms.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967012</data>
+  <data key="d6"></data>
+</node>
+<node id="Prompt Tuning">
+  <data key="d0">Prompt Tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A method for adapting pre-trained models to downstream tasks using prompts, which P-tuning v2 aims to improve.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967012</data>
+  <data key="d6"></data>
+</node>
+<node id="Prompt">
+  <data key="d0">Prompt</data>
+  <data key="d1">concept</data>
+  <data key="d2">Input constructions that significantly affect the performance of downstream tasks for large models.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967012</data>
+  <data key="d6"></data>
+</node>
+<node id="In-Context Learning">
+  <data key="d0">In-Context Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">A training approach where GPT-3 uses manually constructed templates to learn from context.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967012</data>
+  <data key="d6"></data>
+</node>
+<node id="Prompt Encoder">
+  <data key="d0">Prompt Encoder</data>
+  <data key="d1">method</data>
+  <data key="d2">A component in P-tuning consisting of a bidirectional LSTM and a two-layer MLP that processes prompt embeddings and models dependencies between pseudo tokens.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967013</data>
+  <data key="d6"></data>
+</node>
+<node id="Fine-tuning">
+  <data key="d0">Fine-tuning</data>
+  <data key="d1">method</data>
+  <data key="d2">A traditional method for adapting pre-trained models to downstream tasks, which P-tuning v2 aims to match in performance.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967013</data>
+  <data key="d6"></data>
+</node>
+<node id="Multi-Task Learning">
+  <data key="d0">Multi-Task Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">An approach used in P-tuning v2 where prompts are pre-trained on multiple tasks before being adapted to downstream tasks.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967013</data>
+  <data key="d6"></data>
+</node>
+<node id="Verbalizer">
+  <data key="d0">Verbalizer</data>
+  <data key="d1">method</data>
+  <data key="d2">A component in prompt learning that maps class labels to meaningful words, which P-tuning v2 abandons in favor of traditional classification heads.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="Classification Head">
+  <data key="d0">Classification Head</data>
+  <data key="d1">method</data>
+  <data key="d2">A randomly initialized component applied to tokens in P-tuning v2 for traditional classification tasks like sequence labeling.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="NER">
+  <data key="d0">NER</data>
+  <data key="d1">task</data>
+  <data key="d2">Named Entity Recognition, a sequence labeling task that P-tuning v2 can be applied to.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="Large Language Models">
+  <data key="d0">Large Language Models</data>
+  <data key="d1">model</data>
+  <data key="d2">Large models whose prompt construction methods significantly affect the performance of downstream tasks.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="Few-Shot Learning">
+  <data key="d0">Few-Shot Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">A learning scenario where GPT-3's prompt training method can significantly improve performance.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="Zero-Shot Learning">
+  <data key="d0">Zero-Shot Learning</data>
+  <data key="d1">method</data>
+  <data key="d2">A learning scenario where GPT-3's prompt training method can significantly improve performance.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="Automated Template Search">
+  <data key="d0">Automated Template Search</data>
+  <data key="d1">method</data>
+  <data key="d2">A method for searching templates automatically, which was previously costly and yielded suboptimal results.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="Reparameterization Encoder">
+  <data key="d0">Reparameterization Encoder</data>
+  <data key="d1">method</data>
+  <data key="d2">An encoder used in prefix-tuning and P-tuning to improve training speed and robustness, which P-tuning v2 removes.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967014</data>
+  <data key="d6"></data>
+</node>
+<node id="CLS Token">
+  <data key="d0">CLS Token</data>
+  <data key="d1">concept</data>
+  <data key="d2">A classification token used in traditional classification paradigms that P-tuning v2 returns to.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967015</data>
+  <data key="d6"></data>
+</node>
+<node id="Token Label Classification">
+  <data key="d0">Token Label Classification</data>
+  <data key="d1">method</data>
+  <data key="d2">A traditional classification paradigm that P-tuning v2 adopts, applying to tasks like sequence labeling.</data>
+  <data key="d3">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967015</data>
+  <data key="d6"></data>
+</node>
+<node id="image_787e7fe4d47550359f3713e9686fef65">
+  <data key="d0">image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d1">image</data>
+  <data key="d2">Image content: {'type': 'image', 'img_path': '/Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示</data>
+  <data key="d3">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967034</data>
+</node>
+<node id="image_7e3d672b2c6243465929dfcc3a2e30c4">
+  <data key="d0">image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d1">image</data>
+  <data key="d2">Image content: {'type': 'image', 'img_path': '/Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示</data>
+  <data key="d3">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967034</data>
+</node>
+<node id="image_d7fbe1eaf84cda7a9df577575839c952">
+  <data key="d0">image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d1">image</data>
+  <data key="d2">Image content: {'type': 'image', 'img_path': '/Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967034</data>
+</node>
+<node id="Image Content Analysis">
+  <data key="d0">Image Content Analysis</data>
+  <data key="d1">method</data>
+  <data key="d2">A method for analyzing the content of images.&lt;SEP&gt;A method for analyzing the content of images, including their path, captions, and footnotes.&lt;SEP&gt;Image Content Analysis is a process for examining and interpreting the content of images.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967078</data>
+  <data key="d6"></data>
+</node>
+<node id="Image Path">
+  <data key="d0">Image Path</data>
+  <data key="d1">data</data>
+  <data key="d2">The file path to an image located at /Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示学习(Prompting)篇/docling/images/image_1.png.&lt;SEP&gt;The file path location of an image, specifically /Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示学习(Prompting)篇/docling/images/image_0.png.&lt;SEP&gt;Image Path refers to the specific file location of an image on a computer system.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967078</data>
+  <data key="d6"></data>
+</node>
+<node id="/Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示学习(Prompting)篇/docling/images/image_2.png">
+  <data key="d0">/Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示学习(Prompting)篇/docling/images/image_2.png</data>
+  <data key="d1">data</data>
+  <data key="d2">This is a specific file path pointing to an image file in a directory structure.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967078</data>
+  <data key="d6"></data>
+</node>
+<node id="Captions">
+  <data key="d0">Captions</data>
+  <data key="d1">content</data>
+  <data key="d2">Captions associated with the image, which are currently None.&lt;SEP&gt;Textual descriptions or titles associated with an image; in this context, no captions are present.&lt;SEP&gt;Captions are textual descriptions associated with images, which were noted as None in this analysis.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967079</data>
+  <data key="d6"></data>
+</node>
+<node id="Footnotes">
+  <data key="d0">Footnotes</data>
+  <data key="d1">content</data>
+  <data key="d2">Footnotes associated with the image, which are currently None.&lt;SEP&gt;Additional notes or references related to an image; in this context, no footnotes are present.&lt;SEP&gt;Footnotes are additional notes or references associated with images, which were noted as None in this analysis.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967079</data>
+  <data key="d6"></data>
+</node>
+<node id="Visual Analysis">
+  <data key="d0">Visual Analysis</data>
+  <data key="d1">method</data>
+  <data key="d2">A type of analysis that provides details about an image including its type, path, caption, footnote, and page index.&lt;SEP&gt;A process that examines an image's properties, such as its type, path, caption, footnote, and page index.&lt;SEP&gt;Visual Analysis contains structured data about an image including type, path, caption, footnote, and page index.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967079</data>
+  <data key="d6"></data>
+</node>
+<node id="type">
+  <data key="d0">type</data>
+  <data key="d1">data</data>
+  <data key="d2">Type is a data field indicating the category of content being analyzed, specified as 'image' in this case.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967079</data>
+  <data key="d6"></data>
+</node>
+<node id="img_path">
+  <data key="d0">img_path</data>
+  <data key="d1">data</data>
+  <data key="d2">Img_path is a data field containing the file path to the image being analyzed.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967079</data>
+  <data key="d6"></data>
+</node>
+<node id="image_caption">
+  <data key="d0">image_caption</data>
+  <data key="d1">content</data>
+  <data key="d2">Image_caption is a field for storing caption text associated with an image, which was empty in this analysis.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967080</data>
+  <data key="d6"></data>
+</node>
+<node id="image_footnote">
+  <data key="d0">image_footnote</data>
+  <data key="d1">content</data>
+  <data key="d2">Image_footnote is a field for storing footnote text associated with an image, which was empty in this analysis.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967080</data>
+  <data key="d6"></data>
+</node>
+<node id="page_idx">
+  <data key="d0">page_idx</data>
+  <data key="d1">data</data>
+  <data key="d2">Page_idx is a data field indicating the page index number where the image appears, specified as 7 in this case.</data>
+  <data key="d3">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967081</data>
+  <data key="d6"></data>
+</node>
+<node id="Image">
+  <data key="d0">Image</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A visual artifact located at a specific path, analyzed for its content and properties.</data>
+  <data key="d3">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967081</data>
+  <data key="d6"></data>
+</node>
+<node id="Page Index">
+  <data key="d0">Page Index</data>
+  <data key="d1">data</data>
+  <data key="d2">The page number where the image is located, which is page 1.&lt;SEP&gt;A numerical identifier (0) indicating the position of the image within a document or sequence.</data>
+  <data key="d3">chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967081</data>
+  <data key="d6"></data>
+</node>
+<node id="Image Caption">
+  <data key="d0">Image Caption</data>
+  <data key="d1">content</data>
+  <data key="d2">The caption text associated with an image; in this context, the image caption is an empty string.</data>
+  <data key="d3">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967081</data>
+  <data key="d6"></data>
+</node>
+<node id="Image Footnote">
+  <data key="d0">Image Footnote</data>
+  <data key="d1">content</data>
+  <data key="d2">The footnote text associated with an image; in this context, the image footnote is an empty string.</data>
+  <data key="d3">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967081</data>
+  <data key="d6"></data>
+</node>
+<node id="image_1.png">
+  <data key="d0">image_1.png</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An image file located in the docling/images directory.</data>
+  <data key="d3">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967082</data>
+  <data key="d6"></data>
+</node>
+<node id="28-提示学习(Prompting)篇">
+  <data key="d0">28-提示学习(Prompting)篇</data>
+  <data key="d1">content</data>
+  <data key="d2">A directory path component representing a document or section about prompt learning.</data>
+  <data key="d3">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967082</data>
+  <data key="d6"></data>
+</node>
+<node id="docling">
+  <data key="d0">docling</data>
+  <data key="d1">organization</data>
+  <data key="d2">A software tool or library used for document processing and analysis.</data>
+  <data key="d3">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967082</data>
+  <data key="d6"></data>
+</node>
+<node id="langgraph_teach">
+  <data key="d0">langgraph_teach</data>
+  <data key="d1">organization</data>
+  <data key="d2">A project or teaching material related to language graphs.</data>
+  <data key="d3">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d4">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d5">1763967082</data>
+  <data key="d6"></data>
+</node>
+<edge source="Prompt Learning" target="Full Fine-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt Learning is presented as a more efficient alternative to Full Fine-Tuning for adapting pre-trained models to downstream tasks.</data>
+  <data key="d9">efficiency,parameter optimization</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967016</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="Pre-trained Model">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt Learning aims to improve the performance of pre-trained models on new tasks by minimizing fine-tuning parameters and computational complexity.</data>
+  <data key="d9">adaptation,knowledge utilization</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967017</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="Prefix-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning is a specific method under Prompt Learning that constructs virtual tokens as prefixes and updates only those parameters.</data>
+  <data key="d9">method implementation,parameter efficiency</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967017</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="Prompt-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt-Tuning is another method within Prompt Learning, with distinctions made from Prefix-tuning and fine-tuning.</data>
+  <data key="d9">fine-tuning approach,method variation</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967017</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="P-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">P-Tuning is introduced as part of Prompt Learning methods to address limitations of previous approaches.</data>
+  <data key="d9">method evolution,optimization</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967019</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="Sentiment Analysis">
+  <data key="d7">1.0</data>
+  <data key="d8">Sentiment Analysis is a downstream task where Prompt Learning methods, like adding prefixes, are applied to convert it into a fill-in-the-blank task.</data>
+  <data key="d9">method utilization,task application</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967019</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="Question Answering">
+  <data key="d7">1.0</data>
+  <data key="d8">Question Answering is a downstream task where Prompt Learning provides context and task-related information to help models generate correct answers.</data>
+  <data key="d9">context provision,task application</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967020</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt Learning" target="AiGC Interview Guide">
+  <data key="d7">1.0</data>
+  <data key="d8">The "AiGC Interview Guide" is the source document containing the information about Prompt Learning and its methods.</data>
+  <data key="d9">content source,information derivation</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967021</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Full Fine-Tuning" target="Prefix-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning only updates Prefix parameters, whereas Full Fine-Tuning updates all model parameters.</data>
+  <data key="d9">comparison,parameter efficiency</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967023</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Full Fine-Tuning" target="Prompt-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt-Tuning does not change pre-trained model parameters, avoiding catastrophic forgetting, unlike Full Fine-Tuning.</data>
+  <data key="d9">catastrophic forgetting,parameter update</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967025</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="MLP Structure">
+  <data key="d7">1.0</data>
+  <data key="d8">In Prefix-Tuning, an MLP structure is added in front of the prefix layer to decompose the prefix into smaller dimensions.</data>
+  <data key="d9">architecture component,parameter decomposition</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967018</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Virtual Tokens">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning uses Virtual Tokens as a key component to construct the task-related prefix.</data>
+  <data key="d9">component usage,prefix construction</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967019</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Transformer">
+  <data key="d7">1.0</data>
+  <data key="d8">In Prefix-Tuning, the parameters of the Transformer model are fixed, and only the prefix parameters are updated.</data>
+  <data key="d9">architecture utilization,parameter fixation</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967019</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Discrete Prompts">
+  <data key="d7">2.0</data>
+  <data key="d8">Prefix-Tuning can learn implicit prompts, unlike manually designed discrete prompts which cannot update parameters.&lt;SEP&gt;Prefix-Tuning is introduced to address the limitations of manually designed Discrete Prompts.</data>
+  <data key="d9">learning capability,limitation addressing,method comparison,method improvement</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1&lt;SEP&gt;chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967020</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Automated Discrete Prompt Search">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning is presented as an improvement over the costly Automated Discrete Prompt Search method.</data>
+  <data key="d9">cost reduction,method improvement</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967021</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Prefix">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning involves training and updating the parameters of the Prefix.</data>
+  <data key="d9">parameter optimization,training method</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967022</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="MLP">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning adds an MLP structure before the Prefix layer to prevent training instability.</data>
+  <data key="d9">stability enhancement,structural component</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967022</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Prompt-Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt-Tuning is considered a simplified version of Prefix-Tuning.</data>
+  <data key="d9">method comparison,simplified version</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967025</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="GPT">
+  <data key="d7">1.0</data>
+  <data key="d8">Prefix-Tuning is designed specifically for the GPT architecture and is effective for NLG tasks.</data>
+  <data key="d9">architecture compatibility,task specialization</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967025</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="Training Instability">
+  <data key="d7">1.0</data>
+  <data key="d8">The MLP structure is added in Prefix-Tuning to prevent training instability caused by directly updating Prefix parameters.</data>
+  <data key="d9">problem mitigation,structural solution</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967026</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prefix-Tuning" target="P-tuning v2">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 adopts deep prompt encoding from Prefix-Tuning by adding tunable prompt tokens at each layer.</data>
+  <data key="d9">deep prompt encoding,improvement</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967027</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt-Tuning" target="LSTM">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt-Tuning uses LSTM to model the correlation between prompt vectors.</data>
+  <data key="d9">modeling correlation,prompt optimization</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967021</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt-Tuning" target="NLU Tasks">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt-Tuning performs poorly on NLU tasks for normal-sized pre-trained models.</data>
+  <data key="d9">application scope,performance limitation</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967022</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt-Tuning" target="Parameter Efficient">
+  <data key="d7">1.0</data>
+  <data key="d8">Prompt-Tuning methods are parameter efficient, saving memory, but are not necessarily training efficient.</data>
+  <data key="d9">characteristic,resource optimization</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967023</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prompt-Tuning" target="Sequence Labeling Tasks">
+  <data key="d7">1.0</data>
+  <data key="d8">Existing prompt tuning methods cannot handle difficult sequence labeling tasks.</data>
+  <data key="d9">limitation,task applicability</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967024</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-Tuning" target="P-Tuning V2">
+  <data key="d7">1.0</data>
+  <data key="d8">P-Tuning V2 is an updated version of P-Tuning, developed to meet new requirements and offer improvements.</data>
+  <data key="d9">improvement,version upgrade</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967019</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-Tuning" target="GPT">
+  <data key="d7">1.0</data>
+  <data key="d8">P-Tuning addresses the issue where GPT's performance on NLU tasks is significantly worse than BERT's by improving prompt construction.</data>
+  <data key="d9">performance improvement,prompt construction</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967022</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-Tuning" target="In Context Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">P-Tuning addresses the sensitivity of GPT-3's in-context learning performance to manually designed template changes.</data>
+  <data key="d9">performance sensitivity,prompt construction</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967023</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Sentiment Analysis" target="BERT">
+  <data key="d7">1.0</data>
+  <data key="d8">BERT is used in Sentiment Analysis tasks to learn the association between prompts and sentence sentiments.</data>
+  <data key="d9">model application,task learning</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967018</data>
+  <data key="d13"></data>
+</edge>
+<edge source="AiGC Interview Guide" target="Tranquil and Far-reaching">
+  <data key="d7">1.0</data>
+  <data key="d8">"Tranquil and Far-reaching" is the author or contributor associated with the "AiGC Interview Guide".</data>
+  <data key="d9">authorship,contribution</data>
+  <data key="d10">chunk-59336c1ff31ba49f0406842c0d5a48a1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967022</data>
+  <data key="d13"></data>
+</edge>
+<edge source="BERT" target="GPT-3">
+  <data key="d7">1.0</data>
+  <data key="d8">GPT-3 performs worse than BERT on natural language understanding tasks due to differences in modeling approaches.</data>
+  <data key="d9">NLU tasks,performance comparison</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967027</data>
+  <data key="d13"></data>
+</edge>
+<edge source="In Context Learning" target="GPT-3">
+  <data key="d7">1.0</data>
+  <data key="d8">GPT-3 uses manually constructed templates for in-context learning.</data>
+  <data key="d9">application,method usage</data>
+  <data key="d10">chunk-c833b09cb6d1c7dc95291a0ed54a7891</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967024</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GPT-3" target="In-Context Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">GPT-3 uses in-context learning with manually constructed templates, but its performance is highly sensitive to changes in these templates.</data>
+  <data key="d9">template sensitivity,training approach</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967026</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GPT-3" target="Few-Shot Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">GPT-3's prompt training method significantly improves its performance in few-shot learning scenarios.</data>
+  <data key="d9">performance improvement,prompt training</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967028</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GPT-3" target="Zero-Shot Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">GPT-3's prompt training method significantly improves its performance in zero-shot learning scenarios.</data>
+  <data key="d9">performance improvement,prompt training</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967029</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GPT-3" target="Automated Template Search">
+  <data key="d7">1.0</data>
+  <data key="d8">Automated template search for GPT-3 was costly and often resulted in suboptimal, unstable performance.</data>
+  <data key="d9">cost,performance instability</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967029</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning" target="Prompt Encoder">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning uses a prompt encoder to model dependencies between pseudo tokens and provide better initialization.</data>
+  <data key="d9">component,initialization</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967024</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning" target="Large Language Models">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning is a method designed to optimize prompt construction for large language models.</data>
+  <data key="d9">optimization,prompt construction</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967027</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="Multi-Task Learning">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 incorporates multi-task learning by pre-training prompts on multiple tasks before adapting to downstream tasks.</data>
+  <data key="d9">adaptation,pre-training</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967027</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="Verbalizer">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 abandons the verbalizer used in prompt learning and returns to traditional CLS and token label classification paradigms.</data>
+  <data key="d9">abandonment,classification paradigm</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967028</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="Classification Head">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 uses a randomly initialized classification head applied to tokens to enhance generality for tasks like sequence labeling.</data>
+  <data key="d9">application,generalization</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967029</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="NER">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 extends Prompt Tuning to sequence labeling tasks such as Named Entity Recognition.</data>
+  <data key="d9">application,sequence labeling</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967029</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="Prompt Tuning">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 improves upon Prompt Tuning by increasing learnable parameters and making it effective even for smaller models.</data>
+  <data key="d9">improvement,parameter efficiency</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967030</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="Reparameterization Encoder">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 removes the reparameterization encoder used in earlier methods to improve performance, especially for smaller models.</data>
+  <data key="d9">model performance,removal</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967031</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="CLS Token">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 adopts the traditional CLS token classification paradigm, moving away from verbalizers.</data>
+  <data key="d9">adoption,classification paradigm</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967031</data>
+  <data key="d13"></data>
+</edge>
+<edge source="P-tuning v2" target="Token Label Classification">
+  <data key="d7">1.0</data>
+  <data key="d8">P-tuning v2 applies token label classification for tasks like sequence labeling, enhancing its generality.</data>
+  <data key="d9">application,sequence labeling</data>
+  <data key="d10">chunk-5fe60aebb5d1b273f50225f6a56dba1f</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967032</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Image Path">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Path belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967093</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Captions">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Captions belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Image">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Page Index">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Page Index belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Visual Analysis">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Visual Analysis belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Image Caption">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Caption belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967098</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Image Content Analysis">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Content Analysis belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967100</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Image Footnote">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Footnote belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967101</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_787e7fe4d47550359f3713e9686fef65" target="Footnotes">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Footnotes belongs to image_787e7fe4d47550359f3713e9686fef65</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967102</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="Image Path">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Path belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967099</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="Captions">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Captions belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967100</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="Visual Analysis">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Visual Analysis belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967102</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="image_1.png">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity image_1.png belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967103</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="Image Content Analysis">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Content Analysis belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967104</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="Page Index">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Page Index belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967105</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="28-提示学习(Prompting)篇">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity 28-提示学习(Prompting)篇 belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967106</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="docling">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity docling belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967107</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="langgraph_teach">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity langgraph_teach belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967108</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_7e3d672b2c6243465929dfcc3a2e30c4" target="Footnotes">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Footnotes belongs to image_7e3d672b2c6243465929dfcc3a2e30c4</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967109</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="Image Path">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Path belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967085</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="/Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示学习(Prompting)篇/docling/images/image_2.png">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity /Users/bytedance/PycharmProjects/my_best/langgraph_teach/output/28-提示学习(Prompting)篇/docling/images/image_2.png belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967086</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="type">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity type belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967087</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="Visual Analysis">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Visual Analysis belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967088</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="img_path">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity img_path belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967089</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="image_caption">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity image_caption belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967090</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="Captions">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Captions belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967091</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="image_footnote">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity image_footnote belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967092</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="page_idx">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity page_idx belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967093</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="Image Content Analysis">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Image Content Analysis belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="image_d7fbe1eaf84cda7a9df577575839c952" target="Footnotes">
+  <data key="d7">10.0</data>
+  <data key="d8">Entity Footnotes belongs to image_d7fbe1eaf84cda7a9df577575839c952</data>
+  <data key="d9">belongs_to,contained_in,part_of</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">src/data/28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Content Analysis" target="Image Path">
+  <data key="d7">3.0</data>
+  <data key="d8">Image Content Analysis uses the Image Path as input data for processing.&lt;SEP&gt;Image Content Analysis involves extracting and processing the Image Path data.&lt;SEP&gt;Image Content Analysis involves examining and extracting data from the specified Image Path.</data>
+  <data key="d9">analysis method,data extraction,data input,file location</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967083</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Content Analysis" target="Visual Analysis">
+  <data key="d7">1.0</data>
+  <data key="d8">Image Content Analysis and Visual Analysis are both methods for examining and interpreting image content.</data>
+  <data key="d9">content examination,methodology</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967087</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Content Analysis" target="Captions">
+  <data key="d7">3.0</data>
+  <data key="d8">Image Content Analysis examines Captions as part of image metadata.&lt;SEP&gt;Image Content Analysis assesses the presence or absence of Captions.&lt;SEP&gt;Image Content Analysis examines the Captions field which was noted as None.</data>
+  <data key="d9">content analysis,content assessment,data examination,metadata,metadata extraction</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967088</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Content Analysis" target="Footnotes">
+  <data key="d7">3.0</data>
+  <data key="d8">Image Content Analysis examines Footnotes as part of image metadata.&lt;SEP&gt;Image Content Analysis assesses the presence or absence of Footnotes.&lt;SEP&gt;Image Content Analysis examines the Footnotes field which was noted as None.</data>
+  <data key="d9">content analysis,content assessment,data examination,metadata,metadata extraction</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3&lt;SEP&gt;chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967089</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Path" target="Visual Analysis">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis includes the Image Path as a key attribute of the image.</data>
+  <data key="d9">attribute,data inclusion</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967090</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Path" target="28-提示学习(Prompting)篇">
+  <data key="d7">1.0</data>
+  <data key="d8">The Image Path contains the directory 28-提示学习(Prompting)篇as part of its file structure.</data>
+  <data key="d9">directory hierarchy,file structure</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Path" target="docling">
+  <data key="d7">1.0</data>
+  <data key="d8">The Image Path contains the docling directory as part of its file structure.</data>
+  <data key="d9">directory hierarchy,file structure</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967098</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Image Path" target="langgraph_teach">
+  <data key="d7">1.0</data>
+  <data key="d8">The Image Path contains the langgraph_teach directory as part of its file structure.</data>
+  <data key="d9">directory hierarchy,file structure</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967099</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="img_path">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis references the img_path data field to locate the specific image file for analysis.</data>
+  <data key="d9">data reference,file location</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967083</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="type">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis uses the type field to classify the content category as 'image'.</data>
+  <data key="d9">content classification,data categorization</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967084</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="page_idx">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis includes the page_idx data field to indicate the document page location of the image.</data>
+  <data key="d9">document structure,page reference</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967084</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="image_caption">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis includes the image_caption field which stores caption information for the image.</data>
+  <data key="d9">content storage,data field</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967085</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="image_footnote">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis includes the image_footnote field which stores footnote information for the image.</data>
+  <data key="d9">content storage,data field</data>
+  <data key="d10">chunk-7d4e673c7cdcd2bc27f864f25801a9c3</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967086</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="Image">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis is performed on the Image to examine its type, path, and other properties.</data>
+  <data key="d9">examination,property analysis</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967089</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="Page Index">
+  <data key="d7">2.0</data>
+  <data key="d8">Visual Analysis includes the Page Index to indicate the image's location in the document.&lt;SEP&gt;Visual Analysis includes the Page Index to indicate the image's position.</data>
+  <data key="d9">data inclusion,document structure,page reference,positioning</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b&lt;SEP&gt;chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967091</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="Image Caption">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis includes the Image Caption as part of the image's metadata.</data>
+  <data key="d9">data inclusion,description</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967092</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="Image Footnote">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis includes the Image Footnote as part of the image's metadata.</data>
+  <data key="d9">data inclusion,reference</data>
+  <data key="d10">chunk-f6a9b9b2893ac785426d4437504c978b</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Visual Analysis" target="image_1.png">
+  <data key="d7">1.0</data>
+  <data key="d8">Visual Analysis is performed on the image_1.png file.</data>
+  <data key="d9">file analysis,image processing</data>
+  <data key="d10">chunk-1d6271867d78828dbe3bc98eea955ce1</data>
+  <data key="d11">28-提示学习（Prompting）篇.pdf</data>
+  <data key="d12">1763967098</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

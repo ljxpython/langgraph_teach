@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
+
 from langchain_core.tools import tool
 from langchain_mcp_adapters.client import MultiServerMCPClient
 
@@ -103,6 +104,17 @@ def get_mcp_server_chart_tools():
     tools = asyncio.run(client.get_tools())
     return tools
 
+def get_mcp_tools():
+    client = MultiServerMCPClient(
+        {
+            "search": {
+                "url": "http://127.0.0.1:8001/sse",
+                "transport": "sse",
+            }
+        }
+    )
+    tools = asyncio.run(client.get_tools())
+    return tools
 
 # print(get_chrome_devtools_mcp_tools())
 # tools = get_zhipu_search_mcp_tools()

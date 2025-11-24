@@ -1,0 +1,25 @@
+{
+  "doc-59bf9db71eb0feb149a8555e062d5c81": {
+    "status": "processed",
+    "chunks_count": 6,
+    "chunks_list": [
+      "chunk-59336c1ff31ba49f0406842c0d5a48a1",
+      "chunk-c833b09cb6d1c7dc95291a0ed54a7891",
+      "chunk-5fe60aebb5d1b273f50225f6a56dba1f",
+      "chunk-f6a9b9b2893ac785426d4437504c978b",
+      "chunk-1d6271867d78828dbe3bc98eea955ce1",
+      "chunk-7d4e673c7cdcd2bc27f864f25801a9c3"
+    ],
+    "content_summary": "提示学习（Prompting）篇\n\n来自：\n\nAiGC 面试宝典\n\n宁静致远\n\n· 提示学习（ Prompting ）\n\n· 一、为什么需要提示学习（ Prompting ）？\n\n· 二、什么是提示学习（ Prompting ）？\n\n· 三、提示学习（ Prompting ）有什么优点？\n\n· 四、提示学习（ Prompting ）有哪些方法，能不能稍微介绍一下它们间？\n\n· 4.1 前缀微调（ Prefix-tining ）篇\n\n· 4.1.1 为什么需要前缀微调（ Prefix-tining...",
+    "content_length": 6154,
+    "created_at": "2025-11-24T06:46:57.255007+00:00",
+    "updated_at": "2025-11-24T14:51:50+00:00",
+    "file_path": "28-提示学习（Prompting）篇.pdf",
+    "track_id": "insert_20251124_144657_e3d82fb8",
+    "metadata": {
+      "processing_start_time": 1763966908,
+      "processing_end_time": 1763967032
+    },
+    "multimodal_processed": true
+  }
+}
