@@ -58,9 +58,9 @@ async def get_rag_tools_async() -> List[BaseTool]:
 
 async def build_agent_async():
     """构建纯异步 Agent，工具直接使用 MCP 提供的 coroutine。"""
-    tools: List[BaseTool] = [get_available_collections]
-    # 根据需要选择加载哪组 MCP 工具，这里默认用 RAG 服务
-    tools.extend(await get_rag_tools_async())
+    # tools: List[BaseTool] = [get_available_collections]
+    # # 根据需要选择加载哪组 MCP 工具，这里默认用 RAG 服务
+    # tools.extend(await get_rag_tools_async())
     # 也可以换成 await _load_mcp_tools_async()
 
     system_prompt = (
@@ -71,7 +71,7 @@ async def build_agent_async():
     )
 
     llm = get_default_model()
-    return create_agent(model=llm, tools=tools, system_prompt=system_prompt)
+    return create_agent(model=llm, tools=await get_rag_tools_async(), system_prompt=system_prompt)
 
 
 async def example_async():

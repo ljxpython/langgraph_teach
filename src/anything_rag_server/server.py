@@ -253,28 +253,59 @@ class AnythingRAGService:
         return init_result
 
     async def rewrite_queries(self, question: str, num_variants: int = 3) -> List[Dict[str, str]]:
-        prompt = f"将下面的问题改写为 {num_variants} 个更利于检索的查询，输出 JSON 数组，每个元素含 strategy 和 query 字段：{question}"
+        prompt = (
+            f"将下面的问题改写为 {num_variants} 个更利于检索的查询，输出 JSON 数组，每个元素含 strategy 和 query 字段：\n"
+            f"问题：{question}\n"
+            "示例输出：[{\"strategy\":\"original\",\"query\":\"...\"},{\"strategy\":\"simplify\",\"query\":\"...\"}]"
+        )
         system_prompt = (
             "你是查询改写助手，保持语义一致，策略可包含 original/simplify/expand/rephrase/decompose。"
+            "仅返回 JSON，不要添加 ```json 代码块。"
         )
+
+        def _normalize_variants(raw_val) -> List[Dict[str, str]]:
+            """尽量从模型输出提取 JSON，失败则回退原问题。"""
+            # 已是结构化
+            if isinstance(raw_val, list):
+                data = raw_val
+            else:
+                text = str(raw_val).strip()
+                # 去除代码块包裹
+                if "```" in text:
+                    parts = text.split("```")
+                    # 取第一段 json 内容
+                    if len(parts) >= 3:
+                        text = parts[1].strip()
+                if text.startswith("json"):
+                    text = text[4:].strip()
+                try:
+                    data = json.loads(text)
+                except Exception:
+                    data = None
+
+            results: List[Dict[str, str]] = []
+            if isinstance(data, dict):
+                data = data.get("variants") or data.get("queries") or data.get("data") or []
+            if isinstance(data, list):
+                for item in data:
+                    if isinstance(item, str):
+                        results.append({"strategy": "variant", "query": item})
+                    elif isinstance(item, dict):
+                        results.append(
+                            {
+                                "strategy": item.get("strategy", "variant"),
+                                "query": item.get("query") or item.get("rewritten") or question,
+                            }
+                        )
+            if not results:
+                results = [{"strategy": "original", "query": question}]
+            return results[:num_variants]
+
         raw = self.llm_model_func(prompt, system_prompt=system_prompt)
         if asyncio.iscoroutine(raw):
             raw = await raw
-        try:
-            data = json.loads(raw)
-            results = []
-            for item in data:
-                results.append(
-                    {
-                        "strategy": item.get("strategy", "variant"),
-                        "query": item.get("query") or item.get("rewritten") or question,
-                    }
-                )
-            return results or [{"strategy": "original", "query": question}]
-        except Exception:
-            lines = [line.strip("-• ").strip() for line in raw.splitlines() if line.strip()]
-            variants = lines[:num_variants] or [question]
-            return [{"strategy": "variant", "query": q} for q in variants]
+
+        return _normalize_variants(raw)
 
     async def _aquery(self, query: str, mode: str = "hybrid", collection: str | None = None) -> Any:
         # 切换 workspace（集合）后再初始化
@@ -320,20 +351,29 @@ class AnythingRAGService:
         for variant in variants:
             retrievals.append(await self.retrieve(variant["query"], mode, collection))
 
+        # 检查是否有有效上下文，避免无上下文时让 LLM 自行杜撰
+        has_context = False
         context_blocks = []
         for item in retrievals:
             content = item.get("result", "")
             context_blocks.append(f"[{item['mode']}] {item['query']} -> {content}")
+            if content and "[no-context]" not in str(content):
+                has_context = True
 
-        synthesis_prompt = (
-            "根据以下检索结果生成回答，引用关键信息，保持简洁：\n\n"
-            + "\n\n".join(context_blocks)
-            + "\n\n用户问题："
-            + question
-        )
-        final_answer = self.llm_model_func(synthesis_prompt)
-        if asyncio.iscoroutine(final_answer):
-            final_answer = await final_answer
+        if not has_context:
+            final_answer = (
+                "抱歉，未检索到与问题相关的内容，请确认集合是否正确或重新导入文档。"
+            )
+        else:
+            synthesis_prompt = (
+                "根据以下检索结果生成回答，引用关键信息，保持简洁：\n\n"
+                + "\n\n".join(context_blocks)
+                + "\n\n用户问题："
+                + question
+            )
+            final_answer = self.llm_model_func(synthesis_prompt)
+            if asyncio.iscoroutine(final_answer):
+                final_answer = await final_answer
         return {
             "question": question,
             "mode": mode,

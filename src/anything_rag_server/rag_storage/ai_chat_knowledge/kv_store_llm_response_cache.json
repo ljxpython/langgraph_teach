@@ -1,0 +1,182 @@
+{
+  "hybrid:keywords:4a960ed9e9896cbcdb363482918857ce": {
+    "return": "{\"high_level_keywords\": [\"JSON\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "```json",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763973664,
+    "update_time": 1763973664,
+    "_id": "hybrid:keywords:4a960ed9e9896cbcdb363482918857ce"
+  },
+  "hybrid:keywords:10d206563bd33f001f3669d63b1456d8": {
+    "return": "{\"high_level_keywords\": [\"Role of education\", \"Poverty reduction\", \"Socioeconomic development\"], \"low_level_keywords\": [\"School access\", \"Literacy rates\", \"Job training\", \"Income inequality\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "[",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763973669,
+    "update_time": 1763973669,
+    "_id": "hybrid:keywords:10d206563bd33f001f3669d63b1456d8"
+  },
+  "hybrid:keywords:c2762b662989963bf7cc90493f7e40be": {
+    "return": "{\"high_level_keywords\": [\"Retrieval-Augmented Generation\", \"Keyword extraction\", \"Document retrieval\"], \"low_level_keywords\": [\"RAG system\", \"User query\", \"High-level keywords\", \"Low-level keywords\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "{",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763973673,
+    "update_time": 1763973673,
+    "_id": "hybrid:keywords:c2762b662989963bf7cc90493f7e40be"
+  },
+  "hybrid:keywords:f3cf11f49751ef144d0aad2698492831": {
+    "return": "{\"high_level_keywords\": [\"\\u5927\\u6a21\\u578b\", \"\\u63d0\\u793a\\u8bcd\", \"\\u77e5\\u8bc6\\u603b\\u7ed3\", \"\\u4eba\\u5de5\\u667a\\u80fd\"], \"low_level_keywords\": [\"LLM\", \"Prompt engineering\", \"\\u6a21\\u578b\\u8bad\\u7ec3\", \"\\u81ea\\u7136\\u8bed\\u8a00\\u5904\\u7406\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "大模型提示词相关知识总结",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974071,
+    "update_time": 1763974071,
+    "_id": "hybrid:keywords:f3cf11f49751ef144d0aad2698492831"
+  },
+  "hybrid:keywords:da6007f6de553d00c24c5695527cbb47": {
+    "return": "{\"high_level_keywords\": [\"\\u5927\\u6a21\\u578b\", \"\\u63d0\\u793a\\u8bcd\", \"\\u4eba\\u5de5\\u667a\\u80fd\", \"\\u81ea\\u7136\\u8bed\\u8a00\\u5904\\u7406\"], \"low_level_keywords\": [\"LLM\", \"Prompt engineering\", \"\\u8bed\\u8a00\\u6a21\\u578b\", \"\\u63d0\\u793a\\u5de5\\u7a0b\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "大模型提示词知识",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974076,
+    "update_time": 1763974076,
+    "_id": "hybrid:keywords:da6007f6de553d00c24c5695527cbb47"
+  },
+  "hybrid:keywords:0d636ac9de5c4853a38677444465f2a9": {
+    "return": "{\"high_level_keywords\": [\"\\u5927\\u8bed\\u8a00\\u6a21\\u578b\", \"\\u63d0\\u793a\\u5de5\\u7a0b\", \"\\u6280\\u5de7\\u603b\\u7ed3\", \"\\u5e94\\u7528\\u603b\\u7ed3\"], \"low_level_keywords\": [\"\\u63d0\\u793a\\u5de5\\u7a0b\\u6280\\u5de7\", \"\\u6a21\\u578b\\u5e94\\u7528\", \"Prompt Engineering\", \"LLM\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "大语言模型提示工程技巧与应用总结",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974081,
+    "update_time": 1763974081,
+    "_id": "hybrid:keywords:0d636ac9de5c4853a38677444465f2a9"
+  },
+  "hybrid:keywords:39a51843d2cac0c3d4e4cd10fc8b13ce": {
+    "return": "{\"high_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\", \"\\u76f8\\u5173\\u5185\\u5bb9\"], \"low_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\\u5de5\\u7a0b\", \"\\u63d0\\u793a\\u8bcd\\u8bbe\\u8ba1\", \"\\u63d0\\u793a\\u8bcd\\u4f18\\u5316\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "提示词相关内容",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974400,
+    "update_time": 1763974400,
+    "_id": "hybrid:keywords:39a51843d2cac0c3d4e4cd10fc8b13ce"
+  },
+  "hybrid:keywords:acab813f66e73e2ff93246100f83cf1b": {
+    "return": "{\"high_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\", \"\\u5173\\u952e\\u8bcd\\u63d0\\u53d6\", \"\\u7528\\u6237\\u67e5\\u8be2\\u5206\\u6790\"], \"low_level_keywords\": [\"RAG\\u7cfb\\u7edf\", \"\\u6587\\u6863\\u68c0\\u7d22\", \"\\u67e5\\u8be2\\u89e3\\u6790\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "提示词",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974404,
+    "update_time": 1763974404,
+    "_id": "hybrid:keywords:acab813f66e73e2ff93246100f83cf1b"
+  },
+  "hybrid:keywords:c1bef2f837b38ce6edc3e1b2123d9da8": {
+    "return": "{\"high_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\\u5b9a\\u4e49\", \"\\u63d0\\u793a\\u8bcd\\u4f5c\\u7528\", \"\\u63d0\\u793a\\u8bcd\\u4f7f\\u7528\\u65b9\\u6cd5\"], \"low_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\", \"Prompt\", \"AI\\u4ea4\\u4e92\", \"\\u6307\\u4ee4\\u8bbe\\u8ba1\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "提示词的定义、作用和使用方法",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974409,
+    "update_time": 1763974409,
+    "_id": "hybrid:keywords:c1bef2f837b38ce6edc3e1b2123d9da8"
+  }
+}

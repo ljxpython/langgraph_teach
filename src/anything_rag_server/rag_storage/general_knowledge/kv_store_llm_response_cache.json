@@ -1,0 +1,62 @@
+{
+  "hybrid:keywords:4a960ed9e9896cbcdb363482918857ce": {
+    "return": "{\"high_level_keywords\": [\"JSON\"], \"low_level_keywords\": [\"JSON parser\", \"JSON object\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "```json",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763973779,
+    "update_time": 1763973779,
+    "_id": "hybrid:keywords:4a960ed9e9896cbcdb363482918857ce"
+  },
+  "hybrid:keywords:10d206563bd33f001f3669d63b1456d8": {
+    "return": "{\"high_level_keywords\": [\"Role of education\", \"Poverty reduction\", \"Socioeconomic development\"], \"low_level_keywords\": [\"School access\", \"Literacy rates\", \"Job training\", \"Income inequality\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "[",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763973783,
+    "update_time": 1763973783,
+    "_id": "hybrid:keywords:10d206563bd33f001f3669d63b1456d8"
+  },
+  "hybrid:keywords:c2762b662989963bf7cc90493f7e40be": {
+    "return": "{\"high_level_keywords\": [\"Keyword extraction\", \"User query analysis\", \"Retrieval-Augmented Generation\", \"Document retrieval\"], \"low_level_keywords\": [\"RAG system\", \"High-level keywords\", \"Low-level keywords\", \"JSON object\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "{",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763973788,
+    "update_time": 1763973788,
+    "_id": "hybrid:keywords:c2762b662989963bf7cc90493f7e40be"
+  }
+}

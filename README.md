@@ -1,14 +1,12 @@
 
 ## 项目介绍
 
-
-
 一个基于 langgraph 框架的教学项目
 
 ## agent_chat_ui
 一个演示demo的前端页面
 
-使用方式，在graph.json 中配置agent
+使用方式：在graph.json 中配置agent
 
 ```
 {
@@ -68,12 +66,6 @@ cd 到`agent_chat_ui`目录下，执行` npm run dev` 来启动
 ## easy_rag_server
 
 一个简易的rag后台管理系统+前端+对话系统 ，后续应该还会有v2的版本
-
-
-## anything_rag_server 推荐用法
-- 同步版：`src/anything_rag_server/agent_rag.py`（保留同步包装，兼容 `agent.invoke`）
-- 推荐：`src/anything_rag_server/agent_rag_async.py`（纯 async，全程 `await agent.ainvoke(...)`，无需同步包装/裁剪返回）
-  - 如果没有同步调用需求，优先使用异步版本。
 
 
 

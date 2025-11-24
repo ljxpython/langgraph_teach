@@ -87,7 +87,10 @@ python -m src.anything_rag_server.upload_document \
 ```
 
 # mcp server
-.venv/bin/python src/anything_rag_server/server.py --sse --host 0.0.0.0 --port 8000
+export PYTHONPATH=src
+export ANYTHING_RAG_COLLECTION=llm_collection
+python -m anything_rag_server.server --sse --port 8000
+
 
 # agent 配置
 {

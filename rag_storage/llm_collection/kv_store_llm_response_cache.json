@@ -198,5 +198,105 @@
     "create_time": 1763971562,
     "update_time": 1763971562,
     "_id": "hybrid:keywords:c2762b662989963bf7cc90493f7e40be"
+  },
+  "hybrid:keywords:39a51843d2cac0c3d4e4cd10fc8b13ce": {
+    "return": "{\"high_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\", \"\\u76f8\\u5173\\u5185\\u5bb9\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "提示词相关内容",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974611,
+    "update_time": 1763974611,
+    "_id": "hybrid:keywords:39a51843d2cac0c3d4e4cd10fc8b13ce"
+  },
+  "hybrid:keywords:acab813f66e73e2ff93246100f83cf1b": {
+    "return": "{\"high_level_keywords\": [\"\\u63d0\\u793a\\u8bcd\", \"\\u5173\\u952e\\u8bcd\\u63d0\\u53d6\", \"\\u7528\\u6237\\u67e5\\u8be2\\u5206\\u6790\"], \"low_level_keywords\": [\"RAG\\u7cfb\\u7edf\", \"\\u6587\\u6863\\u68c0\\u7d22\", \"\\u67e5\\u8be2\\u89e3\\u6790\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "提示词",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763974681,
+    "update_time": 1763974681,
+    "_id": "hybrid:keywords:acab813f66e73e2ff93246100f83cf1b"
+  },
+  "hybrid:keywords:f31c62ac65297ab73356f01d474de56d": {
+    "return": "{\"high_level_keywords\": [\"LLM\\u63d0\\u793a\\u8bcd\", \"\\u76f8\\u5173\\u5185\\u5bb9\", \"\\u63d0\\u793a\\u8bcd\\u77e5\\u8bc6\"], \"low_level_keywords\": [\"LLM\", \"\\u63d0\\u793a\\u8bcd\\u8bbe\\u8ba1\", \"\\u63d0\\u793a\\u8bcd\\u5de5\\u7a0b\", \"\\u63d0\\u793a\\u8bcd\\u6280\\u5de7\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "LLM提示词相关内容有哪些",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763975598,
+    "update_time": 1763975598,
+    "_id": "hybrid:keywords:f31c62ac65297ab73356f01d474de56d"
+  },
+  "hybrid:keywords:6a96a98db8b56a22d262a3c7fab83adb": {
+    "return": "{\"high_level_keywords\": [\"LLM\\u63d0\\u793a\\u8bcd\", \"\\u5185\\u5bb9\"], \"low_level_keywords\": [\"LLM\", \"\\u63d0\\u793a\\u8bcd\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "LLM提示词内容",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763975676,
+    "update_time": 1763975676,
+    "_id": "hybrid:keywords:6a96a98db8b56a22d262a3c7fab83adb"
+  },
+  "hybrid:keywords:75efc728b167d9a00bbcedac60561b14": {
+    "return": "{\"high_level_keywords\": [\"\\u5927\\u8bed\\u8a00\\u6a21\\u578b\", \"\\u63d0\\u793a\\u8bcd\\u8bbe\\u8ba1\", \"\\u8bbe\\u8ba1\\u539f\\u5219\", \"\\u8bbe\\u8ba1\\u6280\\u5de7\", \"\\u8bbe\\u8ba1\\u793a\\u4f8b\", \"\\u8bbe\\u8ba1\\u6a21\\u677f\"], \"low_level_keywords\": [\"\\u63d0\\u793a\\u5de5\\u7a0b\", \"Prompt\\u8bbe\\u8ba1\", \"LLM\\u63d0\\u793a\", \"\\u63d0\\u793a\\u8bcd\\u6a21\\u677f\", \"\\u63d0\\u793a\\u8bcd\\u793a\\u4f8b\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "大语言模型提示词设计原则 技巧 示例 模板",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1763975780,
+    "update_time": 1763975780,
+    "_id": "hybrid:keywords:75efc728b167d9a00bbcedac60561b14"
   }
 }
