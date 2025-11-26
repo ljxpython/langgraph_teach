@@ -374,3 +374,4 @@ src/anything_rag_demo/rag_storage
 src/anything_rag_demo/existing_lightrag_storage
 IMPLEMENTATION_PLAN.md
 output
+rag_storage/
