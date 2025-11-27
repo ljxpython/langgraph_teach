@@ -97,6 +97,17 @@
 - 📖 详细文档：项目内 README 文件
 - 🎯 学习目标：了解如何将 demo 转化为生产级应用
 
+### 第八阶段：实践项目
+**anything_chat_rag - 基于 LightRAG 的完整 RAG 应用**
+- 📁 项目路径：`anything_chat_rag/`
+- 🎯 学习目标：学习一个基于 LightRAG 构建的完整 RAG 系统，包含文件上传、解析、检索和对话功能
+- ✨ 主要特点：
+  - 支持多模态文档处理（PDF、Office文档、图片等）
+  - 集成 RAG-Anything 实现智能文档解析
+  - 提供本地向量库存储支持
+  - 包含前后端完整实现
+  - 支持多种 LLM 和 Embedding 模型
+
 ## 🏗️ 系统架构
 
 ### Easy RAG Server
