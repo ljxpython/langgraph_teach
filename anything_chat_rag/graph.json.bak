@@ -1,0 +1,10 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": {
+      "path": "./src/anything_rag_server/agent_rag_async.py:agent"
+    }
+  },
+  "env": ".env",
+  "image_distro": "wolfi"
+}
