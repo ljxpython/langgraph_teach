@@ -159,3 +159,23 @@ npm run dev
 
 
 ![image-20251127215716111](./assets/image-20251127215716111.png)
+
+
+
+
+
+## 注意
+
+- 报错：   TimeoutError: Embedding func:
+    Worker execution timeout
+    after 60s
+
+在 env 中有一个`EMBEDDING_TIMEOUT`的配置，可以修改的大一点，默认是 30，当文档比较大时，肯定会报超时这个错误
+
+类似的如下参数都可以扩大设置
+
+```
+EMBEDDING_TIMEOUT=300
+WORKER_TIMEOUT=300
+FUNC_TIMEOUT=300
+```

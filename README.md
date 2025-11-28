@@ -80,24 +80,24 @@
 - 📁 智能检索：`src/agentic_rag/`
 - 🎯 学习目标：构建完整的文档问答系统
 
-### 第五阶段：项目实战
+### 第五阶段：rag项目实战（前端+后端+对话）
 **完整系统开发**
 - 📁 项目示例：`easy_rag_server/`
 - 🎯 学习目标：将 RAG 技术应用到实际项目中
 
-### 第六阶段：架构优化
+### 第六阶段：架构优化（rag 封转成 mcp）
 **MCP + Agent 模式**
 - 📁 基础实现：`src/rag_chat/`
 - 📁 高级封装：`src/mcp_server_rag/`
 - 🎯 学习目标：掌握现代化的 AI 系统架构设计
 
-### 第七阶段：生产实践
+### 第七阶段：实践项目（将 anything_rag的官方文档跑通封装）
 **企业级应用**
 - 📁 生产方案：`src/anything_rag_server/`
 - 📖 详细文档：项目内 README 文件
 - 🎯 学习目标：了解如何将 demo 转化为生产级应用
 
-### 第八阶段：实践项目
+### 第八阶段：rag 生产级项目 （lightrag+anythingrag）
 **anything_chat_rag - 基于 LightRAG 的完整 RAG 应用**
 - 📁 项目路径：`anything_chat_rag/`
 - 🎯 学习目标：学习一个基于 LightRAG 构建的完整 RAG 系统，包含文件上传、解析、检索和对话功能
