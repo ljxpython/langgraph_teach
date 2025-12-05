@@ -377,3 +377,8 @@ output
 rag_storage/
 fast_remove_copyright.py
 remove_copyright.py
+src/data/memory_checkpoints.sqlite
+src/data/memory_checkpoints.sqlite-shm
+src/data/memory_checkpoints.sqlite-wal
+
+src/deep_agent_demo/backends_demo/src

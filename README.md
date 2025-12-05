@@ -108,6 +108,17 @@
   - 包含前后端完整实现
   - 支持多种 LLM 和 Embedding 模型
 
+### 第九阶段：Deep Agent 综合能力
+**中断/子智能体/持久化后端/中间件/集成示例**
+- 📁 目录：`src/deep_agent_demo/`
+  - 中断 & 人为介入：`interrupt_agent/`
+  - 研究型子智能体：`research_agent/`
+  - 后端路由 & 长期记忆：`backends_demo/`, `long_term_memory_demo/`
+  - 子智能体模式：`subagents_demo/`
+  - 默认中间件自定义：`middleware_demo/`
+  - 综合集成示例：`integrated_agent_demo/agent.py`（本地运行），`integrated_agent_demo/agent_api.py`（LangGraph API 部署，使用平台持久化）
+- 🎯 学习目标：掌握 Deep Agent 的规划/文件系统/子智能体/持久化路由组合，以及 MCP 搜索（需 `zhipu_search_mcp_url` 环境变量）与 `HumanMessage.pretty_print` 对话打印。
+
 ## 🏗️ 系统架构
 
 ### Easy RAG Server
