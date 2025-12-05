@@ -1,5 +1,4 @@
 import { initApiPassthrough } from "langgraph-nextjs-api-passthrough";
-// TODO  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WlhOcGF3PT06NWI1YzhkZjQ=
 
 // This file acts as a proxy for requests to your LangGraph server.
 // Read the [Going to Production](https://github.com/langchain-ai/agent-chat-ui?tab=readme-ov-file#going-to-production) section for more information.
