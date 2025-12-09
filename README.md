@@ -120,29 +120,30 @@
 - 🎯 学习目标：掌握 Deep Agent 的规划/文件系统/子智能体/持久化路由组合，以及 MCP 搜索（需 `zhipu_search_mcp_url` 环境变量）与 `HumanMessage.pretty_print` 对话打印。
 
 ### 第十阶段：生产部署与容器化
-**完整系统的部署与运维**
-- 📁 项目路径：`anything_chat_rag/`
-- 🎯 学习目标：掌握 LangGraph 项目的完整部署流程，包含容器化、服务编排和运维监控
+**LangGraph/LangSmith 独立部署与运维**
+- 📁 项目路径：根目录部署配置（`docker-compose.langgraph.yml`、`docker-compose.lb.yml`）
+- 🎯 学习目标：掌握 LangGraph 项目的完整部署流程，包含容器化构建、服务编排和运维监控
 - ✨ 主要特点：
-  - 支持 Docker 容器化部署
-  - 提供完整的 Docker Compose 编排方案
-  - 集成 Nginx 负载均衡配置
-  - 支持前后端分离部署
-  - 包含环境配置和参数调优指南
+  - 基于 LangGraph CLI 的镜像构建与部署
+  - 支持独立服务器部署和负载均衡配置
+  - 集成 Redis 消息队列和 PostgreSQL 数据存储
+  - 提供健康检查和监控机制
+  - 支持多实例扩展和高可用部署
 
-部署内容：
-- **环境配置**：详细的 `.env` 配置说明，支持多种 LLM 和向量数据库
-- **容器化部署**：Dockerfile、docker-compose.yml 完整配置
-- **服务启动**：lightrag-server、前端界面、MCP 服务的启动方法
-- **参数调优**：超时配置、性能优化等运维参数
-- **负载均衡**：Nginx 配置和多服务实例管理
+部署要点：
+- **环境准备**：使用 `langgraph dockerfile` 生成部署镜像，配置 `.env` 环境变量
+- **核心配置**：`REDIS_URI`（消息队列）、`DATABASE_URI`（PostgreSQL）、`LANGSMITH_API_KEY`（API密钥）
+- **部署模式**：
+  - 单实例部署：`docker compose -f docker-compose.langgraph.yml up -d`
+  - 负载均衡部署：`docker compose -f docker-compose.lb.yml up -d --scale langgraph-api=2`
+- **健康检查**：`curl http://0.0.0.0:8123/ok` 返回 `{"ok":true}`
+- **许可校验**：支持 `LANGGRAPH_CLOUD_LICENSE_KEY` 正式许可或 Lite 模式运行
 
-学习路径：
-1. 环境准备与依赖安装
-2. Docker 容器化配置
-3. 多服务编排与启动
-4. 性能监控与参数调优
-5. 生产环境部署最佳实践
+技术特色：
+- 使用 uv 管理 Python 3.13 虚拟环境，确保构建一致性
+- 支持完全离线部署（需参考 air-gapped 文档）
+- 提供 Beacon 服务访问用于许可校验和用量上报
+- 支持多部署共用同一 Redis/PostgreSQL，通过 DB 编号和数据库名隔离
 
 ## 🏗️ 系统架构
 
