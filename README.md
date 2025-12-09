@@ -157,42 +157,9 @@
 
 ### Anything Chat RAG
 
-基于 LightRAG 的完整生产级 RAG 系统，提供企业级部署方案：
+基于 LightRAG 的完整生产级 RAG 系统，提供企业级部署方案。
 
-**核心功能：**
-- 🐳 **容器化部署**：完整的 Docker 支持，包含 Dockerfile 和 docker-compose 配置
-- 🔄 **服务编排**：支持多服务实例管理和负载均衡
-- ⚙️ **环境配置**：灵活的配置管理，支持多种 LLM 和向量数据库
-- 📊 **性能监控**：内置性能监控和参数调优功能
-- 🔧 **运维友好**：提供完整的部署文档和故障排查指南
-
-**部署组件：**
-- **后端服务**：LightRAG API 服务，支持文件上传、文档解析、智能检索
-- **前端界面**：现代化的 Web UI，支持文件管理、对话交互、系统监控
-- **MCP 服务**：模型上下文协议服务，支持多模型集成
-- **负载均衡**：Nginx 反向代理，支持高可用部署
-
-**技术特色：**
-- 支持多模态文档处理（PDF、Office、图片等）
-- 集成 RAG-Anything 实现智能文档解析
-- 提供本地向量库存储和云端存储选项
-- 支持多种 LLM 提供商（OpenAI、DeepSeek、豆包等）
-- 完整的错误处理和超时管理机制
-
-**快速启动：**
-```bash
-# 环境配置
-cp env.example .env
-# 修改 .env 文件配置相关参数
-
-# 启动服务
-docker-compose up -d
-
-# 或者本地开发模式
-lightrag-server
-```
-
-详细部署指南请参考：`anything_chat_rag/how_to_use.md`
+详细使用指南请参考：`anything_chat_rag/how_to_use.md`
 
 ## 🤝 技术交流
 
