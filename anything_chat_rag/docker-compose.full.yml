@@ -1,0 +1,89 @@
+services:
+  # LightRAG API（内置打包前端，使用当前目录 Dockerfile 构建）
+  lightrag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${LIGHTRAG_IMAGE:-lijiaxin8187/lightrag:latest}
+    container_name: lightrag
+    env_file:
+      - .env
+    ports:
+      - "${LIGHTRAG_PORT:-9621}:9621"
+    volumes:
+      - ./data/rag_storage:/app/data/rag_storage
+      - ./data/inputs:/app/data/inputs
+      - ./config.ini:/app/config.ini
+      - ./.env:/app/.env
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # LangGraph 依赖：Redis
+  langgraph-redis:
+    image: redis:6
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 1s
+      retries: 5
+
+  # LangGraph 依赖：Postgres
+  langgraph-postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - langgraph-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      start_period: 10s
+      timeout: 1s
+      retries: 5
+      interval: 5s
+
+  # LangGraph API（使用你 langgraph build 输出的镜像）
+  langgraph-api:
+    image: ${LANGGRAPH_IMAGE:-test:latest}
+    restart: unless-stopped
+    depends_on:
+      langgraph-redis:
+        condition: service_healthy
+      langgraph-postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      REDIS_URI: ${REDIS_URI:-redis://langgraph-redis:6379}
+      DATABASE_URI: ${DATABASE_URI:-postgres://postgres:postgres@langgraph-postgres:5432/postgres?sslmode=disable}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+      LANGSMITH_ENDPOINT: ${LANGSMITH_ENDPOINT:-https://api.smith.langchain.com}
+      # 有正式 License 时填入 JWT；无则保持空，运行 Lite 模式
+      LANGGRAPH_CLOUD_LICENSE_KEY: ${LANGGRAPH_CLOUD_LICENSE_KEY:-}
+    ports:
+      - "${LANGGRAPH_PORT:-8123}:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8000/ok || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # MCP 服务（沿用 langgraph 镜像，运行 anything_rag_server）
+  mcp-server:
+    image: ${LANGGRAPH_IMAGE:-test:latest}
+    restart: unless-stopped
+    env_file:
+      - .env
+    command: >
+      python /deps/langgraph_teach/src/anything_rag_server/server.py
+      --sse --host 0.0.0.0 --port 8000
+    ports:
+      - "${MCP_PORT:-8000}:8000"
+
+volumes:
+  langgraph-data:
+    driver: local

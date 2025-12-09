@@ -1,0 +1,11 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "./src/memory_demo/agent.py:agent"
+  },
+  "env": ".env",
+  "image_distro": "wolfi",
+  "python_version": "3.13",
+  "pip_installer": "uv"
+}

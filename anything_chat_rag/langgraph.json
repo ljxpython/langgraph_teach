@@ -1,0 +1,10 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "./src/anything_rag_server/agent_rag_async.py:agent"
+  },
+  "env": ".env",
+  "base_image": "lijiaxin8187/langgraph-base:3.13",
+  "pip_installer": "uv"
+}

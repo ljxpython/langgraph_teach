@@ -1,0 +1,9 @@
+.git
+.venv
+node_modules
+lightrag_webui/node_modules
+data
+parser_output
+__pycache__
+*.log
+output

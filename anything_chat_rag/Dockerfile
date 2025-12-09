@@ -15,11 +15,12 @@ RUN --mount=type=cache,target=/root/.bun/install/cache \
     && bun run build
 
 # Python build stage - using uv for faster package installation
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim AS builder
+FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV UV_SYSTEM_PYTHON=1
 ENV UV_COMPILE_BYTECODE=1
+ENV UV_PYTHON=3.13
 
 WORKDIR /app
 
@@ -42,9 +43,10 @@ COPY pyproject.toml .
 COPY setup.py .
 COPY uv.lock .
 
-# Install base, API, and offline extras without the project to improve caching
+# Install dependencies without the project to improve caching
+RUN uv python install 3.13 && uv python pin 3.13
 RUN --mount=type=cache,target=/root/.local/share/uv \
-    uv sync --frozen --no-dev --extra api --extra offline --no-install-project --no-editable
+    uv sync --frozen --no-dev --no-install-project --no-editable
 
 # Copy project sources after dependency layer
 COPY lightrag/ ./lightrag/
@@ -54,7 +56,7 @@ COPY --from=frontend-builder /app/lightrag/api/webui ./lightrag/api/webui
 
 # Sync project in non-editable mode and ensure pip is available for runtime installs
 RUN --mount=type=cache,target=/root/.local/share/uv \
-    uv sync --frozen --no-dev --extra api --extra offline --no-editable \
+    uv sync --frozen --no-dev --no-editable \
     && /app/.venv/bin/python -m ensurepip --upgrade
 
 # Prepare offline cache directory and pre-populate tiktoken data
@@ -64,7 +66,7 @@ RUN mkdir -p /app/data/tiktoken \
     if [ -n "${status:-}" ] && [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then exit "$status"; fi
 
 # Final stage
-FROM python:3.12-slim
+FROM python:3.13-slim
 
 WORKDIR /app
 
@@ -72,6 +74,9 @@ WORKDIR /app
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
 ENV UV_SYSTEM_PYTHON=1
+ENV UV_PYTHON=3.13
+
+RUN uv python install 3.13 && uv python pin 3.13
 
 # Copy installed packages and application code
 COPY --from=builder /root/.local /root/.local
@@ -87,7 +92,7 @@ ENV PATH=/app/.venv/bin:/root/.local/bin:$PATH
 # Install dependencies with uv sync (uses locked versions from uv.lock)
 # And ensure pip is available for runtime installs
 RUN --mount=type=cache,target=/root/.local/share/uv \
-    uv sync --frozen --no-dev --extra api --extra offline --no-editable \
+    uv sync --frozen --no-dev --no-editable \
     && /app/.venv/bin/python -m ensurepip --upgrade
 
 # Create persistent data directories AFTER package installation

@@ -1,0 +1,16 @@
+# Base image with Python deps only (no project code), using LangGraph 3.13 wolfi
+FROM langchain/langgraph-api:3.13-wolfi
+
+ENV UV_SYSTEM_PYTHON=1 \
+    UV_COMPILE_BYTECODE=1
+
+WORKDIR /deps/langgraph_teach
+
+# Only copy dependency manifests (setup.py 不存在时可忽略)
+COPY pyproject.toml uv.lock ./
+
+# Install all project dependencies into system Python, skip installing the project code
+RUN --mount=type=cache,target=/root/.cache/uv \
+    PYTHONDONTWRITEBYTECODE=1 uv sync --frozen --no-dev --no-install-project --no-editable
+
+WORKDIR /deps
