@@ -119,6 +119,31 @@
   - 综合集成示例：`integrated_agent_demo/agent.py`（本地运行），`integrated_agent_demo/agent_api.py`（LangGraph API 部署，使用平台持久化）
 - 🎯 学习目标：掌握 Deep Agent 的规划/文件系统/子智能体/持久化路由组合，以及 MCP 搜索（需 `zhipu_search_mcp_url` 环境变量）与 `HumanMessage.pretty_print` 对话打印。
 
+### 第十阶段：生产部署与容器化
+**完整系统的部署与运维**
+- 📁 项目路径：`anything_chat_rag/`
+- 🎯 学习目标：掌握 LangGraph 项目的完整部署流程，包含容器化、服务编排和运维监控
+- ✨ 主要特点：
+  - 支持 Docker 容器化部署
+  - 提供完整的 Docker Compose 编排方案
+  - 集成 Nginx 负载均衡配置
+  - 支持前后端分离部署
+  - 包含环境配置和参数调优指南
+
+部署内容：
+- **环境配置**：详细的 `.env` 配置说明，支持多种 LLM 和向量数据库
+- **容器化部署**：Dockerfile、docker-compose.yml 完整配置
+- **服务启动**：lightrag-server、前端界面、MCP 服务的启动方法
+- **参数调优**：超时配置、性能优化等运维参数
+- **负载均衡**：Nginx 配置和多服务实例管理
+
+学习路径：
+1. 环境准备与依赖安装
+2. Docker 容器化配置
+3. 多服务编排与启动
+4. 性能监控与参数调优
+5. 生产环境部署最佳实践
+
 ## 🏗️ 系统架构
 
 ### Easy RAG Server
@@ -128,6 +153,45 @@
 - ✅ 前端交互界面  
 - ✅ 对话系统
 - 🔄 V2 版本开发中
+
+### Anything Chat RAG
+
+基于 LightRAG 的完整生产级 RAG 系统，提供企业级部署方案：
+
+**核心功能：**
+- 🐳 **容器化部署**：完整的 Docker 支持，包含 Dockerfile 和 docker-compose 配置
+- 🔄 **服务编排**：支持多服务实例管理和负载均衡
+- ⚙️ **环境配置**：灵活的配置管理，支持多种 LLM 和向量数据库
+- 📊 **性能监控**：内置性能监控和参数调优功能
+- 🔧 **运维友好**：提供完整的部署文档和故障排查指南
+
+**部署组件：**
+- **后端服务**：LightRAG API 服务，支持文件上传、文档解析、智能检索
+- **前端界面**：现代化的 Web UI，支持文件管理、对话交互、系统监控
+- **MCP 服务**：模型上下文协议服务，支持多模型集成
+- **负载均衡**：Nginx 反向代理，支持高可用部署
+
+**技术特色：**
+- 支持多模态文档处理（PDF、Office、图片等）
+- 集成 RAG-Anything 实现智能文档解析
+- 提供本地向量库存储和云端存储选项
+- 支持多种 LLM 提供商（OpenAI、DeepSeek、豆包等）
+- 完整的错误处理和超时管理机制
+
+**快速启动：**
+```bash
+# 环境配置
+cp env.example .env
+# 修改 .env 文件配置相关参数
+
+# 启动服务
+docker-compose up -d
+
+# 或者本地开发模式
+lightrag-server
+```
+
+详细部署指南请参考：`anything_chat_rag/how_to_use.md`
 
 ## 🤝 技术交流
 
