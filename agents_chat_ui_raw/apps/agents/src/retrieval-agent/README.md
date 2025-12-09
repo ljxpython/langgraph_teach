@@ -126,7 +126,7 @@ The exact numDimensions may differ if you select a different embedding model.
 - Add your MongoDB Atlas connection string to the `.env` file:
 
 ```
-MONGODB_URI="mongodb+srv://username:password@your-cluster-url.mongodb.net/?retryWrites=true&w=majority&appName=your-cluster-name"
+MONGODB_URI="mongodb+srv://<username>:<password>@<your-cluster-url>.mongodb.net/?retryWrites=true&w=majority&appName=<your-cluster-name>"
 ```
 
 Replace `username`, `password`, `your-cluster-url`, and `your-cluster-name` with your actual credentials and cluster information.
