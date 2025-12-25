@@ -12,7 +12,9 @@ from langgraph.checkpoint.memory import MemorySaver
 from langchain_anthropic import ChatAnthropic
 from langchain.agents.middleware import InterruptOnConfig
 from langchain_core.tools import tool
-os.environ["DEEPSEEK_API_KEY"] = "sk-12fe20a839dc4a8f8f995c92cce35215"
+
+# 请在本地环境或 .env 文件中配置 DEEPSEEK_API_KEY，示例代码不再内置真实密钥
+os.environ["DEEPSEEK_API_KEY"] = os.getenv("DEEPSEEK_API_KEY", "")
 model = init_chat_model("deepseek:deepseek-chat")
 
 # ============================================================================
@@ -397,4 +399,3 @@ if __name__ == "__main__":
     print("\n" + "=" * 60)
     print("所有示例运行完成！")
     print("=" * 60)
-

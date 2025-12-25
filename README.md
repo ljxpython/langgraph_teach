@@ -130,6 +130,10 @@
   - 提供健康检查和监控机制
   - 支持多实例扩展和高可用部署
 
+  实战示例补充：
+  - 📁 Docker 部署示例（前后端同栈）：`src/docker_sdk_use/`（文档见 `src/docker_sdk_use/README.md`）
+  - 📁 LangGraph SDK 系统学习计划：`src/docker_sdk_use/sdk_use/`（文档见 `src/docker_sdk_use/sdk_use/README.md`）
+
 部署要点：
 - **环境准备**：使用 `langgraph dockerfile` 生成部署镜像，配置 `.env` 环境变量
 - **核心配置**：`REDIS_URI`（消息队列）、`DATABASE_URI`（PostgreSQL）、`LANGSMITH_API_KEY`（API密钥）

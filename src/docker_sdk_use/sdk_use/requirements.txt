@@ -1,0 +1,20 @@
+# 🚀 LangGraph SDK Python 依赖包
+# 老王的学习项目必备依赖
+
+# 核心SDK
+langgraph-sdk>=1.0.3
+
+# 环境变量管理
+python-dotenv>=1.0.0
+
+# 异步支持
+aiohttp>=3.8.0
+
+# 日志和调试
+colorlog>=6.0.0
+
+# 开发工具 (可选)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0

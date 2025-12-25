@@ -25,7 +25,8 @@ def send_email(to: str, subject: str, body: str) -> str:
 
 # Checkpointer is REQUIRED for human-in-the-loop
 # checkpointer = MemorySaver()
-# os.environ["DEEPSEEK_API_KEY"] = "sk-ab8dda459d2a4203b71c6aa2065b411a"
+# 请在本地环境中配置 DEEPSEEK_API_KEY，下面仅为占位示例
+# os.environ["DEEPSEEK_API_KEY"] = "<YOUR_DEEPSEEK_API_KEY>"
 # deepseek = ChatDeepSeek(model="deepseek-chat")
 
 agent = create_deep_agent(

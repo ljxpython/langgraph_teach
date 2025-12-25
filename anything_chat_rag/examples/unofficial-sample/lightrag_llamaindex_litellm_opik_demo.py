@@ -29,7 +29,9 @@ print(f"EMBEDDING_MAX_TOKEN_SIZE: {EMBEDDING_MAX_TOKEN_SIZE}")
 # LiteLLM configuration
 LITELLM_URL = os.environ.get("LITELLM_URL", "http://localhost:4000")
 print(f"LITELLM_URL: {LITELLM_URL}")
-LITELLM_KEY = os.environ.get("LITELLM_KEY", "sk-4JdvGFKqSA3S0k_5p0xufw")
+
+# 为避免泄露敏感信息，这里不再内置默认密钥，请在本地通过环境变量 LITELLM_KEY 配置实际值
+LITELLM_KEY = os.environ.get("LITELLM_KEY", "")
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
