@@ -3,7 +3,6 @@ import os
 import logging
 
 from collections.abc import AsyncIterator
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05TE5nPT06NTRhOTYwODA=
 
 import pipmaster as pm
 
@@ -102,7 +101,6 @@ class InvalidResponseError(Exception):
     """Custom exception class for triggering retry mechanism"""
 
     pass
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05TE5nPT06NTRhOTYwODA=
 
 
 def create_openai_async_client(
@@ -315,7 +313,6 @@ async def openai_complete_if_cache(
     logger.debug("===== Sending Query to LLM =====")
 
     messages = kwargs.pop("messages", messages)
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05TE5nPT06NTRhOTYwODA=
 
     # Add explicit parameters back to kwargs so they're passed to OpenAI API
     if stream is not None:
@@ -400,7 +397,7 @@ async def openai_complete_if_cache(
                     if not hasattr(chunk.choices[0], "delta"):
                         # This might be the final chunk, continue to check for usage
                         continue
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05TE5nPT06NTRhOTYwODA=
+# pylint: disable
 
                     delta = chunk.choices[0].delta
                     content = getattr(delta, "content", None)

@@ -70,7 +70,6 @@ class MemgraphStorage(BaseGraphStorage):
                 "MEMGRAPH_DATABASE",
                 config.get("memgraph", "database", fallback="memgraph"),
             )
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxSaWFnPT06ZTQzYWYxNTA=
 
             self._driver = AsyncGraphDatabase.driver(
                 URI,
@@ -293,7 +292,6 @@ class MemgraphStorage(BaseGraphStorage):
                             f"[{self.workspace}] No node found with label '{node_id}'"
                         )
                         return 0
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxSaWFnPT06ZTQzYWYxNTA=
 
                     degree = record["degree"]
                     return degree
@@ -586,7 +584,7 @@ class MemgraphStorage(BaseGraphStorage):
             )
 
         edge_properties = edge_data
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxSaWFnPT06ZTQzYWYxNTA=
+# pylint: disable
 
         # Manual transaction-level retry following official Memgraph documentation
         max_retries = 100
@@ -638,7 +636,6 @@ class MemgraphStorage(BaseGraphStorage):
                     or "TransientError" in str(e)
                     or "Cannot resolve conflicting transactions" in str(e)
                 )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxSaWFnPT06ZTQzYWYxNTA=
 
                 if is_transient:
                     if attempt < max_retries - 1:

@@ -50,7 +50,6 @@ def download_tiktoken_cache(cache_dir: str = None, models: list = None):
             "text-embedding-3-small",  # Small embedding model
             "text-embedding-3-large",  # Large embedding model
         ]
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TkhsWGVnPT06OTFjM2E3Njc=
 
     print(f"\nDownloading {len(models)} tiktoken models...")
     print("=" * 70)
@@ -93,7 +92,7 @@ def download_tiktoken_cache(cache_dir: str = None, models: list = None):
     print("")
     print("  3. Or copy to default location:")
     print(f"     cp -r {cache_dir} ~/.tiktoken_cache/")
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TkhsWGVnPT06OTFjM2E3Njc=
+# pylint: disable
 
     return success_count, failed_models
 
@@ -137,7 +136,6 @@ For more information, visit: https://github.com/HKUDS/LightRAG
     )
 
     args = parser.parse_args()
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TkhsWGVnPT06OTFjM2E3Njc=
 
     print("=" * 70)
     print("LightRAG Offline Cache Downloader")
@@ -176,7 +174,6 @@ For more information, visit: https://github.com/HKUDS/LightRAG
         traceback.print_exc()
         sys.exit(1)
 
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TkhsWGVnPT06OTFjM2E3Njc=
 
 if __name__ == "__main__":
     main()

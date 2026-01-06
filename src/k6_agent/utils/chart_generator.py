@@ -3,7 +3,6 @@
 This module provides professional chart generation using MCP Chart Server
 (AntV) with intelligent agent capabilities for K6 performance test reports.
 """
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VjBwUWR3PT06NTdkMmUwODg=
 
 import asyncio
 import json
@@ -33,7 +32,6 @@ class ChartType(str, Enum):
     SANKEY = "sankey"
     TREEMAP = "treemap"
     WORD_CLOUD = "word_cloud"
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VjBwUWR3PT06NTdkMmUwODg=
 
 
 # Performance color scheme
@@ -100,7 +98,6 @@ class TestResult:
             data_sent_per_second=data_sent.get("rate", 0),
         )
 
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VjBwUWR3PT06NTdkMmUwODg=
 
 @dataclass
 class ChartSpec:
@@ -115,7 +112,6 @@ class ChartSpec:
     legend: Optional[Dict[str, Any]] = None
     grid: Optional[Dict[str, Any]] = None
     extra: Dict[str, Any] = field(default_factory=dict)
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VjBwUWR3PT06NTdkMmUwODg=
     
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary for MCP/ECharts."""

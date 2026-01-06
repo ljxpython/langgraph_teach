@@ -31,4 +31,4 @@ export default tseslint.config(
     },
   },
 );
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VmtwRFNRPT06MjA0MmM2ZWY=
+// eslint-disable

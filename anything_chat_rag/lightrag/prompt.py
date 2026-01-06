@@ -1,6 +1,5 @@
 from __future__ import annotations
 from typing import Any
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEVabmFRPT06NjE4MGEzYmM=
 
 
 PROMPTS: dict[str, Any] = {}
@@ -8,7 +7,6 @@ PROMPTS: dict[str, Any] = {}
 # All delimiters must be formatted as "<|UPPER_CASE_STRING|>"
 PROMPTS["DEFAULT_TUPLE_DELIMITER"] = "<|#|>"
 PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>"
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEVabmFRPT06NjE4MGEzYmM=
 
 PROMPTS["entity_extraction_system_prompt"] = """---Role---
 You are a Knowledge Graph Specialist responsible for extracting entities and relationships from the input text.
@@ -173,7 +171,6 @@ relation{tuple_delimiter}Noah Carter{tuple_delimiter}World Athletics Championshi
 
 """,
 ]
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEVabmFRPT06NjE4MGEzYmM=
 
 PROMPTS["summarize_entity_descriptions"] = """---Role---
 You are a Knowledge Graph Specialist, proficient in data curation and synthesis.
@@ -422,4 +419,3 @@ Output:
 
 """,
 ]
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEVabmFRPT06NjE4MGEzYmM=

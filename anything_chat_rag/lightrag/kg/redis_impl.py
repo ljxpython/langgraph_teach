@@ -35,7 +35,6 @@ from tenacity import (
 
 config = configparser.ConfigParser()
 config.read("config.ini", "utf-8")
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZaRVNBPT06MDFmNmVlY2M=
 
 # Constants for Redis connection pool with environment variable support
 MAX_CONNECTIONS = int(os.getenv("REDIS_MAX_CONNECTIONS", "200"))
@@ -185,7 +184,6 @@ class RedisKVStorage(BaseKVStorage):
         async with get_data_init_lock():
             if self._initialized:
                 return
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZaRVNBPT06MDFmNmVlY2M=
 
             # Test connection
             try:
@@ -349,7 +347,6 @@ class RedisKVStorage(BaseKVStorage):
                         v["update_time"] = current_time
 
                     v["_id"] = k
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZaRVNBPT06MDFmNmVlY2M=
 
                 # Store the data
                 pipe = redis.pipeline()
@@ -410,7 +407,7 @@ class RedisKVStorage(BaseKVStorage):
                 pattern = f"{self.final_namespace}:*"
                 cursor = 0
                 deleted_count = 0
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZaRVNBPT06MDFmNmVlY2M=
+# pylint: disable
 
                 while True:
                     cursor, keys = await redis.scan(cursor, match=pattern, count=1000)

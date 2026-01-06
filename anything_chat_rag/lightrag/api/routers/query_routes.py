@@ -17,7 +17,7 @@ class QueryRequest(BaseModel):
         min_length=3,
         description="The query text",
     )
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhGck5BPT06ZWUxMDg5YzA=
+# pylint: disable
 
     mode: Literal["local", "global", "hybrid", "naive", "mix", "bypass"] = Field(
         default="mix",
@@ -74,7 +74,6 @@ class QueryRequest(BaseModel):
         default_factory=list,
         description="List of high-level keywords to prioritize in retrieval. Leave empty to use the LLM to generate the keywords.",
     )
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhGck5BPT06ZWUxMDg5YzA=
 
     ll_keywords: list[str] = Field(
         default_factory=list,
@@ -164,7 +163,6 @@ class QueryResponse(BaseModel):
         description="Reference list (Disabled when include_references=False, /query/data always includes references.)",
     )
 
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhGck5BPT06ZWUxMDg5YzA=
 
 class QueryDataResponse(BaseModel):
     status: str = Field(description="Query execution status")
@@ -1159,4 +1157,3 @@ def create_query_routes(rag, api_key: Optional[str] = None, top_k: int = 60):
             raise HTTPException(status_code=500, detail=str(e))
 
     return router
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhGck5BPT06ZWUxMDg5YzA=

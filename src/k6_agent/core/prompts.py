@@ -3,7 +3,6 @@
 This module contains carefully crafted system prompts for the orchestrator
 and all sub-agents, optimized for K6 performance testing workflows.
 """
-# noqa  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZDFkUWRRPT06ZmM0NjcyN2E=
 
 ORCHESTRATOR_PROMPT = """You are an expert K6 Performance Testing Orchestrator Agent.
 
@@ -299,4 +298,3 @@ You have access to powerful report and chart generation tools:
 Generate professional, comprehensive reports that communicate findings effectively.
 """
 
-# fmt: off  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZDFkUWRRPT06ZmM0NjcyN2E=

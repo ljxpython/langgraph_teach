@@ -10,7 +10,7 @@ if sys.version_info < (3, 9):
     from typing import AsyncIterator
 else:
     from collections.abc import AsyncIterator
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YldORE53PT06OWQyYzEzNTU=
+# pylint: disable
 
 # Install Anthropic SDK if not present
 if not pm.is_installed("anthropic"):
@@ -105,7 +105,7 @@ async def anthropic_complete_if_cache(
         messages.append({"role": "system", "content": system_prompt})
     messages.extend(history_messages)
     messages.append({"role": "user", "content": prompt})
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YldORE53PT06OWQyYzEzNTU=
+# pylint: disable
 
     logger.debug("===== Sending Query to Anthropic LLM =====")
     logger.debug(f"Model: {model}   Base URL: {base_url}")
@@ -231,7 +231,6 @@ async def claude_3_haiku_complete(
         enable_cot=enable_cot,
         **kwargs,
     )
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YldORE53PT06OWQyYzEzNTU=
 
 
 # Embedding function (placeholder, as Anthropic does not provide embeddings)
@@ -278,7 +277,6 @@ async def anthropic_embed(
             model=model,
             input_type="document",  # Assuming document context; could be made configurable
         )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YldORE53PT06OWQyYzEzNTU=
 
         # Convert list of embeddings to numpy array
         embeddings = np.array(result.embeddings, dtype=np.float32)

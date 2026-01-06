@@ -1,8 +1,8 @@
-// TODO  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002UWt3MGJRPT06YjM5OWEzZmQ=
+// TODO
 
 import tailwindcssAnimate from 'tailwindcss-animate'
 import typography from '@tailwindcss/typography'
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002UWt3MGJRPT06YjM5OWEzZmQ=
+// eslint-disable
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -270,4 +270,3 @@ export default {
   },
   plugins: [tailwindcssAnimate, typography],
 }
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002UWt3MGJRPT06YjM5OWEzZmQ=

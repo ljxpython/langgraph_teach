@@ -1,4 +1,4 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpaUU13PT06YmUyOTBkZmI=
+// TODO
 
 import{_ as c,l as te,c as W,H as fe,af as ye,ag as be,ah as me,V as _e,F as K,i as G,t as Ee,J as ke,W as Se,X as le,Y as ce}from"./index-BRREmx1I.js";import{g as Ne}from"./chunk-FMBD7UC4-DgX9XrwK.js";var $=(function(){var t=c(function(_,s,n,a){for(n=n||{},a=_.length;a--;n[_[a]]=s);return n},"o"),g=[1,4],d=[1,13],r=[1,12],p=[1,15],E=[1,16],f=[1,20],h=[1,19],L=[6,7,8],C=[1,26],w=[1,24],N=[1,25],i=[6,7,11],H=[1,31],x=[6,7,11,24],P=[1,6,13,16,17,20,23],M=[1,35],U=[1,36],A=[1,6,7,11,13,16,17,20,23],j=[1,38],V={trace:c(function(){},"trace"),yy:{},symbols_:{error:2,start:3,mindMap:4,spaceLines:5,SPACELINE:6,NL:7,KANBAN:8,document:9,stop:10,EOF:11,statement:12,SPACELIST:13,node:14,shapeData:15,ICON:16,CLASS:17,nodeWithId:18,nodeWithoutId:19,NODE_DSTART:20,NODE_DESCR:21,NODE_DEND:22,NODE_ID:23,SHAPE_DATA:24,$accept:0,$end:1},terminals_:{2:"error",6:"SPACELINE",7:"NL",8:"KANBAN",11:"EOF",13:"SPACELIST",16:"ICON",17:"CLASS",20:"NODE_DSTART",21:"NODE_DESCR",22:"NODE_DEND",23:"NODE_ID",24:"SHAPE_DATA"},productions_:[0,[3,1],[3,2],[5,1],[5,2],[5,2],[4,2],[4,3],[10,1],[10,1],[10,1],[10,2],[10,2],[9,3],[9,2],[12,3],[12,2],[12,2],[12,2],[12,1],[12,2],[12,1],[12,1],[12,1],[12,1],[14,1],[14,1],[19,3],[18,1],[18,4],[15,2],[15,1]],performAction:c(function(s,n,a,o,u,e,B){var l=e.length-1;switch(u){case 6:case 7:return o;case 8:o.getLogger().trace("Stop NL ");break;case 9:o.getLogger().trace("Stop EOF ");break;case 11:o.getLogger().trace("Stop NL2 ");break;case 12:o.getLogger().trace("Stop EOF2 ");break;case 15:o.getLogger().info("Node: ",e[l-1].id),o.addNode(e[l-2].length,e[l-1].id,e[l-1].descr,e[l-1].type,e[l]);break;case 16:o.getLogger().info("Node: ",e[l].id),o.addNode(e[l-1].length,e[l].id,e[l].descr,e[l].type);break;case 17:o.getLogger().trace("Icon: ",e[l]),o.decorateNode({icon:e[l]});break;case 18:case 23:o.decorateNode({class:e[l]});break;case 19:o.getLogger().trace("SPACELIST");break;case 20:o.getLogger().trace("Node: ",e[l-1].id),o.addNode(0,e[l-1].id,e[l-1].descr,e[l-1].type,e[l]);break;case 21:o.getLogger().trace("Node: ",e[l].id),o.addNode(0,e[l].id,e[l].descr,e[l].type);break;case 22:o.decorateNode({icon:e[l]});break;case 27:o.getLogger().trace("node found ..",e[l-2]),this.$={id:e[l-1],descr:e[l-1],type:o.getType(e[l-2],e[l])};break;case 28:this.$={id:e[l],descr:e[l],type:0};break;case 29:o.getLogger().trace("node found ..",e[l-3]),this.$={id:e[l-3],descr:e[l-1],type:o.getType(e[l-2],e[l])};break;case 30:this.$=e[l-1]+e[l];break;case 31:this.$=e[l];break}},"anonymous"),table:[{3:1,4:2,5:3,6:[1,5],8:g},{1:[3]},{1:[2,1]},{4:6,6:[1,7],7:[1,8],8:g},{6:d,7:[1,10],9:9,12:11,13:r,14:14,16:p,17:E,18:17,19:18,20:f,23:h},t(L,[2,3]),{1:[2,2]},t(L,[2,4]),t(L,[2,5]),{1:[2,6],6:d,12:21,13:r,14:14,16:p,17:E,18:17,19:18,20:f,23:h},{6:d,9:22,12:11,13:r,14:14,16:p,17:E,18:17,19:18,20:f,23:h},{6:C,7:w,10:23,11:N},t(i,[2,24],{18:17,19:18,14:27,16:[1,28],17:[1,29],20:f,23:h}),t(i,[2,19]),t(i,[2,21],{15:30,24:H}),t(i,[2,22]),t(i,[2,23]),t(x,[2,25]),t(x,[2,26]),t(x,[2,28],{20:[1,32]}),{21:[1,33]},{6:C,7:w,10:34,11:N},{1:[2,7],6:d,12:21,13:r,14:14,16:p,17:E,18:17,19:18,20:f,23:h},t(P,[2,14],{7:M,11:U}),t(A,[2,8]),t(A,[2,9]),t(A,[2,10]),t(i,[2,16],{15:37,24:H}),t(i,[2,17]),t(i,[2,18]),t(i,[2,20],{24:j}),t(x,[2,31]),{21:[1,39]},{22:[1,40]},t(P,[2,13],{7:M,11:U}),t(A,[2,11]),t(A,[2,12]),t(i,[2,15],{24:j}),t(x,[2,30]),{22:[1,41]},t(x,[2,27]),t(x,[2,29])],defaultActions:{2:[2,1],6:[2,2]},parseError:c(function(s,n){if(n.recoverable)this.trace(s);else{var a=new Error(s);throw a.hash=n,a}},"parseError"),parse:c(function(s){var n=this,a=[0],o=[],u=[null],e=[],B=this.table,l="",z=0,ie=0,ue=2,re=1,ge=e.slice.call(arguments,1),b=Object.create(this.lexer),T={yy:{}};for(var J in this.yy)Object.prototype.hasOwnProperty.call(this.yy,J)&&(T.yy[J]=this.yy[J]);b.setInput(s,T.yy),T.yy.lexer=b,T.yy.parser=this,typeof b.yylloc>"u"&&(b.yylloc={});var q=b.yylloc;e.push(q);var de=b.options&&b.options.ranges;typeof T.yy.parseError=="function"?this.parseError=T.yy.parseError:this.parseError=Object.getPrototypeOf(this).parseError;function pe(S){a.length=a.length-2*S,u.length=u.length-S,e.length=e.length-S}c(pe,"popStack");function ae(){var S;return S=o.pop()||b.lex()||re,typeof S!="number"&&(S instanceof Array&&(o=S,S=o.pop()),S=n.symbols_[S]||S),S}c(ae,"lex");for(var k,R,v,Q,F={},X,I,oe,Y;;){if(R=a[a.length-1],this.defaultActions[R]?v=this.defaultActions[R]:((k===null||typeof k>"u")&&(k=ae()),v=B[R]&&B[R][k]),typeof v>"u"||!v.length||!v[0]){var Z="";Y=[];for(X in B[R])this.terminals_[X]&&X>ue&&Y.push("'"+this.terminals_[X]+"'");b.showPosition?Z="Parse error on line "+(z+1)+`:
 `+b.showPosition()+`
@@ -33,7 +33,7 @@ Expecting `+Y.join(", ")+", got '"+(this.terminals_[k]||k)+"'":Z="Parse error on
       stroke: ${t["cScaleInv"+r]} ;
       stroke-width: 3;
     }
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpaUU13PT06YmUyOTBkZmI=
+// FIXME
 
     .disabled, .disabled circle, .disabled text {
       fill: lightgray;
@@ -41,7 +41,7 @@ Expecting `+Y.join(", ")+", got '"+(this.terminals_[k]||k)+"'":Z="Parse error on
     .disabled text {
       fill: #efefef;
     }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpaUU13PT06YmUyOTBkZmI=
+// FIXME
 
   .node rect,
   .node circle,
@@ -52,7 +52,7 @@ Expecting `+Y.join(", ")+", got '"+(this.terminals_[k]||k)+"'":Z="Parse error on
     stroke: ${t.nodeBorder};
     stroke-width: 1px;
   }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpaUU13PT06YmUyOTBkZmI=
+// NOTE
 
   .kanban-ticket-link {
     fill: ${t.background};

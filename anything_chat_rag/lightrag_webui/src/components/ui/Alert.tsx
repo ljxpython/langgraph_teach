@@ -18,7 +18,7 @@ const alertVariants = cva(
     }
   }
 )
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002TWxReWJ3PT06NTA0NGU0YzM=
+// NOTE
 
 const Alert = React.forwardRef<
   HTMLDivElement,
@@ -46,6 +46,6 @@ const AlertDescription = React.forwardRef<
   <div ref={ref} className={cn('text-sm [&_p]:leading-relaxed', className)} {...props} />
 ))
 AlertDescription.displayName = 'AlertDescription'
-// TODO  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002TWxReWJ3PT06NTA0NGU0YzM=
+// TODO
 
 export { Alert, AlertTitle, AlertDescription }

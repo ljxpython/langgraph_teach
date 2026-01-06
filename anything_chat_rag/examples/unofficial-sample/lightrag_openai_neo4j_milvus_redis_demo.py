@@ -20,7 +20,6 @@ BATCH_SIZE_EDGES = 100
 os.environ["NEO4J_URI"] = "neo4j://localhost:7687"
 os.environ["NEO4J_USERNAME"] = "neo4j"
 os.environ["NEO4J_PASSWORD"] = "12345678"
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y21aM2RRPT06ZGY1NzExNTM=
 
 # milvus
 os.environ["MILVUS_URI"] = "http://localhost:19530"
@@ -50,7 +49,6 @@ embedding_func = EmbeddingFunc(
         texts, embed_model="shaw/dmeta-embedding-zh", host="http://117.50.173.35:11434"
     ),
 )
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y21aM2RRPT06ZGY1NzExNTM=
 
 
 async def initialize_rag():
@@ -66,7 +64,6 @@ async def initialize_rag():
         vector_storage="MilvusVectorDBStorage",
         doc_status_storage="RedisKVStorage",
     )
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y21aM2RRPT06ZGY1NzExNTM=
 
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
@@ -107,7 +104,6 @@ def main():
         )
     )
 
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y21aM2RRPT06ZGY1NzExNTM=
 
 if __name__ == "__main__":
     main()

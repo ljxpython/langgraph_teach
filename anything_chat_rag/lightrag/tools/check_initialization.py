@@ -41,7 +41,6 @@ async def check_lightrag_setup(rag_instance: LightRAG, verbose: bool = False) ->
     warnings = []
 
     print("🔍 Checking LightRAG initialization status...\n")
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TlRoS1NRPT06MmRlZjdkYmQ=
 
     # Check storage initialization status
     if not hasattr(rag_instance, "_storages_status"):
@@ -97,7 +96,6 @@ async def check_lightrag_setup(rag_instance: LightRAG, verbose: bool = False) ->
         )
     except Exception as e:
         issues.append(f"Error checking pipeline status: {str(e)}")
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TlRoS1NRPT06MmRlZjdkYmQ=
 
     # Print results
     print("\n" + "=" * 50)
@@ -121,7 +119,6 @@ async def check_lightrag_setup(rag_instance: LightRAG, verbose: bool = False) ->
         return False
     else:
         print("✅ LightRAG is properly initialized and ready to use!")
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TlRoS1NRPT06MmRlZjdkYmQ=
 
         if warnings and verbose:
             print("\n⚠️  Warnings (might be normal):")
@@ -156,7 +153,6 @@ async def demo():
     import shutil
 
     shutil.rmtree("./test_diagnostic", ignore_errors=True)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TlRoS1NRPT06MmRlZjdkYmQ=
 
 
 if __name__ == "__main__":

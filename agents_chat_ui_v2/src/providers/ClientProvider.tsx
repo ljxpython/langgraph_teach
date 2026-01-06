@@ -1,4 +1,4 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UzNKS2NRPT06YTI1NjYxM2E=
+// eslint-disable
 
 "use client";
 
@@ -38,7 +38,7 @@ export function ClientProvider({
     <ClientContext.Provider value={value}>{children}</ClientContext.Provider>
   );
 }
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UzNKS2NRPT06YTI1NjYxM2E=
+// NOTE
 
 export function useClient(): Client {
   const context = useContext(ClientContext);

@@ -1,5 +1,5 @@
 "use client";
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VG5adFdBPT06MzEzZjY4YmY=
+// TODO
 
 import { ToolCalls } from "@/components/thread/messages/tool-calls-new";
 import { AIMessage, ToolMessage } from "@langchain/langgraph-sdk";
@@ -53,7 +53,7 @@ const _mockToolResult: ToolMessage = {
   }),
   tool_call_id: "call_1"
 };
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VG5adFdBPT06MzEzZjY4YmY=
+// eslint-disable
 
 // Mock tool result with base64 image data
 const mockToolResultWithImage: ToolMessage = {
@@ -79,7 +79,7 @@ const mockExpandedToolCall: NonNullable<AIMessage["tool_calls"]>[0] = {
   },
   id: "call_expanded"
 };
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VG5adFdBPT06MzEzZjY4YmY=
+// FIXME
 
 // Mock tool call with screenshot
 const mockScreenshotToolCall: NonNullable<AIMessage["tool_calls"]>[0] = {

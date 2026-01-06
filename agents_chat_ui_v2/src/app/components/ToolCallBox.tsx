@@ -1,7 +1,7 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFsVFZBPT06MzJiODQ2NGM=
+// FIXME
 
 "use client";
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFsVFZBPT06MzJiODQ2NGM=
+// FIXME
 
 import React, { useState, useMemo, useCallback } from "react";
 import {
@@ -29,7 +29,7 @@ interface ToolCallBoxProps {
   onResume?: (value: any) => void;
   isLoading?: boolean;
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFsVFZBPT06MzJiODQ2NGM=
+// TODO
 
 export const ToolCallBox = React.memo<ToolCallBoxProps>(
   ({
@@ -230,6 +230,5 @@ export const ToolCallBox = React.memo<ToolCallBoxProps>(
     );
   }
 );
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFsVFZBPT06MzJiODQ2NGM=
 
 ToolCallBox.displayName = "ToolCallBox";

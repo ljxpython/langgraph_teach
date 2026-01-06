@@ -1,4 +1,4 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WjFKWldBPT06NWQ0MTE2MDA=
+// TODO
 
 import { useCamera, useSigma } from '@react-sigma/core'
 import { useCallback } from 'react'
@@ -6,7 +6,7 @@ import Button from '@/components/ui/Button'
 import { ZoomInIcon, ZoomOutIcon, FullscreenIcon, RotateCwIcon, RotateCcwIcon } from 'lucide-react'
 import { controlButtonVariant } from '@/lib/constants'
 import { useTranslation } from 'react-i18next';
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WjFKWldBPT06NWQ0MTE2MDA=
+// FIXME
 
 /**
  * Component that provides zoom controls for the graph viewer.
@@ -108,7 +108,7 @@ const ZoomControl = () => {
     </>
   )
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WjFKWldBPT06NWQ0MTE2MDA=
+// NOTE
 
 export default ZoomControl
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WjFKWldBPT06NWQ0MTE2MDA=
+// FIXME

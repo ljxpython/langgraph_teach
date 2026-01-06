@@ -1,10 +1,9 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZkamVRPT06YjE4OWZiZjI=
 
 import { NavigateFunction } from 'react-router-dom';
 import { useAuthStore, useBackendState } from '@/stores/state';
 import { useGraphStore } from '@/stores/graph';
 import { useSettingsStore } from '@/stores/settings';
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZkamVRPT06YjE4OWZiZjI=
+// NOTE
 
 class NavigationService {
   private navigate: NavigateFunction | null = null;
@@ -84,7 +83,7 @@ class NavigationService {
     this.navigate('/');
   }
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZkamVRPT06YjE4OWZiZjI=
+// eslint-disable
 
 export const navigationService = new NavigationService();
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZkamVRPT06YjE4OWZiZjI=
+// NOTE

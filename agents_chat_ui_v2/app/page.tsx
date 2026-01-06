@@ -1,7 +1,7 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WTNsU1dnPT06M2JhMWFkOWI=
+// eslint-disable
 
 "use client";
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WTNsU1dnPT06M2JhMWFkOWI=
+// NOTE
 
 import React, { useState, useEffect, useCallback, Suspense } from "react";
 import { useQueryState } from "nuqs";
@@ -205,7 +205,6 @@ function HomePageInner({
     </>
   );
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WTNsU1dnPT06M2JhMWFkOWI=
 
 function HomePageContent() {
   const [config, setConfig] = useState<StandaloneConfig | null>(null);
@@ -281,7 +280,6 @@ function HomePageContent() {
     </ClientProvider>
   );
 }
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WTNsU1dnPT06M2JhMWFkOWI=
 
 export default function HomePage() {
   return (

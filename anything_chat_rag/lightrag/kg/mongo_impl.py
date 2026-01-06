@@ -74,7 +74,6 @@ class ClientManager:
                     cls._instances["ref_count"] -= 1
                     if cls._instances["ref_count"] == 0:
                         cls._instances["db"] = None
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBkcFVBPT06MWFjZmUxMDk=
 
 
 @final
@@ -137,7 +136,6 @@ class MongoKVStorage(BaseKVStorage):
             logger.debug(
                 f"[{self.workspace}] Use MongoDB as KV {self._collection_name}"
             )
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBkcFVBPT06MWFjZmUxMDk=
 
     async def finalize(self):
         if self.db is not None:
@@ -216,7 +214,6 @@ class MongoKVStorage(BaseKVStorage):
 
         if operations:
             await self._data.bulk_write(operations)
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBkcFVBPT06MWFjZmUxMDk=
 
     async def index_done_callback(self) -> None:
         # Mongo handles persistence automatically
@@ -360,7 +357,7 @@ class MongoDocStatusStorage(DocStatusStorage):
         async with get_data_init_lock():
             if self.db is None:
                 self.db = await ClientManager.get_client()
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBkcFVBPT06MWFjZmUxMDk=
+# pylint: disable
 
             self._data = await get_or_create_collection(self.db, self._collection_name)
 

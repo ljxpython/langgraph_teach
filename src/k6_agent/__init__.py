@@ -44,7 +44,6 @@ Example:
 
 Version: 2.0.0
 """
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YUhFeVV3PT06MTcwNWE5YjU=
 
 __version__ = "2.0.0"
 __author__ = "Performance Testing Team"
@@ -66,7 +65,6 @@ from k6_agent.utils import (
     TestResult,
     Colors,
 )
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YUhFeVV3PT06MTcwNWE5YjU=
 
 
 # Lazy import of agent to avoid import errors if deepagents is not available
@@ -114,7 +112,7 @@ def create_k6_agent(*args, **kwargs):
     """
     from k6_agent.core.orchestrator import create_k6_agent as _create_agent
     return _create_agent(*args, **kwargs)
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YUhFeVV3PT06MTcwNWE5YjU=
+# pylint: disable
 
 
 __all__ = [
@@ -145,4 +143,4 @@ __all__ = [
     "__version__",
 ]
 
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YUhFeVV3PT06MTcwNWE5YjU=
+# pylint: disable

@@ -18,7 +18,7 @@ interface StateViewRecursiveProps {
   value: unknown;
   expanded?: boolean;
 }
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDFKMFlRPT06Yzc5ZTI5YzM=
+// NOTE
 
 const messageTypeToLabel = (message: BaseMessage) => {
   let type = "";
@@ -148,7 +148,6 @@ function StateViewRecursive(props: StateViewRecursiveProps) {
     );
   }
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDFKMFlRPT06Yzc5ZTI5YzM=
 
 function HasContentsEllipsis({ onClick }: { onClick?: () => void }) {
   return (
@@ -303,4 +302,4 @@ export function StateView({
     </div>
   );
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDFKMFlRPT06Yzc5ZTI5YzM=
+// eslint-disable

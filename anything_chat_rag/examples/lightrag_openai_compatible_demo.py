@@ -23,7 +23,6 @@ def configure_logging():
         logger_instance = logging.getLogger(logger_name)
         logger_instance.handlers = []
         logger_instance.filters = []
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFSaWFnPT06YmVkMzY2YmU=
 
     # Get log directory path from environment variable or use current directory
     log_dir = os.getenv("LOG_DIR", os.getcwd())
@@ -84,7 +83,6 @@ def configure_logging():
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFSaWFnPT06YmVkMzY2YmU=
 
 async def llm_model_func(
     prompt, system_prompt=None, history_messages=[], keyword_extraction=False, **kwargs
@@ -120,7 +118,6 @@ async def initialize_rag():
             ),
         ),
     )
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFSaWFnPT06YmVkMzY2YmU=
 
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
@@ -218,7 +215,6 @@ async def main():
     finally:
         if rag:
             await rag.finalize_storages()
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFSaWFnPT06YmVkMzY2YmU=
 
 
 if __name__ == "__main__":

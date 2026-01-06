@@ -1,5 +1,5 @@
 "use client";
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UVZRNU9RPT06ZGJhY2FmZTc=
+// eslint-disable
 
 import { Thread } from "@/components/thread";
 import { StreamProvider } from "@/providers/Stream";
@@ -7,7 +7,7 @@ import { ThreadProvider } from "@/providers/Thread";
 import { ArtifactProvider } from "@/components/thread/artifact";
 import { Toaster } from "@/components/ui/sonner";
 import React from "react";
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UVZRNU9RPT06ZGJhY2FmZTc=
+// NOTE
 
 export default function DemoPage(): React.ReactNode {
   return (

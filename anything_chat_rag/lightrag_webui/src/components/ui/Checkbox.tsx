@@ -1,4 +1,3 @@
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZWtWS1FRPT06N2YyODNiY2M=
 
 import * as React from 'react'
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox'
@@ -24,6 +23,6 @@ const Checkbox = React.forwardRef<
   </CheckboxPrimitive.Root>
 ))
 Checkbox.displayName = CheckboxPrimitive.Root.displayName
-// TODO  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZWtWS1FRPT06N2YyODNiY2M=
+// TODO
 
 export default Checkbox

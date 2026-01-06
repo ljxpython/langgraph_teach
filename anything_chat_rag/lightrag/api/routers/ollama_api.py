@@ -30,7 +30,6 @@ class OllamaMessage(BaseModel):
     content: str
     images: Optional[List[str]] = None
 
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dRMFN3PT06YjY0MDI3MjU=
 
 class OllamaChatRequest(BaseModel):
     model: str
@@ -103,7 +102,6 @@ class OllamaRunningModelDetails(BaseModel):
     parameter_size: str
     quantization_level: str
 
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dRMFN3PT06YjY0MDI3MjU=
 
 class OllamaRunningModel(BaseModel):
     name: str
@@ -236,7 +234,6 @@ class OllamaAPI:
         async def get_version():
             """Get Ollama version information"""
             return OllamaVersionResponse(version="0.9.3")
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dRMFN3PT06YjY0MDI3MjU=
 
         @self.router.get("/tags", dependencies=[Depends(combined_auth)])
         async def get_tags():
@@ -304,7 +301,6 @@ class OllamaAPI:
 
                 if request.system:
                     self.rag.llm_model_kwargs["system_prompt"] = request.system
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dRMFN3PT06YjY0MDI3MjU=
 
                 if request.stream:
                     response = await self.rag.llm_model_func(

@@ -2,7 +2,7 @@
  * Robust clipboard utility with multiple fallback strategies
  * Handles various browser environments and security contexts
  */
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TURGdU5RPT06ZTI5NDhjYzA=
+// FIXME
 
 export interface CopyResult {
   success: boolean;
@@ -66,7 +66,7 @@ export async function copyToClipboard(text: string): Promise<CopyResult> {
     error: 'All copy methods failed. Please copy the text manually.'
   };
 }
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TURGdU5RPT06ZTI5NDhjYzA=
+// NOTE
 
 /**
  * Copy using legacy execCommand method
@@ -112,7 +112,7 @@ async function copyWithExecCommand(text: string): Promise<CopyResult> {
     }
   });
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TURGdU5RPT06ZTI5NDhjYzA=
+// FIXME
 
 /**
  * Copy using manual text selection method
@@ -199,4 +199,4 @@ export function getBestClipboardMethod(): 'clipboard-api' | 'execCommand' | 'man
 
   return 'none';
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TURGdU5RPT06ZTI5NDhjYzA=
+// NOTE

@@ -56,7 +56,6 @@ class DefaultRAGStorageConfig:
     VECTOR_STORAGE = "NanoVectorDBStorage"
     GRAPH_STORAGE = "NetworkXStorage"
     DOC_STATUS_STORAGE = "JsonDocStatusStorage"
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRCaWRnPT06NjkzMTkxZmM=
 
 
 def get_default_host(binding_type: str) -> str:
@@ -333,7 +332,6 @@ def parse_args() -> argparse.Namespace:
             pass
     elif os.environ.get("LLM_BINDING") == "ollama":
         OllamaLLMOptions.add_args(parser)
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRCaWRnPT06NjkzMTkxZmM=
 
     if "--embedding-binding" in sys.argv:
         try:
@@ -409,7 +407,6 @@ def parse_args() -> argparse.Namespace:
 
     # Ollama ctx_num
     args.ollama_num_ctx = get_env_value("OLLAMA_NUM_CTX", 32768, int)
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRCaWRnPT06NjkzMTkxZmM=
 
     args.llm_binding_host = get_env_value(
         "LLM_BINDING_HOST", get_default_host(args.llm_binding)
@@ -481,7 +478,6 @@ def parse_args() -> argparse.Namespace:
     args.rerank_binding_host = get_env_value("RERANK_BINDING_HOST", None)
     args.rerank_binding_api_key = get_env_value("RERANK_BINDING_API_KEY", None)
     # Note: rerank_binding is already set by argparse, no need to override from env
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRCaWRnPT06NjkzMTkxZmM=
 
     # Min rerank score configuration
     args.min_rerank_score = get_env_value(

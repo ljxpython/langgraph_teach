@@ -4,7 +4,6 @@ from lightrag import LightRAG, QueryParam
 from lightrag.llm.hf import hf_model_complete, hf_embed
 from lightrag.utils import EmbeddingFunc
 from transformers import AutoModel, AutoTokenizer
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VFRKb1ZnPT06MjAwZmU1NzU=
 
 import asyncio
 import nest_asyncio
@@ -16,7 +15,6 @@ WORKING_DIR = "./dickens"
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
 
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VFRKb1ZnPT06MjAwZmU1NzU=
 
 async def initialize_rag():
     rag = LightRAG(
@@ -41,7 +39,6 @@ async def initialize_rag():
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
 
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VFRKb1ZnPT06MjAwZmU1NzU=
 
 def main():
     rag = asyncio.run(initialize_rag())
@@ -62,7 +59,6 @@ def main():
             "What are the top themes in this story?", param=QueryParam(mode="local")
         )
     )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VFRKb1ZnPT06MjAwZmU1NzU=
 
     # Perform global search
     print(

@@ -31,13 +31,12 @@ import {
 import { errorMessage } from '@/lib/utils'
 import { toast } from 'sonner'
 import { useBackendState } from '@/stores/state'
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVkd2NnPT06ODM2YzZmNmM=
+// eslint-disable
 
 import { RefreshCwIcon, ActivityIcon, ArrowUpIcon, ArrowDownIcon, RotateCcwIcon, CheckSquareIcon, XIcon, AlertTriangle, Info } from 'lucide-react'
 import PipelineStatusDialog from '@/components/documents/PipelineStatusDialog'
 
 type StatusFilter = DocStatus | 'all';
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVkd2NnPT06ODM2YzZmNmM=
 
 // Utility functions defined outside component for better performance and to avoid dependency issues
 const getCountValue = (counts: Record<string, number>, ...keys: string[]): number => {
@@ -75,7 +74,7 @@ const getDisplayFileName = (doc: DocStatusResponse, maxLength: number = 20): str
     ? fileName.slice(0, maxLength) + '...'
     : fileName;
 };
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVkd2NnPT06ODM2YzZmNmM=
+// eslint-disable
 
 const formatMetadata = (metadata: Record<string, any>): string => {
   const formattedMetadata = { ...metadata };
@@ -195,7 +194,6 @@ const pulseStyle = `
   border: 1px solid;
 }
 `;
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVkd2NnPT06ODM2YzZmNmM=
 
 // Type definitions for sort field and direction
 type SortField = 'created_at' | 'updated_at' | 'id' | 'file_path';

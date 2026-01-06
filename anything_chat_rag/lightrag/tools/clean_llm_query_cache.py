@@ -57,7 +57,6 @@ WORKSPACE_ENV_MAP = {
 
 # Query cache modes
 QUERY_MODES = ["mix", "hybrid", "local", "global"]
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YlRSTU5nPT06ZjhmMzgwNGI=
 
 # Query cache types
 CACHE_TYPES = ["query", "keywords"]
@@ -86,7 +85,6 @@ class CleanupStats:
     failed_batches: int = 0
     successfully_deleted: int = 0
     failed_to_delete: int = 0
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YlRSTU5nPT06ZjhmMzgwNGI=
 
     # Count by mode and cache_type after cleanup
     counts_after: Dict[str, Dict[str, int]] = field(default_factory=dict)
@@ -269,7 +267,6 @@ class CleanupTool:
 
         # Initialize the storage (may raise exception if connection fails)
         await storage.initialize()
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YlRSTU5nPT06ZjhmMzgwNGI=
 
         return storage
 
@@ -319,7 +316,6 @@ class CleanupTool:
                             cursor, match=prefixed_pattern, count=DEFAULT_BATCH_SIZE
                         )
                         counts[mode][cache_type] += len(keys)
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YlRSTU5nPT06ZjhmMzgwNGI=
 
                         if cursor == 0:
                             break

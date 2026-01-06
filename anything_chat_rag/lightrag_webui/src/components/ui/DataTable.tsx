@@ -1,7 +1,6 @@
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002WjNnMVRRPT06M2E5ZGE2MWY=
 
 import { ColumnDef, flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table'
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002WjNnMVRRPT06M2E5ZGE2MWY=
+// TODO
 
 import {
   Table,
@@ -65,4 +64,3 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
     </div>
   )
 }
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002WjNnMVRRPT06M2E5ZGE2MWY=

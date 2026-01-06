@@ -59,7 +59,6 @@ Looking for: test patterns, VU configurations, duration settings, threshold reco
             hl_keywords=["performance testing", test_type, "scenario design"],
             ll_keywords=["k6", "virtual users", "thresholds", "stages"],
         )
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TWxSdE1RPT06YTExNTcxZDI=
     
     async def retrieve_script_patterns(
         self,
@@ -113,7 +112,6 @@ Looking for: import statements, request patterns, check assertions, custom metri
 Metrics: {metrics_str}
 Observed anomalies: {anomalies_str}
 Looking for: analysis techniques, statistical methods, interpretation guidelines."""
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TWxSdE1RPT06YTExNTcxZDI=
         
         return await self.client.query_for_context(
             query=query,
@@ -224,7 +222,6 @@ def create_knowledge_retrieval_tool(client: KnowledgeClient) -> BaseTool:
             Relevant knowledge and references from the knowledge base.
         """
         return await client.query_for_context(query)
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TWxSdE1RPT06YTExNTcxZDI=
 
     return retrieve_performance_knowledge
 
@@ -294,7 +291,6 @@ def create_script_optimization_tool(client: KnowledgeClient) -> BaseTool:
 def create_analysis_guide_tool(client: KnowledgeClient) -> BaseTool:
     """Create a result analysis methodology retrieval tool."""
     retriever = KnowledgeRetriever(client)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TWxSdE1RPT06YTExNTcxZDI=
 
     @tool(args_schema=AnalysisGuideInput)
     async def retrieve_analysis_methodology(

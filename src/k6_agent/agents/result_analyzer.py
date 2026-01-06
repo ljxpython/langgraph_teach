@@ -3,7 +3,6 @@
 This module provides the result analyzer sub-agent that specializes
 in analyzing K6 test results and identifying performance issues.
 """
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpkdVNRPT06MWM0YjYxNmQ=
 
 from typing import Optional, List, Dict, Any
 from dataclasses import dataclass, field
@@ -97,7 +96,6 @@ class ResultAnalyzerAgent:
                 test_passed=False,
                 summary=f"Invalid JSON in result file: {result_path}",
             )
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpkdVNRPT06MWM0YjYxNmQ=
         
         issues = []
         recommendations = []
@@ -146,7 +144,6 @@ class ResultAnalyzerAgent:
                 threshold=self.thresholds["error_rate_percent"],
                 recommendation="Investigate error responses and server logs",
             ))
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpkdVNRPT06MWM0YjYxNmQ=
         
         # Check thresholds
         thresholds = data.get("thresholds", {})
@@ -158,7 +155,6 @@ class ResultAnalyzerAgent:
         test_passed = len(failed_thresholds) == 0 and not any(
             i.severity == "critical" for i in issues
         )
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpkdVNRPT06MWM0YjYxNmQ=
         
         # Generate summary
         summary = self._generate_summary(data, issues, test_passed)

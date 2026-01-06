@@ -2,10 +2,10 @@
 
 import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
-// FIXME  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTI5SWRnPT06NmY3YTQ3ZmQ=
+// FIXME
 
 import { cn } from "@/lib/utils";
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTI5SWRnPT06NmY3YTQ3ZmQ=
+// TODO
 
 function TooltipProvider({
   delayDuration = 0,
@@ -67,6 +67,6 @@ function TooltipContent({
     </TooltipPrimitive.Portal>
   );
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTI5SWRnPT06NmY3YTQ3ZmQ=
+// NOTE
 
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };

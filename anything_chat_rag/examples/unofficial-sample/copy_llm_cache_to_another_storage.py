@@ -20,11 +20,9 @@ logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TVRWNFpnPT06MWFjYzEwZDk=
 
 # AGE
 os.environ["AGE_GRAPH_NAME"] = "chinese"
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TVRWNFpnPT06MWFjYzEwZDk=
 
 postgres_db = PostgreSQLDB(
     config={
@@ -55,7 +53,7 @@ async def copy_from_postgres_to_json():
 
     # Get all cache data using the new flattened structure
     all_data = await from_llm_response_cache.get_all()
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TVRWNFpnPT06MWFjYzEwZDk=
+# pylint: disable
 
     # Convert flattened data to hierarchical structure for JsonKVStorage
     kv = {}
@@ -91,7 +89,6 @@ async def copy_from_json_to_postgres():
         embedding_func=None,
         db=postgres_db,
     )
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TVRWNFpnPT06MWFjYzEwZDk=
 
     # Get all cache data from JsonKVStorage (hierarchical structure)
     all_data = await from_llm_response_cache.get_all()

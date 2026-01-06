@@ -1,4 +1,4 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YVhKNVNBPT06ZDdjYTJkNzU=
+// eslint-disable
 
 import Button from '@/components/ui/Button'
 import { SiteInfo, webuiPrefix } from '@/lib/constants'
@@ -18,7 +18,7 @@ interface NavigationTabProps {
   currentTab: string
   children: React.ReactNode
 }
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YVhKNVNBPT06ZDdjYTJkNzU=
+// eslint-disable
 
 function NavigationTab({ value, currentTab, children }: NavigationTabProps) {
   return (
@@ -33,7 +33,7 @@ function NavigationTab({ value, currentTab, children }: NavigationTabProps) {
     </TabsTrigger>
   )
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YVhKNVNBPT06ZDdjYTJkNzU=
+// eslint-disable
 
 function TabsNavigation() {
   const currentTab = useSettingsStore.use.currentTab()
@@ -58,7 +58,7 @@ function TabsNavigation() {
     </div>
   )
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YVhKNVNBPT06ZDdjYTJkNzU=
+// NOTE
 
 export default function SiteHeader() {
   const { t } = useTranslation()

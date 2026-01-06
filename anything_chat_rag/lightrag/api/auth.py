@@ -11,7 +11,6 @@ from .config import global_args
 # allows to use different .env file for each lightrag instance
 # the OS environment variables take precedence over the .env file
 load_dotenv(dotenv_path=".env", override=False)
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WVRGQ2JRPT06MTYyMWNkMmI=
 
 
 class TokenPayload(BaseModel):
@@ -20,7 +19,6 @@ class TokenPayload(BaseModel):
     role: str = "user"  # User role, default is regular user
     metadata: dict = {}  # Additional metadata
 
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WVRGQ2JRPT06MTYyMWNkMmI=
 
 class AuthHandler:
     def __init__(self):
@@ -62,7 +60,6 @@ class AuthHandler:
                 expire_hours = self.expire_hours
         else:
             expire_hours = custom_expire_hours
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WVRGQ2JRPT06MTYyMWNkMmI=
 
         expire = datetime.utcnow() + timedelta(hours=expire_hours)
 
@@ -95,7 +92,6 @@ class AuthHandler:
                 raise HTTPException(
                     status_code=status.HTTP_401_UNAUTHORIZED, detail="Token expired"
                 )
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WVRGQ2JRPT06MTYyMWNkMmI=
 
             # Return complete payload instead of just username
             return {

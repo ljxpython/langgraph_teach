@@ -29,7 +29,6 @@ from .shared_storage import (
 @dataclass
 class JsonDocStatusStorage(DocStatusStorage):
     """JSON implementation of document status storage"""
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VmtoVmN3PT06MWViNzk1YzQ=
 
     def __post_init__(self):
         working_dir = self.global_config["working_dir"]
@@ -255,7 +254,6 @@ class JsonDocStatusStorage(DocStatusStorage):
 
         if sort_field not in ["created_at", "updated_at", "id", "file_path"]:
             sort_field = "updated_at"
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VmtoVmN3PT06MWViNzk1YzQ=
 
         if sort_direction.lower() not in ["asc", "desc"]:
             sort_direction = "desc"
@@ -271,7 +269,6 @@ class JsonDocStatusStorage(DocStatusStorage):
                     and doc_data.get("status") != status_filter.value
                 ):
                     continue
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VmtoVmN3PT06MWViNzk1YzQ=
 
                 try:
                     # Prepare document data
@@ -335,7 +332,6 @@ class JsonDocStatusStorage(DocStatusStorage):
         # Add 'all' field with total count
         total_count = sum(counts.values())
         counts["all"] = total_count
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VmtoVmN3PT06MWViNzk1YzQ=
 
         return counts
 

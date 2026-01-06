@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1VoSU5RPT06MWJkNmQxMmI=
 
 import Textarea from '@/components/ui/Textarea'
 import Input from '@/components/ui/Input'
@@ -26,7 +25,7 @@ const generateUniqueId = () => {
   // Fallback to timestamp + random string for browsers without crypto.randomUUID
   return `id-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
 };
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1VoSU5RPT06MWJkNmQxMmI=
+// NOTE
 
 // LaTeX completeness detection function
 const detectLatexCompleteness = (content: string): boolean => {
@@ -43,7 +42,7 @@ const detectLatexCompleteness = (content: string): boolean => {
   // LaTeX is complete if there are no unclosed formulas
   return !hasUnclosedBlock && !hasUnclosedInline
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1VoSU5RPT06MWJkNmQxMmI=
+// eslint-disable
 
 // Robust COT parsing function to handle multiple think blocks and edge cases
 const parseCOTContent = (content: string) => {
@@ -104,7 +103,7 @@ const parseCOTContent = (content: string) => {
     hasValidThinkBlock: hasThinkStart && hasThinkEnd && startMatches.length === endMatches.length
   }
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1VoSU5RPT06MWJkNmQxMmI=
+// NOTE
 
 export default function RetrievalTesting() {
   const { t } = useTranslation()

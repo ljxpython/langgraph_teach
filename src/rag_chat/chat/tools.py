@@ -33,7 +33,6 @@ def get_available_collections() -> str:
         return json.dumps({"error": "collections.json文件格式错误"}, ensure_ascii=False)
     except Exception as e:
         return json.dumps({"error": f"读取集合信息失败: {str(e)}"}, ensure_ascii=False)
-# noqa  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YUZScFJnPT06ZmE5ZWMxZGE=
 
 def get_mcp_rag_tools():
     client = MultiServerMCPClient(

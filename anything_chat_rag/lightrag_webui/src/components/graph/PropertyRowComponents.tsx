@@ -1,7 +1,7 @@
 import { PencilIcon } from 'lucide-react'
 import Text from '@/components/ui/Text'
 import { useTranslation } from 'react-i18next'
-// TODO  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002YjNOalpBPT06YWVjOTEwYWM=
+// TODO
 
 interface PropertyNameProps {
   name: string
@@ -22,7 +22,7 @@ export const PropertyName = ({ name }: PropertyNameProps) => {
     </span>
   )
 }
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002YjNOalpBPT06YWVjOTEwYWM=
+// eslint-disable
 
 interface EditIconProps {
   onClick: () => void
@@ -42,7 +42,7 @@ interface PropertyValueProps {
   onClick?: () => void
   tooltip?: string
 }
-// eslint-disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002YjNOalpBPT06YWVjOTEwYWM=
+// eslint-disable
 
 export const PropertyValue = ({ value, onClick, tooltip }: PropertyValueProps) => (
   <div className="flex items-center gap-1 overflow-hidden">

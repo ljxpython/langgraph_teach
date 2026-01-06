@@ -79,7 +79,6 @@ router = APIRouter(
 
 # Temporary file prefix
 temp_prefix = "__tmp__"
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VveVpBPT06NWM1OTYzMWM=
 
 
 def sanitize_filename(filename: str, input_dir: Path) -> str:
@@ -143,7 +142,6 @@ class ScanResponse(BaseModel):
         default=None, description="Additional details about the scanning operation"
     )
     track_id: str = Field(description="Tracking ID for monitoring scanning progress")
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VveVpBPT06NWM1OTYzMWM=
 
     class Config:
         json_schema_extra = {
@@ -291,7 +289,7 @@ class InsertResponse(BaseModel):
     )
     message: str = Field(description="Message describing the operation result")
     track_id: str = Field(description="Tracking ID for monitoring processing status")
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VveVpBPT06NWM1OTYzMWM=
+# pylint: disable
 
     class Config:
         json_schema_extra = {
@@ -324,7 +322,6 @@ class ClearDocumentsResponse(BaseModel):
             }
         }
 
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VveVpBPT06NWM1OTYzMWM=
 
 class ClearCacheRequest(BaseModel):
     """Request model for clearing cache

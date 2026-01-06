@@ -14,7 +14,7 @@ export interface SubAgent {
   output?: Record<string, unknown>;
   status: "pending" | "active" | "completed" | "error";
 }
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VWtkUWN3PT06Y2ZmZjMxOTQ=
+// NOTE
 
 export interface FileItem {
   path: string;
@@ -27,7 +27,7 @@ export interface TodoItem {
   status: "pending" | "in_progress" | "completed";
   updatedAt?: Date;
 }
-// NOTE  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VWtkUWN3PT06Y2ZmZjMxOTQ=
+// NOTE
 
 export interface Thread {
   id: string;
@@ -57,4 +57,4 @@ export interface ToolApprovalInterruptData {
   action_requests: ActionRequest[];
   review_configs?: ReviewConfig[];
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VWtkUWN3PT06Y2ZmZjMxOTQ=
+// NOTE

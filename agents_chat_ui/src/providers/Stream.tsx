@@ -28,7 +28,7 @@ import { useThreads } from "./Thread";
 import { toast } from "sonner";
 
 export type StateType = { messages: Message[]; ui?: UIMessage[] };
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhsbE13PT06ZTIyMjVmNGI=
+// eslint-disable
 
 const useTypedStream = useStream<
   StateType,
@@ -44,7 +44,7 @@ const useTypedStream = useStream<
 
 type StreamContextType = ReturnType<typeof useTypedStream>;
 const StreamContext = createContext<StreamContextType | undefined>(undefined);
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhsbE13PT06ZTIyMjVmNGI=
+// NOTE
 
 async function sleep(ms = 4000) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -134,7 +134,7 @@ const StreamSession = ({
     </StreamContext.Provider>
   );
 };
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhsbE13PT06ZTIyMjVmNGI=
+// FIXME
 
 // Default values for the form
 const DEFAULT_API_URL = "http://localhost:2024";
@@ -262,7 +262,7 @@ export const StreamProvider: React.FC<{ children: ReactNode }> = ({
     </StreamSession>
   );
 };
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhsbE13PT06ZTIyMjVmNGI=
+// NOTE
 
 // Create a custom hook to use the context
 export const useStreamContext = (): StreamContextType => {

@@ -13,7 +13,6 @@ from lightrag.lightrag import LightRAG
 from raganything import RAGAnything
 from raganything.config import RAGAnythingConfig
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZURkd1dnPT06OTAwOTQ1NGY=
 
 class RAGAnythingProcessor:
     """
@@ -79,7 +78,6 @@ class RAGAnythingProcessor:
                 f"RAG-Anything initialized with parser={self.parser}, "
                 f"method={self.parse_method}, multimodal={self.enable_multimodal}"
             )
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZURkd1dnPT06OTAwOTQ1NGY=
 
         except ImportError as e:
             logger.error(
@@ -158,7 +156,6 @@ class RAGAnythingProcessor:
                 doc_id=doc_id,
                 file_path=str(file_path),
             )
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZURkd1dnPT06OTAwOTQ1NGY=
 
             logger.info(
                 f"Document processing complete: {file_path.name}, doc_id={doc_id}"
@@ -240,7 +237,6 @@ class RAGAnythingProcessor:
             ".txt",
             ".md",
         ]
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZURkd1dnPT06OTAwOTQ1NGY=
 
 
 def create_raganything_processor(

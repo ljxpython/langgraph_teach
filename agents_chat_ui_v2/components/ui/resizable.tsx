@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZVc1SGR3PT06MjZhOWNmMGY=
+// FIXME
 
 "use client";
 
@@ -21,7 +21,7 @@ const ResizablePanelGroup = ({
 );
 
 const ResizablePanel = ResizablePrimitive.Panel;
-// TODO  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZVc1SGR3PT06MjZhOWNmMGY=
+// TODO
 
 const ResizableHandle = ({
   withHandle,

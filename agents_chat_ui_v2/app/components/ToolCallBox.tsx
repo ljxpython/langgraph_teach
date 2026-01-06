@@ -1,4 +1,4 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpsbmNBPT06YWNkMTgzNmE=
+// eslint-disable
 
 "use client";
 
@@ -17,7 +17,7 @@ import { ToolCall, ActionRequest, ReviewConfig } from "@/app/types/types";
 import { cn } from "@/lib/utils";
 import { LoadExternalComponent } from "@langchain/langgraph-sdk/react-ui";
 import { ToolApprovalInterrupt } from "@/app/components/ToolApprovalInterrupt";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpsbmNBPT06YWNkMTgzNmE=
+// eslint-disable
 
 interface ToolCallBoxProps {
   toolCall: ToolCall;
@@ -29,7 +29,7 @@ interface ToolCallBoxProps {
   onResume?: (value: any) => void;
   isLoading?: boolean;
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpsbmNBPT06YWNkMTgzNmE=
+// FIXME
 
 export const ToolCallBox = React.memo<ToolCallBoxProps>(
   ({
@@ -230,6 +230,6 @@ export const ToolCallBox = React.memo<ToolCallBoxProps>(
     );
   }
 );
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWpsbmNBPT06YWNkMTgzNmE=
+// NOTE
 
 ToolCallBox.displayName = "ToolCallBox";

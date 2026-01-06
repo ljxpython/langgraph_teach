@@ -1,4 +1,4 @@
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YTBkcFN3PT06ZTNmMTdkZTA=
+// NOTE
 
 import { cn } from "@/lib/utils";
 
@@ -11,6 +11,6 @@ function Skeleton({ className, ...props }: React.ComponentProps<"div">) {
     />
   );
 }
-// FIXME  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YTBkcFN3PT06ZTNmMTdkZTA=
+// FIXME
 
 export { Skeleton };

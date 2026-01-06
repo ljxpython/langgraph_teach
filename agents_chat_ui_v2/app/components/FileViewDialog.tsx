@@ -1,7 +1,6 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Ym5WaGN3PT06ZjYwMjMwOTc=
+// NOTE
 
 "use client";
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Ym5WaGN3PT06ZjYwMjMwOTc=
 
 import React, { useMemo, useCallback, useState, useEffect } from "react";
 import { FileText, Copy, Download, Edit, Save, X, Loader2 } from "lucide-react";
@@ -52,7 +51,7 @@ const LANGUAGE_MAP: Record<string, string> = {
   dockerfile: "dockerfile",
   makefile: "makefile",
 };
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Ym5WaGN3PT06ZjYwMjMwOTc=
+// NOTE
 
 export const FileViewDialog = React.memo<{
   file: FileItem | null;
@@ -298,4 +297,4 @@ export const FileViewDialog = React.memo<{
 });
 
 FileViewDialog.displayName = "FileViewDialog";
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Ym5WaGN3PT06ZjYwMjMwOTc=
+// TODO

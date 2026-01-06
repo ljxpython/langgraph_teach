@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002WVVvM2F3PT06ZTkyNDM3ZGU=
+// NOTE
 
 import { cn } from "@/lib/utils";
 
@@ -35,7 +35,6 @@ const buttonVariants = cva(
     },
   }
 );
-// @ts-expect-error  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002WVVvM2F3PT06ZTkyNDM3ZGU=
 
 function Button({
   className,
@@ -59,4 +58,4 @@ function Button({
 }
 
 export { Button, buttonVariants };
-// FIXME  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002WVVvM2F3PT06ZTkyNDM3ZGU=
+// FIXME

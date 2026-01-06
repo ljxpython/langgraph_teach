@@ -9,7 +9,6 @@ from lightrag.constants import (
     DEFAULT_LOG_FILENAME,
 )
 
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEZGeVZRPT06N2Q1NDdhYjI=
 
 # Get log directory path from environment variable
 log_dir = os.getenv("LOG_DIR", os.getcwd())
@@ -36,7 +35,7 @@ preload_app = True
 worker_class = "uvicorn.workers.UvicornWorker"
 
 # Other Gunicorn configurations
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEZGeVZRPT06N2Q1NDdhYjI=
+# pylint: disable
 
 # Logging configuration
 errorlog = os.getenv("ERROR_LOG", log_file_path)  # Default write to lightrag.log
@@ -119,7 +118,6 @@ def on_starting(server):
 
     # Log the location of the LightRAG log file
     print(f"LightRAG log file: {log_file_path}\n")
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEZGeVZRPT06N2Q1NDdhYjI=
 
     print("Gunicorn initialization complete, forking workers...\n")
 
@@ -152,7 +150,7 @@ def post_fork(server, worker):
         "uvicorn.access", log_level, add_filter=True, log_file_path=log_file_path
     )
     setup_logger("lightrag", log_level, add_filter=True, log_file_path=log_file_path)
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZEZGeVZRPT06N2Q1NDdhYjI=
+# pylint: disable
 
     # Set up lightrag submodule loggers
     for name in logging.root.manager.loggerDict:

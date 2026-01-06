@@ -3,7 +3,7 @@ import { createSelectors } from '@/lib/utils'
 import { checkHealth, LightragStatus } from '@/api/lightrag'
 import { useSettingsStore } from './settings'
 import { healthCheckInterval } from '@/lib/constants'
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YVRoTU5nPT06ZTExMmRhM2U=
+// FIXME
 
 interface BackendState {
   health: boolean
@@ -152,7 +152,7 @@ const useBackendStateStoreBase = create<BackendState>()((set, get) => ({
     }
   }
 }))
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YVRoTU5nPT06ZTExMmRhM2U=
+// FIXME
 
 const useBackendState = createSelectors(useBackendStateStoreBase)
 
@@ -175,13 +175,13 @@ const getUsernameFromToken = (token: string): string | null => {
   const payload = parseTokenPayload(token);
   return payload.sub || null;
 };
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YVRoTU5nPT06ZTExMmRhM2U=
+// NOTE
 
 const isGuestToken = (token: string): boolean => {
   const payload = parseTokenPayload(token);
   return payload.role === 'guest';
 };
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YVRoTU5nPT06ZTExMmRhM2U=
+// TODO
 
 const initAuthState = (): { isAuthenticated: boolean; isGuestMode: boolean; coreVersion: string | null; apiVersion: string | null; username: string | null; webuiTitle: string | null; webuiDescription: string | null } => {
   const token = localStorage.getItem('LIGHTRAG-API-TOKEN');

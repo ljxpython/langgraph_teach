@@ -21,7 +21,6 @@ from k6_agent.k6.scenarios import (
 )
 from k6_agent.tools.k6_tools import K6ScriptGenerator, ApiEndpoint, HttpMethod
 
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJzMVVBPT06OTZjOGFjZTk=
 
 @dataclass
 class ScriptRequest:
@@ -32,7 +31,6 @@ class ScriptRequest:
     vus: Optional[int] = None
     duration: Optional[str] = None
     custom_options: Optional[Dict[str, Any]] = None
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJzMVVBPT06OTZjOGFjZTk=
 
 
 class ScriptGeneratorAgent:
@@ -124,7 +122,6 @@ class ScriptGeneratorAgent:
         )
         
         return generator.generate()
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJzMVVBPT06OTZjOGFjZTk=
     
     async def generate_with_knowledge(
         self,
@@ -148,7 +145,7 @@ class ScriptGeneratorAgent:
             # Get script patterns
             api_type = "REST"  # Could be detected from endpoints
             endpoint_names = [ep.get("name", "") for ep in request.endpoints]
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJzMVVBPT06OTZjOGFjZTk=
+# pylint: disable
             
             knowledge = await retriever.retrieve_script_patterns(
                 api_type=api_type,

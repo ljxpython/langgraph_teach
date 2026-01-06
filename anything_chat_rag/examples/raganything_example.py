@@ -22,7 +22,6 @@ sys.path.append(str(Path(__file__).parent.parent))
 from lightrag.llm.openai import openai_complete_if_cache, openai_embed
 from lightrag.utils import EmbeddingFunc, logger, set_verbose_debug
 from raganything import RAGAnything, RAGAnythingConfig
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UW5KclF3PT06MjU4YzkwNWQ=
 
 
 def configure_logging():
@@ -167,7 +166,7 @@ async def process_with_rag(
                 base_url=base_url,
             ),
         )
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UW5KclF3PT06MjU4YzkwNWQ=
+# pylint: disable
 
         # Initialize RAGAnything with new dataclass structure
         rag = RAGAnything(
@@ -234,7 +233,7 @@ async def process_with_rag(
     except Exception as e:
         logger.error(f"Error processing with RAG: {str(e)}")
         import traceback
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UW5KclF3PT06MjU4YzkwNWQ=
+# pylint: disable
 
         logger.error(traceback.format_exc())
 
@@ -257,7 +256,6 @@ def main():
     parser.add_argument("--base-url", help="Optional base URL for API")
 
     args = parser.parse_args()
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UW5KclF3PT06MjU4YzkwNWQ=
 
     # Check if API key is provided
     if not args.api_key:

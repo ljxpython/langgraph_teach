@@ -8,7 +8,7 @@ import { useLayoutForceAtlas2, useWorkerLayoutForceAtlas2 } from '@react-sigma/l
 import { useLayoutNoverlap, useWorkerLayoutNoverlap } from '@react-sigma/layout-noverlap'
 import { useLayoutRandom } from '@react-sigma/layout-random'
 import { useCallback, useMemo, useState, useEffect, useRef } from 'react'
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TVhWa1JRPT06MGZiNmE4NGQ=
+// NOTE
 
 import Button from '@/components/ui/Button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/Popover'
@@ -18,7 +18,7 @@ import { useSettingsStore } from '@/stores/settings'
 
 import { GripIcon, PlayIcon, PauseIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TVhWa1JRPT06MGZiNmE4NGQ=
+// TODO
 
 type LayoutName =
   | 'Circular'
@@ -32,7 +32,7 @@ type LayoutName =
 interface ExtendedWorkerLayoutControlProps extends WorkerLayoutControlProps {
   mainLayout: LayoutHook;
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TVhWa1JRPT06MGZiNmE4NGQ=
+// FIXME
 
 const WorkerLayoutControl = ({ layout, autoRunFor, mainLayout }: ExtendedWorkerLayoutControlProps) => {
   const sigma = useSigma()
@@ -346,4 +346,4 @@ const LayoutsControl = () => {
 }
 
 export default LayoutsControl
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TVhWa1JRPT06MGZiNmE4NGQ=
+// eslint-disable

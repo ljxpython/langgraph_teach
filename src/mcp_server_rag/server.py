@@ -84,7 +84,6 @@ class RAGConnector:
         milvus_collection: Optional[str] = None,
     ):
         """使用 LLM 和向量存储初始化 RAG 连接器"""
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UnpSeE9BPT06Y2UxNTE5NDU=
 
         # 初始化 LLM
         if llm_api_key:
@@ -226,7 +225,6 @@ class RAGConnector:
 
         except Exception as e:
             raise ValueError(f"检索失败：{str(e)}")
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UnpSeE9BPT06Y2UxNTE5NDU=
     
     async def rerank_results(
         self,

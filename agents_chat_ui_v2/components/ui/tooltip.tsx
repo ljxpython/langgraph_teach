@@ -2,10 +2,9 @@
 
 import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VmxSU1NRPT06MzRlNjg4ZmI=
+// NOTE
 
 import { cn } from "@/lib/utils";
-// @ts-expect-error  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VmxSU1NRPT06MzRlNjg4ZmI=
 
 function TooltipProvider({
   delayDuration = 0,
@@ -69,4 +68,4 @@ function TooltipContent({
 }
 
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VmxSU1NRPT06MzRlNjg4ZmI=
+// NOTE

@@ -1,4 +1,4 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Wm5KcFVBPT06OGU0N2UxMjQ=
+// eslint-disable
 
 import { useState, useCallback, useEffect, useRef } from 'react'
 import Button from '@/components/ui/Button'
@@ -16,7 +16,7 @@ import Checkbox from '@/components/ui/Checkbox'
 import { toast } from 'sonner'
 import { errorMessage } from '@/lib/utils'
 import { clearDocuments, clearCache } from '@/api/lightrag'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Wm5KcFVBPT06OGU0N2UxMjQ=
+// NOTE
 
 import { EraserIcon, AlertTriangleIcon, Loader2Icon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
@@ -36,12 +36,12 @@ const Label = ({
     {children}
   </label>
 )
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Wm5KcFVBPT06OGU0N2UxMjQ=
+// NOTE
 
 interface ClearDocumentsDialogProps {
   onDocumentsCleared?: () => Promise<void>
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Wm5KcFVBPT06OGU0N2UxMjQ=
+// NOTE
 
 export default function ClearDocumentsDialog({ onDocumentsCleared }: ClearDocumentsDialogProps) {
   const { t } = useTranslation()

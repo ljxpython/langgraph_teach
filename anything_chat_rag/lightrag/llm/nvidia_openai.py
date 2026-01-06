@@ -1,6 +1,6 @@
 import sys
 import os
-# pylint: disable  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um1NNWRRPT06ZGU2YTVhYzM=
+# pylint: disable
 
 if sys.version_info < (3, 9):
     pass
@@ -12,7 +12,6 @@ import pipmaster as pm  # Pipmaster for dynamic library install
 # install specific modules
 if not pm.is_installed("openai"):
     pm.install("openai")
-# type: ignore  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um1NNWRRPT06ZGU2YTVhYzM=
 
 from openai import (
     AsyncOpenAI,
@@ -34,7 +33,7 @@ from lightrag.utils import (
 
 import numpy as np
 
-# pylint: disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um1NNWRRPT06ZGU2YTVhYzM=
+# pylint: disable
 
 @wrap_embedding_func_with_attrs(embedding_dim=2048, max_token_size=8192)
 @retry(

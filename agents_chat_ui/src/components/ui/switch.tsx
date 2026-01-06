@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as SwitchPrimitive from "@radix-ui/react-switch";
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YWxCT1VRPT06YTEwNTQ5M2I=
 
 import { cn } from "@/lib/utils";
 
@@ -26,6 +25,6 @@ function Switch({
     </SwitchPrimitive.Root>
   );
 }
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YWxCT1VRPT06YTEwNTQ5M2I=
+// eslint-disable
 
 export { Switch };

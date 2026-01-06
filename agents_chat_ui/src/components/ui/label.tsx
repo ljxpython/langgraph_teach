@@ -1,9 +1,8 @@
 import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
-// TODO  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WXpFM1FRPT06YmE2ZmVhOTI=
+// TODO
 
 import { cn } from "@/lib/utils";
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WXpFM1FRPT06YmE2ZmVhOTI=
 
 function Label({
   className,

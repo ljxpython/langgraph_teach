@@ -1,4 +1,4 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGt4U1NRPT06NWEyYWE3OTk=
+// TODO
 
 /**
  * @see https://github.com/sadmann7/file-uploader
@@ -128,7 +128,6 @@ function formatBytes(
     sizeType === 'accurate' ? (accurateSizes[i] ?? 'Bytes') : (sizes[i] ?? 'Bytes')
   }`
 }
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGt4U1NRPT06NWEyYWE3OTk=
 
 function FileUploader(props: FileUploaderProps) {
   const { t } = useTranslation()
@@ -393,7 +392,7 @@ function Progress({ value, error }: ProgressProps) {
     </div>
   )
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGt4U1NRPT06NWEyYWE3OTk=
+// eslint-disable
 
 interface FileCardProps {
   file: File
@@ -446,7 +445,7 @@ function isFileWithPreview(file: File): file is File & { preview: string } {
 interface FilePreviewProps {
   file: File & { preview: string }
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGt4U1NRPT06NWEyYWE3OTk=
+// eslint-disable
 
 function FilePreview({ file }: FilePreviewProps) {
   if (file.type.startsWith('image/')) {

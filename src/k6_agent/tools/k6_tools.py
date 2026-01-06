@@ -27,7 +27,6 @@ from k6_agent.k6.scenarios import (
     Threshold,
 )
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUd3eWJBPT06ZWIzZTkyMWM=
 
 class HttpMethod(str, Enum):
     """HTTP methods."""
@@ -123,7 +122,6 @@ class K6ScriptGenerator:
     test_data: Optional[TestData] = None
     setup_code: Optional[str] = None
     teardown_code: Optional[str] = None
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUd3eWJBPT06ZWIzZTkyMWM=
     
     def add_endpoint(self, endpoint: ApiEndpoint) -> "K6ScriptGenerator":
         """Add an endpoint to test."""
@@ -195,7 +193,6 @@ export function teardown(data) {{
         if metric_types:
             types_str = ", ".join(t.value for t in metric_types)
             imports.append(f"import {{ {types_str} }} from 'k6/metrics';")
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUd3eWJBPT06ZWIzZTkyMWM=
 
         # Add data import
         if self.test_data:
@@ -304,7 +301,6 @@ def create_k6_script_tool():
             "soak": create_soak_test_options,
             "breakpoint": create_breakpoint_test_options,
         }
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUd3eWJBPT06ZWIzZTkyMWM=
 
         factory = options_factory.get(test_type, create_load_test_options)
         options = factory()

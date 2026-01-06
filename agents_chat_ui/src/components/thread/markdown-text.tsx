@@ -1,4 +1,4 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TlU1T1dnPT06OWE1MjJkYTI=
+// FIXME
 
 "use client";
 
@@ -11,7 +11,7 @@ import remarkMath from "remark-math";
 import { FC, memo, useState } from "react";
 import { CheckIcon, CopyIcon } from "lucide-react";
 import { SyntaxHighlighter } from "@/components/thread/syntax-highlighter";
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TlU1T1dnPT06OWE1MjJkYTI=
+// TODO
 
 import { TooltipIconButton } from "@/components/thread/tooltip-icon-button";
 import { cn } from "@/lib/utils";
@@ -22,7 +22,7 @@ interface CodeHeaderProps {
   language?: string;
   code: string;
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TlU1T1dnPT06OWE1MjJkYTI=
+// FIXME
 
 const useCopyToClipboard = ({
   copiedDuration = 3000,
@@ -279,4 +279,4 @@ const MarkdownTextImpl: FC<{ children: string }> = ({ children }) => {
 };
 
 export const MarkdownText = memo(MarkdownTextImpl);
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TlU1T1dnPT06OWE1MjJkYTI=
+// NOTE

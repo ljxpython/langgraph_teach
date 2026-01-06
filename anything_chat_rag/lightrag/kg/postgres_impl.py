@@ -71,7 +71,6 @@ class PostgreSQLDB:
         self.ssl_key = config.get("ssl_key")
         self.ssl_root_cert = config.get("ssl_root_cert")
         self.ssl_crl = config.get("ssl_crl")
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YkVoa1VRPT06ZDQxOGFjMGU=
 
         # Vector configuration
         self.vector_index_type = config.get("vector_index_type")
@@ -137,7 +136,6 @@ class PostgreSQLDB:
             elif ssl_mode in ["require", "prefer", "allow"]:
                 # Return None for simple SSL requirement, handled in initdb
                 return None
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YkVoa1VRPT06ZDQxOGFjMGU=
 
         # For modes that require certificate verification
         if ssl_mode in ["verify-ca", "verify-full"]:
@@ -380,7 +378,6 @@ class PostgreSQLDB:
         except Exception as e:
             logger.warning(f"Could not create VECTOR extension: {e}")
             # Don't raise - let the system continue without vector extension
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YkVoa1VRPT06ZDQxOGFjMGU=
 
     @staticmethod
     async def configure_age_extension(connection: asyncpg.Connection) -> None:
@@ -555,7 +552,6 @@ class PostgreSQLDB:
 
         except Exception as e:
             logger.warning(f"Failed to migrate LLM cache schema: {e}")
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YkVoa1VRPT06ZDQxOGFjMGU=
 
     async def _migrate_timestamp_columns(self):
         """Migrate timestamp columns in tables to witimezone-free types, assuming original data is in UTC time"""

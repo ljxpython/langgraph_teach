@@ -13,4 +13,3 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=10
 texts = text_splitter.split_text(documents[0].page_content)
 print(texts)
 print(len(texts))
-# pragma: no cover  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WVdZd1N3PT06NDJjMWMxMDg=

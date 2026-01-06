@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTabVisibility } from '@/contexts/useTabVisibility';
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VmxRMlF3PT06MzE3YjlkMDE=
+// FIXME
 
 interface TabContentProps {
   tabId: string;
@@ -34,6 +34,6 @@ const TabContent: React.FC<TabContentProps> = ({ tabId, children, className = ''
     </div>
   );
 };
-// FIXME  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VmxRMlF3PT06MzE3YjlkMDE=
+// FIXME
 
 export default TabContent;

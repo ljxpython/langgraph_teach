@@ -1,4 +1,4 @@
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WTNoRGFnPT06OGFkMWI4NjU=
+// NOTE
 
 import { useFullScreen } from '@react-sigma/core'
 import { MaximizeIcon, MinimizeIcon } from 'lucide-react'
@@ -29,4 +29,4 @@ const FullScreenControl = () => {
 }
 
 export default FullScreenControl
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WTNoRGFnPT06OGFkMWI4NjU=
+// eslint-disable

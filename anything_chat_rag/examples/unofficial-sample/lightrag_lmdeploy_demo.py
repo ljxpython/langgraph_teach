@@ -1,5 +1,4 @@
 import os
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJOVFlRPT06M2ExNzliNDk=
 
 from lightrag import LightRAG, QueryParam
 from lightrag.llm.lmdeploy import lmdeploy_model_if_cache
@@ -16,7 +15,6 @@ WORKING_DIR = "./dickens"
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJOVFlRPT06M2ExNzliNDk=
 
 
 async def lmdeploy_model_complete(
@@ -65,7 +63,6 @@ async def initialize_rag():
 
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJOVFlRPT06M2ExNzliNDk=
 
 
 def main():
@@ -90,7 +87,6 @@ def main():
             "What are the top themes in this story?", param=QueryParam(mode="local")
         )
     )
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJOVFlRPT06M2ExNzliNDk=
 
     print("\nGlobal Search:")
     print(

@@ -1,11 +1,10 @@
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002WkRGU1pBPT06MmYyNGQ4NjE=
 
 import { cn } from '@/lib/utils'
 import { useBackendState } from '@/stores/state'
 import { useEffect, useState } from 'react'
 import StatusDialog from './StatusDialog'
 import { useTranslation } from 'react-i18next'
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002WkRGU1pBPT06MmYyNGQ4NjE=
+// eslint-disable
 
 const StatusIndicator = () => {
   const { t } = useTranslation()
@@ -53,4 +52,4 @@ const StatusIndicator = () => {
 }
 
 export default StatusIndicator
-// eslint-disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002WkRGU1pBPT06MmYyNGQ4NjE=
+// eslint-disable

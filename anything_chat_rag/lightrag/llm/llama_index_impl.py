@@ -29,7 +29,7 @@ from lightrag.exceptions import (
 )
 import numpy as np
 
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WWpsM2FBPT06MjJkODZlY2U=
+# pylint: disable
 
 def configure_llama_index(settings: LlamaIndexSettings = None, **kwargs):
     """
@@ -53,7 +53,6 @@ def configure_llama_index(settings: LlamaIndexSettings = None, **kwargs):
     LlamaIndexSettings.set_global(settings)
     return settings
 
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WWpsM2FBPT06MjJkODZlY2U=
 
 def format_chat_messages(messages):
     """Format chat messages into LlamaIndex format."""
@@ -113,7 +112,6 @@ async def llama_index_complete_if_cache(
             formatted_messages.append(
                 ChatMessage(role=MessageRole.SYSTEM, content=system_prompt)
             )
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WWpsM2FBPT06MjJkODZlY2U=
 
         # Add history messages
         for msg in history_messages:
@@ -209,4 +207,3 @@ async def llama_index_embed(
     # Use _get_text_embeddings for batch processing
     embeddings = embed_model._get_text_embeddings(texts)
     return np.array(embeddings)
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WWpsM2FBPT06MjJkODZlY2U=

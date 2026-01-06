@@ -11,7 +11,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UVVSNGR3PT06ZDg4Y2M5OGM=
+// NOTE
 
 type Setter<T> = (value: T | ((value: T) => T)) => void;
 
@@ -24,7 +24,7 @@ const ArtifactSlotContext = createContext<{
 
   context: [Record<string, unknown>, Setter<Record<string, unknown>>];
 }>(null!);
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UVVSNGR3PT06ZDg4Y2M5OGM=
+// NOTE
 
 /**
  * Headless component that will obtain the title and content of the artifact
@@ -96,7 +96,7 @@ export function ArtifactTitle(props: HTMLAttributes<HTMLDivElement>) {
     />
   );
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UVVSNGR3PT06ZDg4Y2M5OGM=
+// TODO
 
 export function ArtifactProvider(props: { children?: ReactNode }) {
   const content = useState<HTMLElement | null>(null);
@@ -181,7 +181,7 @@ export function useArtifactOpen() {
 
   return [open, onClose] as const;
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UVVSNGR3PT06ZDg4Y2M5OGM=
+// FIXME
 
 /**
  * Artifacts may at their discretion provide additional context

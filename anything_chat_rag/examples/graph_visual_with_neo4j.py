@@ -2,7 +2,6 @@ import os
 import json
 import xml.etree.ElementTree as ET
 from neo4j import GraphDatabase
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pBeWNBPT06ODI2MDU4Mzg=
 
 # Constants
 WORKING_DIR = "./dickens"
@@ -73,7 +72,7 @@ def xml_to_json(xml_file):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pBeWNBPT06ODI2MDU4Mzg=
+# pylint: disable
 
 
 def convert_xml_to_json(xml_path, output_path):
@@ -104,7 +103,6 @@ def main():
     # Paths
     xml_file = os.path.join(WORKING_DIR, "graph_chunk_entity_relation.graphml")
     json_file = os.path.join(WORKING_DIR, "graph_data.json")
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pBeWNBPT06ODI2MDU4Mzg=
 
     # Convert XML to JSON
     json_data = convert_xml_to_json(xml_file, json_file)
@@ -169,7 +167,6 @@ def main():
             session.execute_write(
                 process_in_batches, create_nodes_query, nodes, BATCH_SIZE_NODES
             )
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pBeWNBPT06ODI2MDU4Mzg=
 
             # Insert edges in batches
             session.execute_write(

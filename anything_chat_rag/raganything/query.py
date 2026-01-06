@@ -139,7 +139,6 @@ class QueryMixin:
             self.logger.warning(
                 "VLM enhanced query requested but vision_model_func is not available, falling back to normal query"
             )
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFGdFRRPT06ZTMwMzA2NTA=
 
         # Create query parameters
         query_param = QueryParam(mode=mode, **kwargs)
@@ -241,7 +240,6 @@ class QueryMixin:
         enhanced_query = await self._process_multimodal_query_content(
             query, multimodal_content
         )
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFGdFRRPT06ZTMwMzA2NTA=
 
         self.logger.info(
             f"Generated enhanced query length: {len(enhanced_query)} characters"
@@ -340,7 +338,6 @@ class QueryMixin:
             return await self.lightrag.aquery(query, param=query_param)
 
         self.logger.info(f"Processed {images_found} images for VLM")
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFGdFRRPT06ZTMwMzA2NTA=
 
         # 3. Build VLM message format
         messages = self._build_vlm_messages_with_images(enhanced_prompt, query)
@@ -429,7 +426,6 @@ class QueryMixin:
                 return await self._describe_generic_for_query(
                     processor, content, content_type
                 )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UjFGdFRRPT06ZTMwMzA2NTA=
 
         except Exception as e:
             self.logger.error(f"Error generating {content_type} description: {str(e)}")

@@ -12,7 +12,7 @@ import nest_asyncio
 
 nest_asyncio.apply()
 
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YW1od1ZRPT06NmJjZTAwNjY=
+# pylint: disable
 
 # Configure working directory
 WORKING_DIR = "./index_default"
@@ -58,7 +58,6 @@ async def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwar
     except Exception as e:
         print(f"LLM request failed: {str(e)}")
         raise
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YW1od1ZRPT06NmJjZTAwNjY=
 
 
 # Initialize embedding function
@@ -86,7 +85,6 @@ async def get_embedding_dim():
 
 async def initialize_rag():
     embedding_dimension = await get_embedding_dim()
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YW1od1ZRPT06NmJjZTAwNjY=
 
     rag = LightRAG(
         working_dir=WORKING_DIR,
@@ -142,4 +140,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YW1od1ZRPT06NmJjZTAwNjY=
+# pylint: disable

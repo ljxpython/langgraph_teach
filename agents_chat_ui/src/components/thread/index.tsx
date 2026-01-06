@@ -45,7 +45,6 @@ import {
   ArtifactTitle,
   useArtifactContext,
 } from "./artifact";
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5GdVpRPT06NTc3MGQzOGQ=
 
 function StickyToBottomContent(props: {
   content: ReactNode;
@@ -87,7 +86,6 @@ function ScrollToBottom(props: { className?: string }) {
     </Button>
   );
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5GdVpRPT06NTc3MGQzOGQ=
 
 function OpenGitHubRepo() {
   return (
@@ -602,4 +600,4 @@ export function Thread() {
     </div>
   );
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5GdVpRPT06NTc3MGQzOGQ=
+// eslint-disable

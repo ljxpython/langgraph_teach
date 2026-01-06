@@ -63,4 +63,3 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
 };
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002TlVGTVRnPT06ZmMwYTIwMTc=

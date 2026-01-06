@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// FIXME  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZG5SVU5nPT06ZTlhNGZiNjk=
+// FIXME
 
 export function useMediaQuery(query: string) {
   const [matches, setMatches] = useState(false);

@@ -1,5 +1,5 @@
 import * as React from "react";
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WjFVNVRBPT06NTY0NmM3NTE=
+// eslint-disable
 
 import { cn } from "@/lib/utils";
 
@@ -22,4 +22,4 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
 Textarea.displayName = "Textarea";
 
 export { Textarea };
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WjFVNVRBPT06NTY0NmM3NTE=
+// eslint-disable

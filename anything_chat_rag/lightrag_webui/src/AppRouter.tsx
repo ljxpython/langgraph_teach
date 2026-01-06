@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YkRSSmFBPT06OTg0NDkxMDk=
+// NOTE
 
 import '@/lib/extensions'; // Import all global extensions
 import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
@@ -9,7 +9,7 @@ import { Toaster } from 'sonner'
 import App from './App'
 import LoginPage from '@/features/LoginPage'
 import ThemeProvider from '@/components/ThemeProvider'
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YkRSSmFBPT06OTg0NDkxMDk=
+// eslint-disable
 
 const AppContent = () => {
   const [initializing, setInitializing] = useState(true)
@@ -78,7 +78,7 @@ const AppContent = () => {
     </Routes>
   )
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YkRSSmFBPT06OTg0NDkxMDk=
+// FIXME
 
 const AppRouter = () => {
   return (
@@ -97,4 +97,4 @@ const AppRouter = () => {
 }
 
 export default AppRouter
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YkRSSmFBPT06OTg0NDkxMDk=
+// FIXME

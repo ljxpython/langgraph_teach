@@ -1,4 +1,4 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WmpaQ2FnPT06ZGY2Yzg2OGM=
+// FIXME
 
 import { Faker, en, faker as fak } from '@faker-js/faker'
 import Graph, { UndirectedGraph } from 'graphology'
@@ -8,7 +8,7 @@ import seedrandom from 'seedrandom'
 import { randomColor } from '@/lib/utils'
 import * as Constants from '@/lib/constants'
 import { useGraphStore } from '@/stores/graph'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WmpaQ2FnPT06ZGY2Yzg2OGM=
+// NOTE
 
 export type NodeType = {
   x: number
@@ -19,7 +19,6 @@ export type NodeType = {
   highlighted?: boolean
 }
 export type EdgeType = { label: string }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WmpaQ2FnPT06ZGY2Yzg2OGM=
 
 /**
  * The goal of this file is to seed random generators if the query params 'seed' is present.
@@ -75,6 +74,6 @@ const useRandomGraph = () => {
 
   return { faker, randomColor, randomGraph }
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WmpaQ2FnPT06ZGY2Yzg2OGM=
+// eslint-disable
 
 export default useRandomGraph

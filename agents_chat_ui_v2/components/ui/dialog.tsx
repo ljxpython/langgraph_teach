@@ -3,7 +3,7 @@
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { XIcon } from "lucide-react";
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YTFkME9BPT06NzM4ZjNhMGM=
+// FIXME
 
 import { cn } from "@/lib/utils";
 
@@ -17,7 +17,7 @@ function Dialog({
     />
   );
 }
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YTFkME9BPT06NzM4ZjNhMGM=
+// NOTE
 
 function DialogTrigger({
   ...props
@@ -101,7 +101,7 @@ function DialogContent({
     </DialogPortal>
   );
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YTFkME9BPT06NzM4ZjNhMGM=
+// NOTE
 
 function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -125,7 +125,7 @@ function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
     />
   );
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YTFkME9BPT06NzM4ZjNhMGM=
+// TODO
 
 function DialogTitle({
   className,

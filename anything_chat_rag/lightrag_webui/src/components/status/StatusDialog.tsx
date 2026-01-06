@@ -8,14 +8,14 @@ import {
   DialogDescription,
 } from '@/components/ui/Dialog'
 import StatusCard from './StatusCard'
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002T1ZaYVJBPT06MTE0MTZiOGE=
+// eslint-disable
 
 interface StatusDialogProps {
   open: boolean
   onOpenChange: (open: boolean) => void
   status: LightragStatus | null
 }
-// TODO  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002T1ZaYVJBPT06MTE0MTZiOGE=
+// TODO
 
 const StatusDialog = ({ open, onOpenChange, status }: StatusDialogProps) => {
   const { t } = useTranslation()

@@ -1,11 +1,10 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V2t0UmNnPT06MTM0NzFjODk=
+// FIXME
 
 import { useRegisterEvents, useSetSettings, useSigma } from '@react-sigma/core'
 import { AbstractGraph } from 'graphology-types'
 // import { useLayoutCircular } from '@react-sigma/layout-circular'
 import { useLayoutForceAtlas2 } from '@react-sigma/layout-forceatlas2'
 import { useEffect, useState } from 'react'
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V2t0UmNnPT06MTM0NzFjODk=
 
 // import useRandomGraph, { EdgeType, NodeType } from '@/hooks/useRandomGraph'
 import { EdgeType, NodeType } from '@/hooks/useLightragGraph'
@@ -14,7 +13,6 @@ import * as Constants from '@/lib/constants'
 
 import { useSettingsStore } from '@/stores/settings'
 import { useGraphStore } from '@/stores/graph'
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V2t0UmNnPT06MTM0NzFjODk=
 
 const isButtonPressed = (ev: MouseEvent | TouchEvent) => {
   if (ev.type.startsWith('mouse')) {
@@ -362,6 +360,5 @@ const GraphControl = ({ disableHoverEffect }: { disableHoverEffect?: boolean }) 
 
   return null
 }
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V2t0UmNnPT06MTM0NzFjODk=
 
 export default GraphControl

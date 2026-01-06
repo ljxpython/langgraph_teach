@@ -8,7 +8,6 @@ from lightrag import LightRAG
 from lightrag.utils import EmbeddingFunc
 from lightrag.llm.openai import openai_complete_if_cache, openai_embed
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VTNGUWFRPT06MWM0YjYwOWY=
 
 ## For Upstage API
 # please check if embedding_dim=4096 in lightrag.py and llm.py in lightrag direcotry
@@ -37,7 +36,6 @@ async def embedding_func(texts: list[str]) -> np.ndarray:
 
 ## /For Upstage API
 
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VTNGUWFRPT06MWM0YjYwOWY=
 
 def insert_text(rag, file_path):
     with open(file_path, mode="r") as f:
@@ -62,7 +60,6 @@ WORKING_DIR = f"../{cls}"
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VTNGUWFRPT06MWM0YjYwOWY=
 
 
 async def initialize_rag():
@@ -84,4 +81,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VTNGUWFRPT06MWM0YjYwOWY=
+# pylint: disable

@@ -17,7 +17,6 @@ from dotenv import load_dotenv
 # 加载环境变量
 load_dotenv()
 
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Tms5eVZBPT06OWY0ZDgyYmY=
 
 
 class Environment(str, Enum):
@@ -94,7 +93,6 @@ class MonitoringConfig:
     enable_cloud: bool = field(default_factory=lambda: os.getenv("K6_CLOUD_ENABLED", "false").lower() == "true")
     cloud_token: Optional[str] = field(default_factory=lambda: os.getenv("K6_CLOUD_TOKEN"))
     cloud_project_id: Optional[str] = field(default_factory=lambda: os.getenv("K6_CLOUD_PROJECT_ID"))
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Tms5eVZBPT06OWY0ZDgyYmY=
 
 
 @dataclass
@@ -198,7 +196,6 @@ class K6AgentConfig:
         """Initialize workspace directory."""
         self.workspace_dir = Path(self.workspace_dir)
         self.workspace_dir.mkdir(parents=True, exist_ok=True)
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Tms5eVZBPT06OWY0ZDgyYmY=
 
     @classmethod
     def from_env(cls) -> "K6AgentConfig":
@@ -307,5 +304,4 @@ class K6AgentConfig:
         temp_dir = Path(tempfile.gettempdir()) / "k6_scripts"
         temp_dir.mkdir(parents=True, exist_ok=True)
         return temp_dir
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Tms5eVZBPT06OWY0ZDgyYmY=
 

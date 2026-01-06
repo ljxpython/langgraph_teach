@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VDJ0d2FnPT06NzMzMzM2NGI=
+// FIXME
 
 import { useContext } from 'react';
 import { TabVisibilityContext } from './context';
@@ -17,4 +17,4 @@ export const useTabVisibility = (): TabVisibilityContextType => {
 
   return context;
 };
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VDJ0d2FnPT06NzMzMzM2NGI=
+// NOTE

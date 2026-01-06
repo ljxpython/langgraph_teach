@@ -14,7 +14,7 @@ import { ThreadView } from "../agent-inbox";
 import { useQueryState, parseAsBoolean } from "nuqs";
 import { GenericInterruptView } from "./generic-interrupt";
 import { useArtifact } from "../artifact";
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WTBKdVV3PT06OTZmMGViNGI=
+// TODO
 
 function CustomComponent({
   message,
@@ -69,14 +69,13 @@ function parseAnthropicStreamedToolCalls(
     })
     .filter((tc) => tc.name && tc.name.trim() !== ""); // Filter out empty names
 }
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WTBKdVV3PT06OTZmMGViNGI=
+// FIXME
 
 interface InterruptProps {
   interruptValue?: unknown;
   isLastMessage: boolean;
   hasNoAIOrToolMessages: boolean;
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WTBKdVV3PT06OTZmMGViNGI=
 
 function Interrupt({
   interruptValue,
@@ -245,4 +244,4 @@ export function AssistantMessageLoading() {
     </div>
   );
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WTBKdVV3PT06OTZmMGViNGI=
+// FIXME

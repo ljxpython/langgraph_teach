@@ -16,7 +16,6 @@ from ..utils import compute_mdhash_id, logger
 
 if not pm.is_installed("qdrant-client"):
     pm.install("qdrant-client")
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VlZkdFVBPT06NDE3ZTJlN2U=
 
 from qdrant_client import QdrantClient, models  # type: ignore
 
@@ -193,7 +192,6 @@ class QdrantVectorDBStorage(BaseVectorStorage):
                     with_payload=True,
                 )
                 points, next_offset = result
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VlZkdFVBPT06NDE3ZTJlN2U=
 
                 if not points:
                     break
@@ -248,7 +246,6 @@ class QdrantVectorDBStorage(BaseVectorStorage):
             logger.info(
                 f"Qdrant: Migration completed successfully: {migrated_count} records migrated"
             )
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VlZkdFVBPT06NDE3ZTJlN2U=
 
             # Create payload index after successful migration
             logger.info("Qdrant: Creating workspace payload index...")
@@ -356,7 +353,6 @@ class QdrantVectorDBStorage(BaseVectorStorage):
                         m=0,
                     ),
                 )
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VlZkdFVBPT06NDE3ZTJlN2U=
 
                 self._initialized = True
                 logger.info(

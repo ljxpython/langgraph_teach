@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VUcxcFp3PT06N2Q1NmQyMmE=
+// FIXME
 
 import Button from '@/components/ui/Button'
 import useTheme from '@/hooks/useTheme'
@@ -41,4 +41,3 @@ export default function ThemeToggle() {
     </Button>
   )
 }
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VUcxcFp3PT06N2Q1NmQyMmE=

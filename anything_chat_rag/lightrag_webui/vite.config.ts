@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UkVzM2RRPT06OWI1NjI0MjU=
+// FIXME
 
 import { defineConfig } from 'vite'
 import path from 'path'
@@ -49,4 +49,3 @@ export default defineConfig({
       ) : {}
   }
 })
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UkVzM2RRPT06OWI1NjI0MjU=

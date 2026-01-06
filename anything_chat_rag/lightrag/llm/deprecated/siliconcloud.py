@@ -9,7 +9,6 @@ import pipmaster as pm  # Pipmaster for dynamic library install
 # install specific modules
 if not pm.is_installed("lmdeploy"):
     pm.install("lmdeploy")
-# type: ignore  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002UVZKb1FRPT06YzVmZTE2MTc=
 
 from openai import (
     APIConnectionError,
@@ -46,12 +45,10 @@ async def siliconcloud_embedding(
 ) -> np.ndarray:
     if api_key and not api_key.startswith("Bearer "):
         api_key = "Bearer " + api_key
-# type: ignore  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002UVZKb1FRPT06YzVmZTE2MTc=
 
     headers = {"Authorization": api_key, "Content-Type": "application/json"}
 
     truncate_texts = [text[0:max_token_size] for text in texts]
-# fmt: off  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002UVZKb1FRPT06YzVmZTE2MTc=
 
     payload = {"model": model, "input": truncate_texts, "encoding_format": "base64"}
 

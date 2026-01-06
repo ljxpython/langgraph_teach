@@ -1,5 +1,5 @@
 "use client";
-// TODO  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YVd0Ull3PT06Y2FmYzM2MWM=
+// TODO
 
 import { ReactNode, createContext, useContext } from "react";
 import { Assistant } from "@langchain/langgraph-sdk";
@@ -24,7 +24,6 @@ export function ChatProvider({
 }
 
 export type ChatContextType = ReturnType<typeof useChat>;
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YVd0Ull3PT06Y2FmYzM2MWM=
 
 export const ChatContext = createContext<ChatContextType | undefined>(
   undefined

@@ -21,7 +21,6 @@ def configure_logging():
     # Get log directory path from environment variable or use current directory
     log_dir = os.getenv("LOG_DIR", os.getcwd())
     log_file_path = os.path.abspath(os.path.join(log_dir, "lightrag_demo.log"))
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VFdGMlZ3PT06M2M1ZGZkNmU=
 
     print(f"\nLightRAG demo log file: {log_file_path}\n")
     os.makedirs(os.path.dirname(log_dir), exist_ok=True)
@@ -71,7 +70,6 @@ def configure_logging():
     logger.setLevel(logging.INFO)
     # Enable verbose debug if needed
     set_verbose_debug(os.getenv("VERBOSE_DEBUG", "false").lower() == "true")
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VFdGMlZ3PT06M2M1ZGZkNmU=
 
 
 if not os.path.exists(WORKING_DIR):
@@ -86,7 +84,6 @@ async def initialize_rag():
     )
 
     await rag.initialize_storages()  # Auto-initializes pipeline_status
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VFdGMlZ3PT06M2M1ZGZkNmU=
 
     return rag
 
@@ -131,7 +128,6 @@ async def main():
         print("========================")
         print(f"Test dict: {test_text}")
         print(f"Detected embedding dimension: {embedding_dim}\n\n")
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VFdGMlZ3PT06M2M1ZGZkNmU=
 
         with open("./book.txt", "r", encoding="utf-8") as f:
             await rag.ainsert(f.read())

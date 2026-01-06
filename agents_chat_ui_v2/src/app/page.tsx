@@ -1,7 +1,7 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUhCMGN3PT06MWRhMWU2NjQ=
+// TODO
 
 "use client";
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUhCMGN3PT06MWRhMWU2NjQ=
+// NOTE
 
 import React, { useState, useEffect, useCallback, Suspense } from "react";
 import { useQueryState } from "nuqs";
@@ -26,7 +26,7 @@ interface HomePageInnerProps {
   setConfigDialogOpen: (open: boolean) => void;
   handleSaveConfig: (config: StandaloneConfig) => void;
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUhCMGN3PT06MWRhMWU2NjQ=
+// FIXME
 
 function HomePageInner({
   config,
@@ -281,7 +281,7 @@ function HomePageContent() {
     </ClientProvider>
   );
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUhCMGN3PT06MWRhMWU2NjQ=
+// FIXME
 
 export default function HomePage() {
   return (

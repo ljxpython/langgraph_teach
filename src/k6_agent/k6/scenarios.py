@@ -25,7 +25,6 @@ class ExecutorType(str, Enum):
     CONSTANT_ARRIVAL_RATE = "constant-arrival-rate"
     RAMPING_ARRIVAL_RATE = "ramping-arrival-rate"
     EXTERNALLY_CONTROLLED = "externally-controlled"
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TlZaUFVBPT06NmVkNzQ3YTE=
 
 
 class MetricType(str, Enum):
@@ -119,7 +118,6 @@ class TestData:
   return JSON.parse(open('{self.file_path}'));
 }});"""
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TlZaUFVBPT06NmVkNzQ3YTE=
 
 @dataclass
 class K6Scenario:
@@ -270,7 +268,6 @@ class K6Options:
             result["discardResponseBodies"] = True
         if self.tags:
             result["tags"] = self.tags
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TlZaUFVBPT06NmVkNzQ3YTE=
 
         return result
 
@@ -440,7 +437,6 @@ def create_spike_test_options(
         executor=ExecutorType.RAMPING_VUS,
         stages=stages,
     )
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TlZaUFVBPT06NmVkNzQ3YTE=
 
     default_thresholds = {
         "http_req_failed": Threshold("http_req_failed", ["rate<0.10"]),

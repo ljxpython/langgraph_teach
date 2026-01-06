@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UkdoSVNBPT06MTZhZGNlMzI=
 
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import { forwardRef, useCallback, useEffect, useState } from 'react'
@@ -21,7 +20,7 @@ export interface NumberInputProps extends Omit<NumericFormatProps, 'value' | 'on
   fixedDecimalScale?: boolean
   decimalScale?: number
 }
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UkdoSVNBPT06MTZhZGNlMzI=
+// NOTE
 
 const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
   (
@@ -128,9 +127,8 @@ const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
     )
   }
 )
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UkdoSVNBPT06MTZhZGNlMzI=
 
 NumberInput.displayName = 'NumberInput'
 
 export default NumberInput
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UkdoSVNBPT06MTZhZGNlMzI=
+// FIXME

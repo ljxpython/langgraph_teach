@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002TVV4NWRRPT06YTlmOTgwZDA=
+// FIXME
 
 import React from "react";
 import { Button } from "./button";
@@ -42,4 +42,3 @@ export function TooltipIconButton({
     </TooltipProvider>
   );
 }
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002TVV4NWRRPT06YTlmOTgwZDA=

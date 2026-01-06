@@ -12,7 +12,7 @@ import {
   SetStateAction,
 } from "react";
 import { createClient } from "./client";
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V0RONk5BPT06NWE4MDdkMDM=
+// TODO
 
 interface ThreadContextType {
   getThreads: () => Promise<Thread[]>;
@@ -34,7 +34,7 @@ function getThreadSearchMetadata(
     return { graph_id: assistantId };
   }
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V0RONk5BPT06NWE4MDdkMDM=
+// NOTE
 
 export function ThreadProvider({ children }: { children: ReactNode }) {
   // Get environment variables
@@ -101,4 +101,3 @@ export function useThreads() {
   }
   return context;
 }
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V0RONk5BPT06NWE4MDdkMDM=

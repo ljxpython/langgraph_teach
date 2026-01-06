@@ -1,10 +1,10 @@
-// TODO  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um1aeU1nPT06NjY3NDllNjc=
+// TODO
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { TabVisibilityContext } from './context';
 import { TabVisibilityContextType } from './types';
 import { useSettingsStore } from '@/stores/settings';
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um1aeU1nPT06NjY3NDllNjc=
+// TODO
 
 interface TabVisibilityProviderProps {
   children: React.ReactNode;
@@ -58,6 +58,6 @@ export const TabVisibilityProvider: React.FC<TabVisibilityProviderProps> = ({ ch
     </TabVisibilityContext.Provider>
   );
 };
-// eslint-disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um1aeU1nPT06NjY3NDllNjc=
+// eslint-disable
 
 export default TabVisibilityProvider;

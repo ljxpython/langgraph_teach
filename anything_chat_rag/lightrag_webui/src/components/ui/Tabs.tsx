@@ -1,9 +1,8 @@
 import * as React from 'react'
 import * as TabsPrimitive from '@radix-ui/react-tabs'
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um5CQ1F3PT06NmJmY2ZkMTk=
 
 import { cn } from '@/lib/utils'
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um5CQ1F3PT06NmJmY2ZkMTk=
+// eslint-disable
 
 const Tabs = TabsPrimitive.Root
 
@@ -36,7 +35,7 @@ const TabsTrigger = React.forwardRef<
   />
 ))
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002Um5CQ1F3PT06NmJmY2ZkMTk=
+// NOTE
 
 const TabsContent = React.forwardRef<
   React.ComponentRef<typeof TabsPrimitive.Content>,

@@ -3,7 +3,7 @@ from __future__ import annotations
 import httpx
 from typing import Literal
 
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxoVGVBPT06YTY1M2YzMTE=
+# pylint: disable
 
 class APIStatusError(Exception):
     """Raised when an API response has a status code of 4xx or 5xx."""
@@ -47,12 +47,10 @@ class NotFoundError(APIStatusError):
 class ConflictError(APIStatusError):
     status_code: Literal[409] = 409  # pyright: ignore[reportIncompatibleVariableOverride]
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxoVGVBPT06YTY1M2YzMTE=
 
 class UnprocessableEntityError(APIStatusError):
     status_code: Literal[422] = 422  # pyright: ignore[reportIncompatibleVariableOverride]
 
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxoVGVBPT06YTY1M2YzMTE=
 
 class RateLimitError(APIStatusError):
     status_code: Literal[429] = 429  # pyright: ignore[reportIncompatibleVariableOverride]
@@ -107,7 +105,6 @@ class PipelineCancelledException(Exception):
     def __init__(self, message: str = "User cancelled"):
         super().__init__(message)
         self.message = message
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxoVGVBPT06YTY1M2YzMTE=
 
 
 class ChunkTokenLimitExceededError(ValueError):

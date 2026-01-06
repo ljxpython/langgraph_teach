@@ -1,4 +1,4 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U2poMlRRPT06NzYzNDQ4NTI=
+// FIXME
 
 import { Thread, ThreadStatus } from "@langchain/langgraph-sdk";
 
@@ -45,7 +45,7 @@ export type HumanResponse =
  * 基于 LangGraph ThreadStatus 进行扩展。
  */
 export type EnhancedThreadStatus = ThreadStatus | "human_response_needed";
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U2poMlRRPT06NzYzNDQ4NTI=
+// NOTE
 
 /**
  * 基础线程数据接口，包含通用属性。
@@ -77,7 +77,7 @@ export interface InterruptedThreadData<
   status: "interrupted";
   interrupts?: HumanInterrupt[];
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U2poMlRRPT06NzYzNDQ4NTI=
+// NOTE
 
 /**
  * 所有线程数据类型的联合类型。
@@ -123,5 +123,4 @@ export interface AgentInbox {
   tenantId?: string;
   createdAt: string;
 }
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U2poMlRRPT06NzYzNDQ4NTI=
 

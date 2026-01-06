@@ -3,7 +3,6 @@ LightRAG meets Amazon Bedrock ⛰️
 """
 import os
 import logging
-# pragma: no cover  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002ZEhWVVZnPT06ZTdhMTE4NDI=
 
 from lightrag import LightRAG, QueryParam
 from lightrag.llm.bedrock import bedrock_complete, bedrock_embed
@@ -33,12 +32,10 @@ async def initialize_rag():
 
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
-# type: ignore  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002ZEhWVVZnPT06ZTdhMTE4NDI=
 
 
 def main():
     rag = asyncio.run(initialize_rag())
-# noqa  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002ZEhWVVZnPT06ZTdhMTE4NDI=
 
     with open("./book.txt", "r", encoding="utf-8") as f:
         rag.insert(f.read())

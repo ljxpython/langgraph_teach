@@ -8,7 +8,6 @@ from typing import Dict, List, Any, Tuple
 from pathlib import Path
 from lightrag.utils import logger
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWxGaFJRPT06NDIzMjQ3YTE=
 
 def separate_content(
     content_list: List[Dict[str, Any]],
@@ -52,7 +51,6 @@ def separate_content(
 
     if modal_types:
         logger.info(f"  - Multimodal type distribution: {modal_types}")
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWxGaFJRPT06NDIzMjQ3YTE=
 
     return text_content, multimodal_items
 
@@ -134,7 +132,6 @@ def validate_image_file(image_path: str, max_size_mb: int = 50) -> bool:
 
         logger.debug(f"Image validation successful: {image_path}")
         return True
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWxGaFJRPT06NDIzMjQ3YTE=
 
     except Exception as e:
         logger.error(f"Error validating image file {image_path}: {e}")
@@ -245,7 +242,6 @@ def get_processor_for_type(modal_processors: Dict[str, Any], content_type: str):
         # For other types, use generic processor
         return modal_processors.get("generic")
 
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWxGaFJRPT06NDIzMjQ3YTE=
 
 def get_processor_supports(proc_type: str) -> List[str]:
     """Get processor supported features"""

@@ -26,7 +26,6 @@ PROMPTS["EQUATION_ANALYSIS_SYSTEM"] = (
 PROMPTS["GENERIC_ANALYSIS_SYSTEM"] = (
     "You are an expert content analyst specializing in {content_type} content."
 )
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UkhwMFl3PT06YzM1NTcxODU=
 
 # Image analysis prompt template
 PROMPTS[
@@ -125,7 +124,6 @@ Body: {table_body}
 Footnotes: {table_footnote}
 
 Focus on extracting meaningful insights and relationships from the tabular data."""
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UkhwMFl3PT06YzM1NTcxODU=
 
 # Table analysis prompt with context support
 PROMPTS[
@@ -294,7 +292,6 @@ Equation: {equation_text}
 Format: {equation_format}
 
 Mathematical Analysis: {enhanced_caption}"""
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UkhwMFl3PT06YzM1NTcxODU=
 
 PROMPTS["generic_chunk"] = """{content_type} Content Analysis:
 Content: {content}
@@ -349,7 +346,6 @@ Please briefly summarize the main characteristics and important information of t
 PROMPTS["QUERY_GENERIC_ANALYST_SYSTEM"] = (
     "You are a professional content analyst who can accurately analyze {content_type} type content."
 )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UkhwMFl3PT06YzM1NTcxODU=
 
 PROMPTS["QUERY_ENHANCEMENT_SUFFIX"] = (
     "\n\nPlease provide a comprehensive answer based on the user query and the provided multimodal content information."

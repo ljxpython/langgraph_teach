@@ -1,4 +1,4 @@
-// TODO  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZUUxRmJRPT06NzNkYTlmOTI=
+// TODO
 
 import { cn } from '@/lib/utils'
 import { Card, CardDescription, CardTitle } from '@/components/ui/Card'
@@ -10,7 +10,7 @@ interface EmptyCardProps extends React.ComponentPropsWithoutRef<typeof Card> {
   action?: React.ReactNode
   icon?: React.ComponentType<{ className?: string }>
 }
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZUUxRmJRPT06NzNkYTlmOTI=
+// eslint-disable
 
 export default function EmptyCard({
   title,

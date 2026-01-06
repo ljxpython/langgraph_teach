@@ -1,4 +1,4 @@
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YVhwWmNnPT06ZjE4MTQ0M2Y=
+// NOTE
 
 import js from '@eslint/js'
 import globals from 'globals'
@@ -8,7 +8,7 @@ import stylisticJs from '@stylistic/eslint-plugin-js'
 import tseslint from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
 import react from 'eslint-plugin-react'
-// TODO  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YVhwWmNnPT06ZjE4MTQ0M2Y=
+// TODO
 
 export default tseslint.config(
   { ignores: ['dist'] },

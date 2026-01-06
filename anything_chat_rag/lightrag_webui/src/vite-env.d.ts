@@ -1,4 +1,4 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002V1U1T2VBPT06MGViZGExZjc=
+// eslint-disable
 
 /// <reference types="vite/client" />
 
@@ -11,4 +11,4 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv
 }
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002V1U1T2VBPT06MGViZGExZjc=
+// eslint-disable

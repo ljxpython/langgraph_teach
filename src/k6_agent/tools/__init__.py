@@ -7,7 +7,6 @@ This module provides LangChain-compatible tools for:
 - Report and chart generation
 - Knowledge retrieval
 """
-# pragma: no cover  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002WW1wamR3PT06YWRhNTgxYzU=
 
 from k6_agent.tools.k6_tools import (
     K6ScriptGenerator,
@@ -29,7 +28,7 @@ from k6_agent.tools.report_tools import (
     create_report_generation_tool,
     create_quick_summary_tool,
 )
-# pylint: disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002WW1wamR3PT06YWRhNTgxYzU=
+# pylint: disable
 
 __all__ = [
     # K6 script tools
@@ -49,5 +48,4 @@ __all__ = [
     "create_report_generation_tool",
     "create_quick_summary_tool",
 ]
-# noqa  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002WW1wamR3PT06YWRhNTgxYzU=
 

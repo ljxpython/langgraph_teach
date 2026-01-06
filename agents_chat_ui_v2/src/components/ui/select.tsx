@@ -5,7 +5,7 @@ import * as SelectPrimitive from "@radix-ui/react-select";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpCeWVRPT06N2VhNTQ3MTg=
+// FIXME
 
 const Select = SelectPrimitive.Root;
 
@@ -32,7 +32,7 @@ const SelectTrigger = React.forwardRef<
   </SelectPrimitive.Trigger>
 ));
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpCeWVRPT06N2VhNTQ3MTg=
+// eslint-disable
 
 const SelectScrollUpButton = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.ScrollUpButton>,
@@ -112,7 +112,7 @@ const SelectLabel = React.forwardRef<
   />
 ));
 SelectLabel.displayName = SelectPrimitive.Label.displayName;
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpCeWVRPT06N2VhNTQ3MTg=
+// FIXME
 
 const SelectItem = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Item>,
@@ -161,4 +161,3 @@ export {
   SelectScrollUpButton,
   SelectScrollDownButton,
 };
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpCeWVRPT06N2VhNTQ3MTg=

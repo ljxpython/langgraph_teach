@@ -17,7 +17,7 @@ from .shared_storage import (
 
 # You must manually install faiss-cpu or faiss-gpu before using FAISS vector db
 import faiss  # type: ignore
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZCNFNnPT06MGUyYThkZDA=
+# pylint: disable
 
 
 @final
@@ -196,7 +196,6 @@ class FaissVectorDBStorage(BaseVectorStorage):
             )  # higher priority for query
             # embedding is shape (1, dim)
             embedding = np.array(embedding, dtype=np.float32)
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZCNFNnPT06MGUyYThkZDA=
 
         faiss.normalize_L2(embedding)  # we do in-place normalization
 
@@ -315,7 +314,6 @@ class FaissVectorDBStorage(BaseVectorStorage):
         we rebuild the index excluding those vectors.
         """
         keep_fids = [fid for fid in self._id_to_meta if fid not in fid_list]
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZCNFNnPT06MGUyYThkZDA=
 
         # Rebuild the index
         vectors_to_keep = []
@@ -415,7 +413,6 @@ class FaissVectorDBStorage(BaseVectorStorage):
                 return False  # Return error
 
         return True  # Return success
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZCNFNnPT06MGUyYThkZDA=
 
     async def get_by_id(self, id: str) -> dict[str, Any] | None:
         """Get vector data by its ID

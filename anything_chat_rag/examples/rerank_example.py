@@ -35,7 +35,6 @@ from lightrag.rerank import cohere_rerank
 # Set up your working directory
 WORKING_DIR = "./test_rerank"
 setup_logger("test_rerank")
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpKTWN3PT06ZWI5NGRiYTE=
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
@@ -70,7 +69,6 @@ rerank_model_func = partial(
     api_key=os.getenv("RERANK_BINDING_API_KEY"),
     base_url=os.getenv("RERANK_BINDING_HOST"),
 )
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpKTWN3PT06ZWI5NGRiYTE=
 
 
 async def create_rag_with_rerank():
@@ -182,7 +180,6 @@ async def test_direct_rerank():
             documents=documents,
             top_n=4,
         )
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpKTWN3PT06ZWI5NGRiYTE=
 
         print("\n✅ Rerank Results:")
         i = 0
@@ -229,4 +226,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VmpKTWN3PT06ZWI5NGRiYTE=

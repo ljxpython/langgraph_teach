@@ -13,7 +13,6 @@ import os
 from pathlib import Path
 from typing import Optional, Dict, Any, List
 from datetime import datetime
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxSdlFRPT06ZjY5YjY3OWY=
 
 from langchain_core.tools import tool
 from pydantic import BaseModel, Field
@@ -162,11 +161,10 @@ TIP: Use 'write_file' tool to create the script in the workspace first.
                 except FileExistsError:
                     # Directory was created by another process, ignore
                     pass
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxSdlFRPT06ZjY5YjY3OWY=
+# pylint: disable
 
         # Build command
         cmd = ["k6", "run"]
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxSdlFRPT06ZjY5YjY3OWY=
 
         # Add output options
         if actual_output_path:
@@ -297,5 +295,5 @@ def create_k6_cloud_tool():
             return f"❌ Cloud execution error: {str(e)}"
     
     return run_k6_cloud
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UWxSdlFRPT06ZjY5YjY3OWY=
+# pylint: disable
 

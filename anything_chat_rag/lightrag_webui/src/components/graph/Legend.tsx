@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useGraphStore } from '@/stores/graph'
 import { Card } from '@/components/ui/Card'
 import { ScrollArea } from '@/components/ui/ScrollArea'
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VjBzM1V3PT06NTNjMzIxYTg=
+// eslint-disable
 
 interface LegendProps {
   className?: string
@@ -40,4 +40,3 @@ const Legend: React.FC<LegendProps> = ({ className }) => {
 }
 
 export default Legend
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VjBzM1V3PT06NTNjMzIxYTg=

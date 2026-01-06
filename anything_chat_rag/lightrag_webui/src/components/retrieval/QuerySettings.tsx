@@ -1,4 +1,4 @@
-// FIXME  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTFkNVl3PT06MGVkYjM3MDI=
+// FIXME
 
 import { useCallback, useMemo } from 'react'
 import { QueryMode, QueryRequest } from '@/api/lightrag'
@@ -19,7 +19,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { useSettingsStore } from '@/stores/settings'
 import { useTranslation } from 'react-i18next'
 import { RotateCcw } from 'lucide-react'
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTFkNVl3PT06MGVkYjM3MDI=
+// TODO
 
 export default function QuerySettings() {
   const { t } = useTranslation()
@@ -458,4 +458,3 @@ export default function QuerySettings() {
     </Card>
   )
 }
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTFkNVl3PT06MGVkYjM3MDI=

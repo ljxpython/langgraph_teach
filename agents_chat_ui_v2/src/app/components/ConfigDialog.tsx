@@ -1,7 +1,7 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1RGNVZBPT06NDM3ZTAxMjk=
+// TODO
 
 "use client";
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1RGNVZBPT06NDM3ZTAxMjk=
+// NOTE
 
 import { useState, useEffect } from "react";
 import {
@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { StandaloneConfig } from "@/lib/config";
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1RGNVZBPT06NDM3ZTAxMjk=
+// FIXME
 
 interface ConfigDialogProps {
   open: boolean;
@@ -24,7 +24,7 @@ interface ConfigDialogProps {
   onSave: (config: StandaloneConfig) => void;
   initialConfig?: StandaloneConfig;
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1RGNVZBPT06NDM3ZTAxMjk=
+// NOTE
 
 export function ConfigDialog({
   open,

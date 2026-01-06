@@ -1,7 +1,7 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGpZMFRBPT06MjYzZTg2NWU=
+// NOTE
 
 "use client";
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGpZMFRBPT06MjYzZTg2NWU=
+// FIXME
 
 import React, { useState, useCallback, useMemo } from "react";
 import { Button } from "@/components/ui/button";
@@ -16,10 +16,10 @@ interface InterruptActionsProps {
   onSubmit: (responses: HumanResponse[]) => void;
   isLoading?: boolean;
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGpZMFRBPT06MjYzZTg2NWU=
+// NOTE
 
 type DecisionMode = "idle" | "edit" | "reject";
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGpZMFRBPT06MjYzZTg2NWU=
+// NOTE
 
 interface InterruptDecision {
   mode: DecisionMode;

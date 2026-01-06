@@ -42,7 +42,6 @@ class ProcessorMixin:
 
         # Get file modification time
         mtime = file_path.stat().st_mtime
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZwYU1BPT06ZjU1ZTU1YTc=
 
         # Create configuration dict for cache key
         config_dict = {
@@ -141,7 +140,6 @@ class ProcessorMixin:
             # Check file modification time
             current_mtime = file_path.stat().st_mtime
             cached_mtime = cached_data.get("mtime", 0)
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZwYU1BPT06ZjU1ZTU1YTc=
 
             if current_mtime != cached_mtime:
                 self.logger.debug(f"Cache invalid - file modified: {cache_key}")
@@ -313,7 +311,6 @@ class ProcessorMixin:
                     f"* Total blocks in cached content_list: {len(content_list)}"
                 )
             return content_list, doc_id
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZwYU1BPT06ZjU1ZTU1YTc=
 
         # Choose appropriate parsing method based on file extension
         ext = file_path.suffix.lower()
@@ -494,7 +491,6 @@ class ProcessorMixin:
         except Exception as e:
             self.logger.debug(f"Error checking document status for {doc_id}: {e}")
             # Continue with processing if cache check fails
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T1ZwYU1BPT06ZjU1ZTU1YTc=
 
         # Use ProcessorMixin's own batch processing that can handle multiple content types
         log_message = "Starting multimodal content processing..."

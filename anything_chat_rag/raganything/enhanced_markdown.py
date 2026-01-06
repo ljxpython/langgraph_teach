@@ -44,7 +44,7 @@ except ImportError:
 @dataclass
 class MarkdownConfig:
     """Configuration for Markdown to PDF conversion"""
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhscE1BPT06N2IxMDYxNjQ=
+# pylint: disable
 
     # Styling options
     css_file: Optional[str] = None
@@ -100,7 +100,6 @@ class EnhancedMarkdownConverter:
             "pandoc": PANDOC_AVAILABLE,
             "markdown": MARKDOWN_AVAILABLE,
         }
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhscE1BPT06N2IxMDYxNjQ=
 
         # Check if pandoc is installed on system
         try:
@@ -396,7 +395,6 @@ class EnhancedMarkdownConverter:
                 )
             else:
                 raise ValueError(f"Unknown conversion method: {method}")
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhscE1BPT06N2IxMDYxNjQ=
 
         except Exception as e:
             self.logger.error(f"{method.title()} conversion failed: {str(e)}")
@@ -492,7 +490,6 @@ def main():
         level=logging.INFO,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     )
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhscE1BPT06N2IxMDYxNjQ=
 
     # Create converter
     config = MarkdownConfig()

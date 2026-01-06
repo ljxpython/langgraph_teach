@@ -7,7 +7,6 @@ from dataclasses import dataclass, field
 from typing import List
 from lightrag.utils import get_env_value
 
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y0ZCU2VnPT06NmRlNjY2ODQ=
 
 @dataclass
 class RAGAnythingConfig:
@@ -57,7 +56,6 @@ class RAGAnythingConfig:
         default=get_env_value("MAX_CONCURRENT_FILES", 1, int)
     )
     """Maximum number of files to process concurrently."""
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y0ZCU2VnPT06NmRlNjY2ODQ=
 
     supported_file_extensions: List[str] = field(
         default_factory=lambda: get_env_value(
@@ -77,7 +75,6 @@ class RAGAnythingConfig:
     # ---
     context_window: int = field(default=get_env_value("CONTEXT_WINDOW", 1, int))
     """Number of pages/chunks to include before and after current item for context."""
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y0ZCU2VnPT06NmRlNjY2ODQ=
 
     context_mode: str = field(default=get_env_value("CONTEXT_MODE", "page", str))
     """Context extraction mode: 'page' for page-based, 'chunk' for chunk-based."""
@@ -118,7 +115,6 @@ class RAGAnythingConfig:
                 DeprecationWarning,
                 stacklevel=2,
             )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y0ZCU2VnPT06NmRlNjY2ODQ=
 
     @property
     def mineru_parse_method(self) -> str:

@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VVRWcWJBPT06OTUxNGI4ZTY=
 
 import { cn } from "@/lib/utils";
 
@@ -19,7 +18,6 @@ function Avatar({
     />
   );
 }
-// @ts-expect-error  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VVRWcWJBPT06OTUxNGI4ZTY=
 
 function AvatarImage({
   className,
@@ -51,4 +49,3 @@ function AvatarFallback({
 }
 
 export { Avatar, AvatarImage, AvatarFallback };
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VVRWcWJBPT06OTUxNGI4ZTY=

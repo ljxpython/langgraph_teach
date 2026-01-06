@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WNFFnPT06Mjk1ZWVhZWQ=
 
 import { useState, useCallback, useEffect } from 'react'
 import Button from '@/components/ui/Button'
@@ -18,7 +17,6 @@ import { deleteDocuments } from '@/api/lightrag'
 
 import { TrashIcon, AlertTriangleIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WNFFnPT06Mjk1ZWVhZWQ=
 
 // Simple Label component
 const Label = ({
@@ -35,7 +33,7 @@ const Label = ({
     {children}
   </label>
 )
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WNFFnPT06Mjk1ZWVhZWQ=
+// eslint-disable
 
 interface DeleteDocumentsDialogProps {
   selectedDocIds: string[]
@@ -193,4 +191,4 @@ export default function DeleteDocumentsDialog({ selectedDocIds, onDocumentsDelet
     </Dialog>
   )
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WNFFnPT06Mjk1ZWVhZWQ=
+// FIXME

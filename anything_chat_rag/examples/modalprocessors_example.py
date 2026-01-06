@@ -13,7 +13,6 @@ from raganything.modalprocessors import (
     TableModalProcessor,
     EquationModalProcessor,
 )
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YjFaT2RnPT06ZjgxMzVhMzE=
 
 WORKING_DIR = "./rag_storage"
 
@@ -133,7 +132,6 @@ async def process_table_example(lightrag: LightRAG, llm_model_func):
         file_path="table_example.md",
         entity_name="Employee Table",
     )
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YjFaT2RnPT06ZjgxMzVhMzE=
 
     print("\nTable Processing Results:")
     print(f"Description: {description}")
@@ -193,7 +191,6 @@ async def initialize_rag(api_key: str, base_url: str = None):
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
 
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YjFaT2RnPT06ZjgxMzVhMzE=
 
 def main():
     """Main function to run the example"""
@@ -203,7 +200,6 @@ def main():
     parser.add_argument(
         "--working-dir", "-w", default=WORKING_DIR, help="Working directory path"
     )
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YjFaT2RnPT06ZjgxMzVhMzE=
 
     args = parser.parse_args()
 

@@ -1,4 +1,4 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VFVadlN3PT06MDIyOWYxMTk=
+// eslint-disable
 
 import * as React from 'react'
 import { cn } from '@/lib/utils'
@@ -23,6 +23,6 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   }
 )
 Textarea.displayName = 'Textarea'
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VFVadlN3PT06MDIyOWYxMTk=
+// NOTE
 
 export default Textarea

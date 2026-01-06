@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJjMFNnPT06M2VkZmQ4NWQ=
+// NOTE
 
 "use client";
 
@@ -15,7 +15,7 @@ import { toast } from "sonner";
 import { MarkdownContent } from "@/app/components/MarkdownContent";
 import type { FileItem } from "@/app/types/types";
 import useSWRMutation from "swr/mutation";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJjMFNnPT06M2VkZmQ4NWQ=
+// eslint-disable
 
 const LANGUAGE_MAP: Record<string, string> = {
   js: "javascript",
@@ -52,7 +52,7 @@ const LANGUAGE_MAP: Record<string, string> = {
   dockerfile: "dockerfile",
   makefile: "makefile",
 };
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJjMFNnPT06M2VkZmQ4NWQ=
+// NOTE
 
 export const FileViewDialog = React.memo<{
   file: FileItem | null;
@@ -298,4 +298,4 @@ export const FileViewDialog = React.memo<{
 });
 
 FileViewDialog.displayName = "FileViewDialog";
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJjMFNnPT06M2VkZmQ4NWQ=
+// TODO

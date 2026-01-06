@@ -1,5 +1,4 @@
 from openai import OpenAI
-# type: ignore  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002ZEVvelVnPT06OTRkMWRmYWE=
 
 # os.environ["OPENAI_API_KEY"] = ""
 
@@ -19,7 +18,6 @@ def openai_complete_if_cache(
         model=model, messages=messages, **kwargs
     )
     return response.choices[0].message.content
-# noqa  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002ZEVvelVnPT06OTRkMWRmYWE=
 
 
 if __name__ == "__main__":
@@ -55,4 +53,3 @@ if __name__ == "__main__":
         file.write(result)
 
     print(f"Queries written to {file_path}")
-# pragma: no cover  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002ZEVvelVnPT06OTRkMWRmYWE=

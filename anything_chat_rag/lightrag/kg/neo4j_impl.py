@@ -43,7 +43,6 @@ config.read("config.ini", "utf-8")
 # Set neo4j logger level to ERROR to suppress warning logs
 logging.getLogger("neo4j").setLevel(logging.ERROR)
 
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VWtWdVlRPT06NjU0MjBmZDQ=
 
 @final
 @dataclass
@@ -220,7 +219,6 @@ class Neo4JStorage(BaseGraphStorage):
                         logger.warning(
                             f"[{self.workspace}] Failed to create B-Tree index: {str(e)}"
                         )
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VWtWdVlRPT06NjU0MjBmZDQ=
 
                     # Create full-text index for entity_id for faster text searches
                     await self._create_fulltext_index(
@@ -427,7 +425,7 @@ class Neo4JStorage(BaseGraphStorage):
                 if result is not None:
                     await result.consume()  # Ensure results are consumed even on error
                 raise
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VWtWdVlRPT06NjU0MjBmZDQ=
+# pylint: disable
 
     async def get_node(self, node_id: str) -> dict[str, str] | None:
         """Get node by its label identifier, return only node properties
@@ -722,7 +720,6 @@ class Neo4JStorage(BaseGraphStorage):
                                 "description": None,
                                 "keywords": None,
                             }
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VWtWdVlRPT06NjU0MjBmZDQ=
 
                     # logger.debug(
                     #     f"{inspect.currentframe().f_code.co_name}: No edge found between {source_node_id} and {target_node_id}"

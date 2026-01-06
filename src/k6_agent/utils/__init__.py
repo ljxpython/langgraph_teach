@@ -5,7 +5,6 @@ This module provides utility components including:
 - Performance data visualization
 - Chart rendering and export
 """
-# noqa  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UkhsdU1RPT06YTZmMGVmM2M=
 
 from k6_agent.utils.chart_generator import (
     ChartType,
@@ -27,5 +26,4 @@ __all__ = [
     # Prompts
     "MCP_CHART_SYSTEM_PROMPT",
 ]
-# fmt: off  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UkhsdU1RPT06YTZmMGVmM2M=
 

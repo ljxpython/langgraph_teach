@@ -1,7 +1,7 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YTJGVVlRPT06MDVkMDY0YzI=
+// FIXME
 
 "use client";
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YTJGVVlRPT06MDVkMDY0YzI=
+// FIXME
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { AlertCircle, Check, X, Pencil } from "lucide-react";
 import type { ActionRequest, ReviewConfig } from "@/app/types/types";
 import { cn } from "@/lib/utils";
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YTJGVVlRPT06MDVkMDY0YzI=
+// NOTE
 
 interface ToolApprovalInterruptProps {
   actionRequest: ActionRequest;
@@ -17,7 +17,6 @@ interface ToolApprovalInterruptProps {
   onResume: (value: any) => void;
   isLoading?: boolean;
 }
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YTJGVVlRPT06MDVkMDY0YzI=
 
 export function ToolApprovalInterrupt({
   actionRequest,

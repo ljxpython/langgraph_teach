@@ -8,7 +8,7 @@ import {
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TooltipIconButton } from "../../tooltip-icon-button";
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YWtOT05nPT06YjJjZTY5ZWE=
+// FIXME
 
 export function ThreadIdTooltip({ threadId }: { threadId: string }) {
   const firstThreeChars = threadId.slice(0, 3);
@@ -29,7 +29,7 @@ export function ThreadIdTooltip({ threadId }: { threadId: string }) {
     </TooltipProvider>
   );
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YWtOT05nPT06YjJjZTY5ZWE=
+// FIXME
 
 export function ThreadIdCopyable({
   threadId,
@@ -84,4 +84,4 @@ export function ThreadIdCopyable({
     </TooltipIconButton>
   );
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YWtOT05nPT06YjJjZTY5ZWE=
+// eslint-disable

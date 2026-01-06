@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U3pOaVVBPT06YzcyODk0Zjg=
+// NOTE
 
 "use client";
 
@@ -32,7 +32,6 @@ import { useChatContext } from "@/providers/ChatProvider";
 import { cn } from "@/lib/utils";
 import { useStickToBottom } from "use-stick-to-bottom";
 import { FilesPopover } from "@/app/components/TasksFilesSidebar";
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U3pOaVVBPT06YzcyODk0Zjg=
 
 interface ChatInterfaceProps {
   assistant: Assistant | null;
@@ -63,7 +62,6 @@ const getStatusIcon = (status: TodoItem["status"], className?: string) => {
       );
   }
 };
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U3pOaVVBPT06YzcyODk0Zjg=
 
 export const ChatInterface = React.memo<ChatInterfaceProps>(({ assistant }) => {
   const [metaOpen, setMetaOpen] = useState<"tasks" | "files" | null>(null);
@@ -545,6 +543,6 @@ export const ChatInterface = React.memo<ChatInterfaceProps>(({ assistant }) => {
     </div>
   );
 });
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U3pOaVVBPT06YzcyODk0Zjg=
+// NOTE
 
 ChatInterface.displayName = "ChatInterface";

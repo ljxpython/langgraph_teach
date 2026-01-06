@@ -1,4 +1,4 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VVc1SVp3PT06YzY1N2Y5ZjA=
+// TODO
 
 import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
@@ -32,7 +32,7 @@ export const buttonVariants = cva(
     }
   }
 )
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VVc1SVp3PT06YzY1N2Y5ZjA=
+// eslint-disable
 
 interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -41,7 +41,6 @@ interface ButtonProps
   side?: 'top' | 'right' | 'bottom' | 'left'
   tooltip?: string
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VVc1SVp3PT06YzY1N2Y5ZjA=
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, tooltip, size, side = 'right', asChild = false, ...props }, ref) => {
@@ -78,6 +77,6 @@ export type ButtonVariantType = Exclude<
   NonNullable<Parameters<typeof buttonVariants>[0]>['variant'],
   undefined
 >
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VVc1SVp3PT06YzY1N2Y5ZjA=
+// NOTE
 
 export default Button

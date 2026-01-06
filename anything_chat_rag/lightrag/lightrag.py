@@ -141,7 +141,6 @@ class LightRAG:
 
     kv_storage: str = field(default="JsonKVStorage")
     """Storage backend for key-value data."""
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YlhJM1JBPT06NmQyZTZkM2I=
 
     vector_storage: str = field(default="NanoVectorDBStorage")
     """Storage backend for vector embeddings."""
@@ -173,7 +172,6 @@ class LightRAG:
         default=get_env_value("CHUNK_TOP_K", DEFAULT_CHUNK_TOP_K, int)
     )
     """Maximum number of chunks in context."""
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YlhJM1JBPT06NmQyZTZkM2I=
 
     max_entity_tokens: int = field(
         default=get_env_value("MAX_ENTITY_TOKENS", DEFAULT_MAX_ENTITY_TOKENS, int)
@@ -239,7 +237,6 @@ class LightRAG:
 
     tiktoken_model_name: str = field(default="gpt-4o-mini")
     """Model name used for tokenization when chunking text with tiktoken. Defaults to `gpt-4o-mini`."""
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YlhJM1JBPT06NmQyZTZkM2I=
 
     chunking_func: Callable[
         [
@@ -343,7 +340,6 @@ class LightRAG:
 
     llm_model_kwargs: dict[str, Any] = field(default_factory=dict)
     """Additional keyword arguments passed to the LLM model function."""
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YlhJM1JBPT06NmQyZTZkM2I=
 
     default_llm_timeout: int = field(
         default=int(os.getenv("LLM_TIMEOUT", DEFAULT_LLM_TIMEOUT))

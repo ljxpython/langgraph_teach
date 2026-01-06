@@ -1,4 +1,3 @@
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002T0VwMllRPT06MmRlOTUzN2U=
 
 "use client";
 
@@ -45,4 +44,4 @@ const ResizableHandle = ({
 );
 
 export { ResizablePanelGroup, ResizablePanel, ResizableHandle };
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002T0VwMllRPT06MmRlOTUzN2U=
+// NOTE

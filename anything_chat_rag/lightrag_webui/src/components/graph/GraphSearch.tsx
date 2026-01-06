@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Ukdwc1lRPT06MDNiNjEyM2Q=
 
 import { FC, useCallback, useEffect } from 'react'
 import {
@@ -21,7 +20,7 @@ export interface OptionItem {
   type: 'nodes' | 'edges' | 'message'
   message?: string
 }
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Ukdwc1lRPT06MDNiNjEyM2Q=
+// NOTE
 
 const NodeOption = ({ id }: { id: string }) => {
   const graph = useGraphStore.use.sigmaGraph()
@@ -61,7 +60,7 @@ function OptionComponent(item: OptionItem) {
     </div>
   )
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Ukdwc1lRPT06MDNiNjEyM2Q=
+// TODO
 
 
 /**
@@ -232,6 +231,6 @@ export const GraphSearchInput = ({
 const GraphSearch: FC<GraphSearchInputProps & GraphSearchContextProviderProps> = ({ ...props }) => {
   return <GraphSearchInput {...props} />
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Ukdwc1lRPT06MDNiNjEyM2Q=
+// eslint-disable
 
 export default GraphSearch

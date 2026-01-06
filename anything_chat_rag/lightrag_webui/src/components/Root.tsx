@@ -1,9 +1,9 @@
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZGpCR1Z3PT06ZDcxZjFjNTY=
+// NOTE
 
 import { StrictMode } from 'react'
 import App from '@/App'
 import '@/i18n'
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZGpCR1Z3PT06ZDcxZjFjNTY=
+// NOTE
 
 export const Root = () => (
   <StrictMode>

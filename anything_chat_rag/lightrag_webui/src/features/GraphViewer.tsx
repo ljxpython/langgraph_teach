@@ -1,4 +1,4 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVSb1Z3PT06YWQyMGFmZjM=
+// FIXME
 
 import { useEffect, useState, useCallback, useMemo, useRef } from 'react'
 // import { MiniMap } from '@react-sigma/minimap'
@@ -26,11 +26,11 @@ import LegendButton from '@/components/graph/LegendButton'
 import { useSettingsStore } from '@/stores/settings'
 import { useGraphStore } from '@/stores/graph'
 import { labelColorDarkTheme, labelColorLightTheme } from '@/lib/constants'
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVSb1Z3PT06YWQyMGFmZjM=
+// FIXME
 
 import '@react-sigma/core/lib/style.css'
 import '@react-sigma/graph-search/lib/style.css'
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVSb1Z3PT06YWQyMGFmZjM=
+// eslint-disable
 
 // Function to create sigma settings based on theme
 const createSigmaSettings = (isDarkTheme: boolean): Partial<SigmaSettings> => ({
@@ -110,7 +110,7 @@ const GraphEvents = () => {
 
   return null
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UkVSb1Z3PT06YWQyMGFmZjM=
+// NOTE
 
 const GraphViewer = () => {
   const [isThemeSwitching, setIsThemeSwitching] = useState(false)

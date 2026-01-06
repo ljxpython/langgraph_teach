@@ -169,7 +169,7 @@ export type ScanResponse = {
   message: string
   track_id: string
 }
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pCMVJ3PT06NjU1ZGFkNGQ=
+// FIXME
 
 export type ReprocessFailedResponse = {
   status: 'reprocessing_started'
@@ -198,7 +198,7 @@ export type DocStatusResponse = {
   metadata?: Record<string, any>
   file_path: string
 }
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pCMVJ3PT06NjU1ZGFkNGQ=
+// FIXME
 
 export type DocsStatusesResponse = {
   statuses: Record<DocStatus, DocStatusResponse[]>
@@ -366,7 +366,7 @@ export const checkHealth = async (): Promise<
     }
   }
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pCMVJ3PT06NjU1ZGFkNGQ=
+// NOTE
 
 export const getDocuments = async (): Promise<DocsStatusesResponse> => {
   const response = await axiosInstance.get('/documents')
@@ -647,7 +647,7 @@ export const deleteDocuments = async (
   })
   return response.data
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V2pCMVJ3PT06NjU1ZGFkNGQ=
+// NOTE
 
 export const getAuthStatus = async (): Promise<AuthStatusResponse> => {
   try {

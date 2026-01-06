@@ -1,10 +1,10 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YzBRNWN3PT06MTRhNTAyNWE=
+// FIXME
 
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import { ChevronDown, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Input from './Input'
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YzBRNWN3PT06MTRhNTAyNWE=
+// eslint-disable
 
 interface UserPromptInputWithHistoryProps {
   value: string
@@ -16,7 +16,6 @@ interface UserPromptInputWithHistoryProps {
   onSelectFromHistory: (prompt: string) => void
   onDeleteFromHistory?: (index: number) => void
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YzBRNWN3PT06MTRhNTAyNWE=
 
 export default function UserPromptInputWithHistory({
   value,
@@ -205,4 +204,4 @@ export default function UserPromptInputWithHistory({
     </div>
   )
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YzBRNWN3PT06MTRhNTAyNWE=
+// TODO

@@ -68,7 +68,6 @@ def _resolve_optional_type(field_type: Any) -> Any:
 @dataclass
 class BindingOptions:
     """Base class for binding options."""
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDJSSmJBPT06YTg1YTA2ZmQ=
 
     # mandatory name of binding
     _binding_name: ClassVar[str]
@@ -216,7 +215,6 @@ class BindingOptions:
                 # Skip private fields
                 if field.name.startswith("_"):
                     continue
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDJSSmJBPT06YTg1YTA2ZmQ=
 
                 # Get default value
                 if field.default is not dataclasses.MISSING:
@@ -276,7 +274,7 @@ class BindingOptions:
             str: A string containing the contents of the sample .env file.
         """
         from io import StringIO
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDJSSmJBPT06YTg1YTA2ZmQ=
+# pylint: disable
 
         sample_top = (
             "#" * 80
@@ -464,7 +462,7 @@ class OllamaEmbeddingOptions(_OllamaOptionsMixin, BindingOptions):
 
     # mandatory name of binding
     _binding_name: ClassVar[str] = "ollama_embedding"
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDJSSmJBPT06YTg1YTA2ZmQ=
+# pylint: disable
 
 
 @dataclass

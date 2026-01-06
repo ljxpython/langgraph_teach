@@ -6,7 +6,7 @@ if not pm.is_installed("aiohttp"):
     pm.install("aiohttp")
 if not pm.is_installed("tenacity"):
     pm.install("tenacity")
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YWxweU53PT06NjA4MzU2NjE=
+# pylint: disable
 
 import numpy as np
 import base64
@@ -58,7 +58,6 @@ async def fetch_data(url, headers, data):
             data_list = response_json.get("data", [])
             return data_list
 
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YWxweU53PT06NjA4MzU2NjE=
 
 @wrap_embedding_func_with_attrs(embedding_dim=2048, max_token_size=8192)
 @retry(
@@ -119,7 +118,6 @@ async def jina_embed(
     # Only add optional parameters if they have non-default values
     if late_chunking:
         data["late_chunking"] = late_chunking
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YWxweU53PT06NjA4MzU2NjE=
 
     logger.debug(
         f"Jina embedding request: {len(texts)} texts, dimensions: {embedding_dim}"
@@ -139,7 +137,6 @@ async def jina_embed(
             raise ValueError(
                 f"Jina API returned {len(data_list)} embeddings for {len(texts)} texts"
             )
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YWxweU53PT06NjA4MzU2NjE=
 
         embeddings = np.array(
             [

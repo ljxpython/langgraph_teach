@@ -1,4 +1,4 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WmxOTE5BPT06NzcxOTc4NGE=
+// TODO
 
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -12,7 +12,6 @@ import {
 } from '@/components/ui/Dialog'
 import Button from '@/components/ui/Button'
 import Checkbox from '@/components/ui/Checkbox'
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WmxOTE5BPT06NzcxOTc4NGE=
 
 interface PropertyEditDialogProps {
   isOpen: boolean
@@ -23,7 +22,7 @@ interface PropertyEditDialogProps {
   isSubmitting?: boolean
   errorMessage?: string | null
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WmxOTE5BPT06NzcxOTc4NGE=
+// FIXME
 
 /**
  * Dialog component for editing property values
@@ -198,4 +197,4 @@ const PropertyEditDialog = ({
 }
 
 export default PropertyEditDialog
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WmxOTE5BPT06NzcxOTc4NGE=
+// eslint-disable

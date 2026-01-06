@@ -120,7 +120,6 @@ async def adelete_by_entity(
                     logger.info(
                         f"Entity Delete: removed chunk tracking for {len(relation_keys_to_delete)} relations"
                     )
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T1RaNE5RPT06YmY2MjBhM2Y=
 
             await entities_vdb.delete_entity(entity_name)
             await relationships_vdb.delete_entity_relation(entity_name)
@@ -200,7 +199,6 @@ async def adelete_by_relation(
             # Clean up chunk tracking storage before deletion
             if relation_chunks_storage is not None:
                 from .utils import make_relation_chunk_key
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T1RaNE5RPT06YmY2MjBhM2Y=
 
                 # Normalize entity order for consistent key generation
                 normalized_src, normalized_tgt = sorted([source_entity, target_entity])
@@ -353,7 +351,6 @@ async def _edit_entity_impl(
             relation_id = compute_mdhash_id(
                 normalized_src + normalized_tgt, prefix="rel-"
             )
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T1RaNE5RPT06YmY2MjBhM2Y=
 
             relation_data = {
                 relation_id: {
@@ -394,7 +391,6 @@ async def _edit_entity_impl(
 
     if entity_chunks_storage is not None or relation_chunks_storage is not None:
         from .utils import make_relation_chunk_key, compute_incremental_chunk_ids
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T1RaNE5RPT06YmY2MjBhM2Y=
 
         if entity_chunks_storage is not None:
             storage_key = original_entity_name if is_renaming else entity_name

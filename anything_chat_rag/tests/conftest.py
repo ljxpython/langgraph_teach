@@ -23,7 +23,6 @@ def pytest_configure(config):
 
 def pytest_addoption(parser):
     """Add custom command-line options for LightRAG tests."""
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TldOb1J3PT06NWJlNjU0NGI=
 
     parser.addoption(
         "--keep-artifacts",
@@ -38,7 +37,6 @@ def pytest_addoption(parser):
         default=False,
         help="Enable stress test mode with more intensive workloads",
     )
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TldOb1J3PT06NWJlNjU0NGI=
 
     parser.addoption(
         "--test-workers",
@@ -90,7 +88,6 @@ def keep_test_artifacts(request):
 
     # Fall back to environment variable
     return os.getenv("LIGHTRAG_KEEP_ARTIFACTS", "false").lower() == "true"
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TldOb1J3PT06NWJlNjU0NGI=
 
 
 @pytest.fixture(scope="session")
@@ -109,7 +106,6 @@ def stress_test_mode(request):
     # Fall back to environment variable
     return os.getenv("LIGHTRAG_STRESS_TEST", "false").lower() == "true"
 
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TldOb1J3PT06NWJlNjU0NGI=
 
 @pytest.fixture(scope="session")
 def parallel_workers(request):

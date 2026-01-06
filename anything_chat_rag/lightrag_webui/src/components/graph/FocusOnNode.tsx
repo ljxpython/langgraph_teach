@@ -1,9 +1,8 @@
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002Y0VOYVNnPT06NTNhNjg3NGM=
 
 import { useCamera, useSigma } from '@react-sigma/core'
 import { useEffect } from 'react'
 import { useGraphStore } from '@/stores/graph'
-// FIXME  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002Y0VOYVNnPT06NTNhNjg3NGM=
+// FIXME
 
 /**
  * Component that highlights a node and centers the camera on it.
@@ -53,6 +52,6 @@ const FocusOnNode = ({ node, move }: { node: string | null; move?: boolean }) =>
 
   return null
 }
-// eslint-disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002Y0VOYVNnPT06NTNhNjg3NGM=
+// eslint-disable
 
 export default FocusOnNode

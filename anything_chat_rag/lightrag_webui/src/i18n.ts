@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import { useSettingsStore } from '@/stores/settings'
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002YTBaS2FnPT06NzA3NDYzNjg=
+// NOTE
 
 import en from './locales/en.json'
 import zh from './locales/zh.json'
@@ -21,7 +21,7 @@ const getStoredLanguage = () => {
   }
   return 'en'
 }
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002YTBaS2FnPT06NzA3NDYzNjg=
+// eslint-disable
 
 i18n
   .use(initReactI18next)
@@ -50,6 +50,5 @@ useSettingsStore.subscribe((state) => {
     i18n.changeLanguage(currentLanguage)
   }
 })
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002YTBaS2FnPT06NzA3NDYzNjg=
 
 export default i18n

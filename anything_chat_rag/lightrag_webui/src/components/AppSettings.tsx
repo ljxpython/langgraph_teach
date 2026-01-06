@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Tlc5cGFBPT06NmFmMDUzNjE=
+// NOTE
 
 import { useState, useCallback } from 'react'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/Popover'
@@ -8,12 +8,12 @@ import { useSettingsStore } from '@/stores/settings'
 import { PaletteIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Tlc5cGFBPT06NmFmMDUzNjE=
+// NOTE
 
 interface AppSettingsProps {
   className?: string
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Tlc5cGFBPT06NmFmMDUzNjE=
+// TODO
 
 export default function AppSettings({ className }: AppSettingsProps) {
   const [opened, setOpened] = useState<boolean>(false)
@@ -76,4 +76,4 @@ export default function AppSettings({ className }: AppSettingsProps) {
     </Popover>
   )
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Tlc5cGFBPT06NmFmMDUzNjE=
+// TODO

@@ -108,7 +108,6 @@ def example_2_code_analyzer_with_subagents():
     })
     
     print(result)
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVRrM2VnPT06ZGQwMjY2MGM=
 
 
 # ============================================================================
@@ -145,7 +144,6 @@ def example_3_different_backends():
             "/cache/": lambda rt: StateBackend(rt),     # 临时缓存
         }
     )
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVRrM2VnPT06ZGQwMjY2MGM=
     
     agent_composite = create_deep_agent(
         model=model,
@@ -260,7 +258,6 @@ def example_5_enterprise_application():
             "system_prompt": "你是技术文档专家，生成清晰、专业的文档。",
         },
     ]
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVRrM2VnPT06ZGQwMjY2MGM=
 
     # 5. 配置人机交互
     interrupt_on = {

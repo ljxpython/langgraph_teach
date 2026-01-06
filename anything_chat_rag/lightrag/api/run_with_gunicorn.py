@@ -16,7 +16,6 @@ from lightrag.constants import (
     DEFAULT_TIMEOUT,
 )
 
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNGM01nPT06MDU0Y2MxMDM=
 
 def check_and_install_dependencies():
     """Check and install required dependencies"""
@@ -117,7 +116,6 @@ def main():
 
     # Display startup information
     display_splash_screen(global_args)
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNGM01nPT06MDU0Y2MxMDM=
 
     print("🚀 Starting LightRAG with Gunicorn")
     print(f"🔄 Worker management: Gunicorn (workers={global_args.workers})")
@@ -160,7 +158,6 @@ def main():
                 "max_requests",
                 "max_requests_jitter",
             }
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNGM01nPT06MDU0Y2MxMDM=
 
             # Special hooks that need to be set separately
             special_hooks = {
@@ -265,7 +262,6 @@ def main():
 
     # Create the application
     app = GunicornApp("")
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNGM01nPT06MDU0Y2MxMDM=
 
     # Force workers to be an integer and greater than 1 for multi-process mode
     workers_count = global_args.workers

@@ -1,10 +1,9 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VSSGFnPT06ZTk3MWJmMGQ=
+// eslint-disable
 
 import useSWRInfinite from "swr/infinite";
 import type { Thread } from "@langchain/langgraph-sdk";
 import { Client } from "@langchain/langgraph-sdk";
 import { getConfig } from "@/lib/config";
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VSSGFnPT06ZTk3MWJmMGQ=
 
 export interface ThreadItem {
   id: string;
@@ -14,10 +13,10 @@ export interface ThreadItem {
   description: string;
   assistantId?: string;
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VSSGFnPT06ZTk3MWJmMGQ=
+// TODO
 
 const DEFAULT_PAGE_SIZE = 20;
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T1VSSGFnPT06ZTk3MWJmMGQ=
+// TODO
 
 export function useThreads(props: {
   status?: Thread["status"];

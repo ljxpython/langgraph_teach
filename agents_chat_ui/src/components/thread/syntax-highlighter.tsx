@@ -16,7 +16,7 @@ interface SyntaxHighlighterProps {
   language: string;
   className?: string;
 }
-// FIXME  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YVc1M2JnPT06M2YzNjdjNTk=
+// FIXME
 
 export const SyntaxHighlighter: FC<SyntaxHighlighterProps> = ({
   children,

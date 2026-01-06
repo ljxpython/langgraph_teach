@@ -1,7 +1,7 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhNNU13PT06OTg1OTEyNGQ=
+// eslint-disable
 
 "use client";
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhNNU13PT06OTg1OTEyNGQ=
+// NOTE
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { AlertCircle, Check, X, Pencil } from "lucide-react";
 import type { ActionRequest, ReviewConfig } from "@/app/types/types";
 import { cn } from "@/lib/utils";
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhNNU13PT06OTg1OTEyNGQ=
+// TODO
 
 interface ToolApprovalInterruptProps {
   actionRequest: ActionRequest;
@@ -17,7 +17,7 @@ interface ToolApprovalInterruptProps {
   onResume: (value: any) => void;
   isLoading?: boolean;
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhNNU13PT06OTg1OTEyNGQ=
+// FIXME
 
 export function ToolApprovalInterrupt({
   actionRequest,

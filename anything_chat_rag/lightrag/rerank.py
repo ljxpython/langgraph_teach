@@ -1,5 +1,4 @@
 from __future__ import annotations
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZZMU1nPT06MWJjNzAwMWU=
 
 import os
 import aiohttp
@@ -109,7 +108,6 @@ async def generic_rerank_api(
     logger.debug(
         f"Rerank request: {len(documents)} documents, model: {model}, format: {response_format}"
     )
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZZMU1nPT06MWJjNzAwMWU=
 
     async with aiohttp.ClientSession() as session:
         async with session.post(base_url, headers=headers, json=payload) as response:
@@ -197,7 +195,7 @@ async def cohere_rerank(
     """
     if api_key is None:
         api_key = os.getenv("COHERE_API_KEY") or os.getenv("RERANK_BINDING_API_KEY")
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZZMU1nPT06MWJjNzAwMWU=
+# pylint: disable
 
     return await generic_rerank_api(
         query=query,
@@ -338,7 +336,6 @@ if __name__ == "__main__":
                 print(f"Document: {docs[item['index']]}")
         except Exception as e:
             print(f"Cohere Error: {e}")
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZZMU1nPT06MWJjNzAwMWU=
 
         # Test Aliyun rerank
         try:

@@ -2,7 +2,7 @@ import re
 import json
 from lightrag import LightRAG, QueryParam
 from lightrag.utils import always_get_an_event_loop
-# pylint: disable  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VVROcWJBPT06YTM4NmM0YWU=
+# pylint: disable
 
 
 def extract_queries(file_path):
@@ -15,7 +15,7 @@ def extract_queries(file_path):
 
     return queries
 
-# pylint: disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VVROcWJBPT06YTM4NmM0YWU=
+# pylint: disable
 
 async def process_query(query_text, rag_instance, query_param):
     try:
@@ -58,7 +58,6 @@ if __name__ == "__main__":
     cls = "agriculture"
     mode = "hybrid"
     WORKING_DIR = f"../{cls}"
-# pragma: no cover  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VVROcWJBPT06YTM4NmM0YWU=
 
     rag = LightRAG(working_dir=WORKING_DIR)
     query_param = QueryParam(mode=mode)

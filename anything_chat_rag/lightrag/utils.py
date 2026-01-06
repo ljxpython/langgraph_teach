@@ -44,7 +44,6 @@ from lightrag.constants import (
 
 # Precompile regex pattern for JSON sanitization (module-level, compiled once)
 _SURROGATE_PATTERN = re.compile(r"[\uD800-\uDFFF\uFFFE\uFFFF]")
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhWR1VBPT06MDcwZmVhYjc=
 
 
 class SafeStreamHandler(logging.StreamHandler):
@@ -195,7 +194,6 @@ def get_env_value(
     # Handle special case for "None" string
     if special_none and value == "None":
         return None
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhWR1VBPT06MDcwZmVhYjc=
 
     if value_type is bool:
         return value.lower() in ("true", "1", "yes", "t", "on")
@@ -225,7 +223,6 @@ def get_env_value(
     except (ValueError, TypeError):
         return default
 
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhWR1VBPT06MDcwZmVhYjc=
 
 # Use TYPE_CHECKING to avoid circular imports
 if TYPE_CHECKING:
@@ -359,7 +356,6 @@ def setup_logger(
 
         # Ensure log directory exists
         os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YkhWR1VBPT06MDcwZmVhYjc=
 
         # Get log file max size and backup count from environment variables
         log_max_bytes = get_env_value("LOG_MAX_BYTES", DEFAULT_LOG_MAX_BYTES, int)

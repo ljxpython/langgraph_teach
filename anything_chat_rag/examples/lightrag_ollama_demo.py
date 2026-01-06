@@ -12,7 +12,6 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env", override=False)
 
 WORKING_DIR = "./dickens"
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VFVwcE53PT06NDhkN2IyMWQ=
 
 
 def configure_logging():
@@ -81,7 +80,6 @@ def configure_logging():
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
 
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VFVwcE53PT06NDhkN2IyMWQ=
 
 async def initialize_rag():
     rag = LightRAG(
@@ -135,7 +133,7 @@ async def main():
 
         # Initialize RAG instance
         rag = await initialize_rag()
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VFVwcE53PT06NDhkN2IyMWQ=
+# pylint: disable
 
         # Test embedding function
         test_text = ["This is a test string for embedding."]
@@ -162,7 +160,6 @@ async def main():
             await print_stream(resp)
         else:
             print(resp)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VFVwcE53PT06NDhkN2IyMWQ=
 
         # Perform local search
         print("\n=====================")

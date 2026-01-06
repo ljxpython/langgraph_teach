@@ -1,4 +1,4 @@
-// FIXME  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VFZSVlVBPT06NjU4NjQ5ZTQ=
+// FIXME
 
 "use client";
 
@@ -6,7 +6,7 @@ import * as React from "react";
 import * as TabsPrimitive from "@radix-ui/react-tabs";
 
 import { cn } from "@/lib/utils";
-// FIXME  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VFZSVlVBPT06NjU4NjQ5ZTQ=
+// FIXME
 
 function Tabs({
   className,
@@ -65,6 +65,6 @@ function TabsContent({
     />
   );
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VFZSVlVBPT06NjU4NjQ5ZTQ=
+// NOTE
 
 export { Tabs, TabsList, TabsTrigger, TabsContent };

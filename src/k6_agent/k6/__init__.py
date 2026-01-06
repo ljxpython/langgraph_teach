@@ -22,7 +22,6 @@ from k6_agent.k6.scenarios import (
     create_soak_test_options,
     create_breakpoint_test_options,
 )
-# noqa  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002TjBnMFp3PT06NTQ1ZDI3NGQ=
 
 __all__ = [
     # Core types
@@ -43,4 +42,3 @@ __all__ = [
     "create_breakpoint_test_options",
 ]
 
-# fmt: off  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002TjBnMFp3PT06NTQ1ZDI3NGQ=

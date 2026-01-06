@@ -1,9 +1,9 @@
 "use client";
-// FIXME  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002TmtwSGR3PT06YWRiNjVlN2E=
+// FIXME
 
 import * as React from "react";
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
-// NOTE  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002TmtwSGR3PT06YWRiNjVlN2E=
+// NOTE
 
 import { cn } from "@/lib/utils";
 
@@ -56,6 +56,5 @@ function ScrollBar({
     </ScrollAreaPrimitive.ScrollAreaScrollbar>
   );
 }
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002TmtwSGR3PT06YWRiNjVlN2E=
 
 export { ScrollArea, ScrollBar };

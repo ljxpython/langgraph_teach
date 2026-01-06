@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area'
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002Y21SYWNRPT06NmZkZDA0NDg=
+// NOTE
 
 import { cn } from '@/lib/utils'
 
@@ -43,4 +43,4 @@ const ScrollBar = React.forwardRef<
 ScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName
 
 export { ScrollArea, ScrollBar }
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002Y21SYWNRPT06NmZkZDA0NDg=
+// NOTE

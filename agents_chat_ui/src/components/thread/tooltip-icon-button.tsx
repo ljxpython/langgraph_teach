@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef } from "react";
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UzBwRmFRPT06ZWU4NDg0OTA=
+// NOTE
 
 import {
   Tooltip,
@@ -41,6 +41,6 @@ export const TooltipIconButton = forwardRef<
     </TooltipProvider>
   );
 });
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UzBwRmFRPT06ZWU4NDg0OTA=
+// NOTE
 
 TooltipIconButton.displayName = "TooltipIconButton";

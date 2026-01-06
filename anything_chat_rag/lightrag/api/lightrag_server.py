@@ -68,7 +68,6 @@ from lightrag.api.auth import auth_handler
 # the OS environment variables take precedence over the .env file
 load_dotenv(dotenv_path=".env", override=False)
 
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VkhCT1RRPT06ZDYyYTJjMTc=
 
 webui_title = os.getenv("WEBUI_TITLE")
 webui_description = os.getenv("WEBUI_DESCRIPTION")
@@ -163,7 +162,6 @@ def check_frontend_build():
     """
     webui_dir = Path(__file__).parent / "webui"
     index_html = webui_dir / "index.html"
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VkhCT1RRPT06ZDYyYTJjMTc=
 
     # 1. Check if build files exist (required)
     if not index_html.exists():
@@ -275,7 +273,6 @@ def check_frontend_build():
         else:
             logger.info("Frontend build is up-to-date")
             return False  # Frontend is up-to-date
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VkhCT1RRPT06ZDYyYTJjMTc=
 
     except Exception as e:
         # If check fails, log warning but don't affect startup
@@ -395,7 +392,7 @@ def create_app(args):
         "redoc_url": "/redoc",  # Explicitly set redoc URL
         "lifespan": lifespan,
     }
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VkhCT1RRPT06ZDYyYTJjMTc=
+# pylint: disable
 
     # Configure Swagger UI parameters
     # Enable persistAuthorization and tryItOutEnabled for better user experience

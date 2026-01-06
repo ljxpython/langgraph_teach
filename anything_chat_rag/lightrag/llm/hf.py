@@ -1,7 +1,6 @@
 import copy
 import os
 from functools import lru_cache
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TjA5eGJ3PT06MDBhMjBlZWQ=
 
 import pipmaster as pm  # Pipmaster for dynamic library install
 
@@ -42,7 +41,6 @@ def initialize_hf_model(model_name):
     )
     if hf_tokenizer.pad_token is None:
         hf_tokenizer.pad_token = hf_tokenizer.eos_token
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TjA5eGJ3PT06MDBhMjBlZWQ=
 
     return hf_model, hf_tokenizer
 
@@ -142,7 +140,6 @@ async def hf_model_complete(
         **kwargs,
     )
     return result
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TjA5eGJ3PT06MDBhMjBlZWQ=
 
 
 @wrap_embedding_func_with_attrs(embedding_dim=1024, max_token_size=8192)
@@ -154,7 +151,6 @@ async def hf_embed(texts: list[str], tokenizer, embed_model) -> np.ndarray:
         device = torch.device("mps")  # Use MPS for Apple Silicon
     else:
         device = torch.device("cpu")  # Fallback to CPU
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TjA5eGJ3PT06MDBhMjBlZWQ=
 
     # Move the model to the detected device
     embed_model = embed_model.to(device)

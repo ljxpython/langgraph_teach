@@ -1,4 +1,3 @@
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTAxWk9BPT06N2FmZDY5OWU=
 
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
@@ -36,7 +35,6 @@ const buttonVariants = cva(
     },
   }
 );
-// @ts-expect-error  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTAxWk9BPT06N2FmZDY5OWU=
 
 function Button({
   className,
@@ -58,6 +56,6 @@ function Button({
     />
   );
 }
-// TODO  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VTAxWk9BPT06N2FmZDY5OWU=
+// TODO
 
 export { Button, buttonVariants };

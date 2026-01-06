@@ -11,7 +11,6 @@ import asyncio
 import nest_asyncio
 
 nest_asyncio.apply()
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGxOR2VnPT06OWQ0YzViYzQ=
 
 
 # Configure working directory
@@ -45,7 +44,6 @@ async def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwar
                 temperature=0.7,
             )
             kwargs["llm_instance"] = llm_instance
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGxOR2VnPT06OWQ0YzViYzQ=
 
         response = await llama_index_complete_if_cache(
             kwargs["llm_instance"],
@@ -102,7 +100,6 @@ async def initialize_rag():
 def main():
     # Initialize RAG instance
     rag = asyncio.run(initialize_rag())
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGxOR2VnPT06OWQ0YzViYzQ=
 
     # Insert example text
     with open("./book.txt", "r", encoding="utf-8") as f:
@@ -137,7 +134,6 @@ def main():
         )
     )
 
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZGxOR2VnPT06OWQ0YzViYzQ=
 
 if __name__ == "__main__":
     main()

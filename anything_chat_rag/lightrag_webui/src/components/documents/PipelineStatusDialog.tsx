@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V0hSU2JBPT06ZTI1N2M1NTg=
+// NOTE
 
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -16,16 +16,16 @@ import Button from '@/components/ui/Button'
 import { getPipelineStatus, cancelPipeline, PipelineStatusResponse } from '@/api/lightrag'
 import { errorMessage } from '@/lib/utils'
 import { cn } from '@/lib/utils'
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V0hSU2JBPT06ZTI1N2M1NTg=
+// TODO
 
 type DialogPosition = 'left' | 'center' | 'right'
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V0hSU2JBPT06ZTI1N2M1NTg=
+// TODO
 
 interface PipelineStatusDialogProps {
   open: boolean
   onOpenChange: (open: boolean) => void
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V0hSU2JBPT06ZTI1N2M1NTg=
+// TODO
 
 export default function PipelineStatusDialog({
   open,

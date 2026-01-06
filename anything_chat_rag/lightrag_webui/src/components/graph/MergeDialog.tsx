@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhsM2VnPT06YzExNzMzMWU=
+// NOTE
 
 import { useTranslation } from 'react-i18next'
 import { useSettingsStore } from '@/stores/settings'
@@ -11,7 +11,7 @@ import {
   DialogTitle
 } from '@/components/ui/Dialog'
 import Button from '@/components/ui/Button'
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhsM2VnPT06YzExNzMzMWU=
+// eslint-disable
 
 interface MergeDialogProps {
   mergeDialogOpen: boolean
@@ -22,7 +22,6 @@ interface MergeDialogProps {
   onOpenChange: (open: boolean) => void
   onRefresh: (useMergedStart: boolean) => void
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhsM2VnPT06YzExNzMzMWU=
 
 /**
  * MergeDialog component that appears after a successful entity merge
@@ -72,4 +71,4 @@ const MergeDialog = ({
 }
 
 export default MergeDialog
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VFhsM2VnPT06YzExNzMzMWU=
+// NOTE

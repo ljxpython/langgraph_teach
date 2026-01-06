@@ -17,7 +17,6 @@ if TYPE_CHECKING:
 
 class BatchMixin:
     """BatchMixin class containing batch processing functionality for RAGAnything"""
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVwcmVnPT06YWQ1ZWJjNWM=
 
     # Type hints for mixin attributes (will be available when mixed into RAGAnything)
     config: "RAGAnythingConfig"
@@ -137,7 +136,6 @@ class BatchMixin:
                     successful_files.append(file_path)
                 else:
                     failed_files.append((file_path, error))
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVwcmVnPT06YWQ1ZWJjNWM=
 
         # Display statistics if requested
         if display_stats:
@@ -195,7 +193,6 @@ class BatchMixin:
             show_progress=show_progress,
             skip_installation_check=True,  # Skip installation check for better UX
         )
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVwcmVnPT06YWQ1ZWJjNWM=
 
         # Process batch
         return batch_parser.process_batch(
@@ -372,7 +369,6 @@ class BatchMixin:
                         "error": str(e),
                         "processed": False,
                     }
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVwcmVnPT06YWQ1ZWJjNWM=
 
         processing_time = time.time() - start_time
 

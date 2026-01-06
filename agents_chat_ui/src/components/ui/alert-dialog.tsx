@@ -1,5 +1,5 @@
 "use client"
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpoc05nPT06MTdjNjNlMDM=
+// TODO
 
 import * as React from "react"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
@@ -10,7 +10,7 @@ import { buttonVariants } from "@/components/ui/button"
 const AlertDialog = AlertDialogPrimitive.Root
 
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpoc05nPT06MTdjNjNlMDM=
+// NOTE
 
 const AlertDialogPortal = AlertDialogPrimitive.Portal
 
@@ -46,7 +46,7 @@ const AlertDialogContent = React.forwardRef<
   </AlertDialogPortal>
 ))
 AlertDialogContent.displayName = AlertDialogPrimitive.Content.displayName
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpoc05nPT06MTdjNjNlMDM=
+// FIXME
 
 const AlertDialogHeader = ({
   className,
@@ -142,4 +142,3 @@ export {
   AlertDialogAction,
   AlertDialogCancel,
 }
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VGpoc05nPT06MTdjNjNlMDM=

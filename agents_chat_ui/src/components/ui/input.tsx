@@ -1,4 +1,3 @@
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YW5NNFRRPT06ZDU2MGE0ZTY=
 
 import * as React from "react";
 
@@ -20,4 +19,3 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
 }
 
 export { Input };
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YW5NNFRRPT06ZDU2MGE0ZTY=

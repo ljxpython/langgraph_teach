@@ -8,7 +8,6 @@ https://github.com/langchain-ai/deepagents
 """
 from typing import Optional, List, Any, Dict, Sequence
 from pathlib import Path
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V1c5eWRBPT06NTM4NzQwMmY=
 
 from deepagents import create_deep_agent, SubAgent
 from deepagents.backends import FilesystemBackend
@@ -175,7 +174,6 @@ def _create_agent_tools(
             api_key=config.knowledge.api_key,
             timeout=config.knowledge.timeout,
         )
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V1c5eWRBPT06NTM4NzQwMmY=
         
         tools.extend([
             create_knowledge_retrieval_tool(client),
@@ -201,7 +199,6 @@ def _create_middleware_stack(config: K6AgentConfig) -> List[Any]:
     This function adds custom middleware for the K6 agent.
     """
     middleware: List[Any] = []
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V1c5eWRBPT06NTM4NzQwMmY=
 
     # Custom middleware can be added here if needed
     # Example: Add validation or monitoring middleware
@@ -319,5 +316,4 @@ def _create_subagents(
     })
 
     return subagents
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V1c5eWRBPT06NTM4NzQwMmY=
 

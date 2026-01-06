@@ -5,7 +5,7 @@ import asyncio
 
 from lightrag import LightRAG
 
-# pylint: disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YWxFeU53PT06OTZlYTJlZWM=
+# pylint: disable
 
 def insert_text(rag, file_path):
     with open(file_path, mode="r") as f:
@@ -43,7 +43,6 @@ def main():
     # Initialize RAG instance
     rag = asyncio.run(initialize_rag())
     insert_text(rag, f"../datasets/unique_contexts/{cls}_unique_contexts.json")
-# type: ignore  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YWxFeU53PT06OTZlYTJlZWM=
 
 
 if __name__ == "__main__":

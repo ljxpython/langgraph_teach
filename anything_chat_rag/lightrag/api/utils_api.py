@@ -34,7 +34,7 @@ def check_env_file():
                 ASCIIColors.red("Server startup cancelled")
                 return False
     return True
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dsUmJBPT06NDc1MjZmNzI=
+# pylint: disable
 
 
 # Get whitelist paths from global_args, only once during initialization
@@ -110,7 +110,6 @@ def get_combined_auth_dependency(api_key: Optional[str] = None):
                 # Accept non-guest token if auth is configured
                 if auth_configured and token_info.get("role") != "guest":
                     return
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dsUmJBPT06NDc1MjZmNzI=
 
                 # Token validation failed, immediately return 401 error
                 raise HTTPException(
@@ -143,7 +142,6 @@ def get_combined_auth_dependency(api_key: Optional[str] = None):
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="No credentials provided. Please login.",
             )
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dsUmJBPT06NDc1MjZmNzI=
 
         # if api key is provided but validation failed
         if api_key_header_value:
@@ -327,7 +325,6 @@ def display_splash_screen(args: argparse.Namespace) -> None:
         ASCIIColors.yellow(f"{base_url}/docs")
         ASCIIColors.white("    └─ Alternative Documentation: ", end="")
         ASCIIColors.yellow(f"{base_url}/redoc")
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dsUmJBPT06NDc1MjZmNzI=
 
     # Security Notice
     if args.key:

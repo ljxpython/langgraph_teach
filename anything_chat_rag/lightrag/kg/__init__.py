@@ -40,7 +40,7 @@ STORAGE_IMPLEMENTATIONS = {
         "required_methods": ["get_docs_by_status"],
     },
 }
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhKTk5nPT06YjdkMjVjZjk=
+# pylint: disable
 
 # Storage implementation environment variable without default value
 STORAGE_ENV_REQUIREMENTS: dict[str, list[str]] = {
@@ -93,7 +93,6 @@ STORAGE_ENV_REQUIREMENTS: dict[str, list[str]] = {
         "MONGO_DATABASE",
     ],
 }
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhKTk5nPT06YjdkMjVjZjk=
 
 # Storage implementation module mapping
 STORAGES = {
@@ -120,7 +119,6 @@ STORAGES = {
     "MemgraphStorage": ".kg.memgraph_impl",
 }
 
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhKTk5nPT06YjdkMjVjZjk=
 
 def verify_storage_implementation(storage_type: str, storage_name: str) -> None:
     """Verify if storage implementation is compatible with specified storage type
@@ -141,4 +139,3 @@ def verify_storage_implementation(storage_type: str, storage_name: str) -> None:
             f"Storage implementation '{storage_name}' is not compatible with {storage_type}. "
             f"Compatible implementations are: {', '.join(storage_info['implementations'])}"
         )
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhKTk5nPT06YjdkMjVjZjk=

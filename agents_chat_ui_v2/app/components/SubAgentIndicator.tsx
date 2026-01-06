@@ -4,14 +4,14 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import type { SubAgent } from "@/app/types/types";
-// TODO  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UjAwMWJRPT06MzE1N2FkNGU=
+// TODO
 
 interface SubAgentIndicatorProps {
   subAgent: SubAgent;
   onClick: () => void;
   isExpanded?: boolean;
 }
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UjAwMWJRPT06MzE1N2FkNGU=
+// eslint-disable
 
 export const SubAgentIndicator = React.memo<SubAgentIndicatorProps>(
   ({ subAgent, onClick, isExpanded = true }) => {

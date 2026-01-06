@@ -1,12 +1,11 @@
 import { Message } from "@langchain/langgraph-sdk";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y2toNWRBPT06OGI3NWMyY2M=
+// NOTE
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y2toNWRBPT06OGI3NWMyY2M=
 
 export function extractStringFromMessageContent(message: Message): string {
   return typeof message.content === "string"
@@ -73,7 +72,7 @@ export function isPreparingToCallTaskTool(messages: Message[]): boolean {
     false
   );
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y2toNWRBPT06OGI3NWMyY2M=
+// NOTE
 
 export function formatMessageForLLM(message: Message): string {
   let role: string;
@@ -153,7 +152,7 @@ export function formatMessageForLLM(message: Message): string {
 
   return `${role}${timestamp}:\n${parts.join("\n\n")}`;
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y2toNWRBPT06OGI3NWMyY2M=
+// TODO
 
 export function formatConversationForLLM(messages: Message[]): string {
   const formattedMessages = messages.map(formatMessageForLLM);

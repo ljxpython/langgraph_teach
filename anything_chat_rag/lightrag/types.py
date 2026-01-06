@@ -7,14 +7,13 @@ from typing import Any, Optional
 class GPTKeywordExtractionFormat(BaseModel):
     high_level_keywords: list[str]
     low_level_keywords: list[str]
-# pylint: disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VGxkbFVRPT06YzY1NDdhNTQ=
+# pylint: disable
 
 
 class KnowledgeGraphNode(BaseModel):
     id: str
     labels: list[str]
     properties: dict[str, Any]  # anything else goes here
-# noqa  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VGxkbFVRPT06YzY1NDdhNTQ=
 
 
 class KnowledgeGraphEdge(BaseModel):

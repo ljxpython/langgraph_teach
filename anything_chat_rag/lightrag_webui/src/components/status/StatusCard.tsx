@@ -1,8 +1,8 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhoeWRBPT06YjZhMjE4Yjk=
+// FIXME
 
 import { LightragStatus } from '@/api/lightrag'
 import { useTranslation } from 'react-i18next'
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhoeWRBPT06YjZhMjE4Yjk=
+// eslint-disable
 
 const StatusCard = ({ status }: { status: LightragStatus | null }) => {
   const { t } = useTranslation()
@@ -90,7 +90,7 @@ const StatusCard = ({ status }: { status: LightragStatus | null }) => {
     </div>
   )
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhoeWRBPT06YjZhMjE4Yjk=
+// FIXME
 
 export default StatusCard
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VVhoeWRBPT06YjZhMjE4Yjk=
+// TODO

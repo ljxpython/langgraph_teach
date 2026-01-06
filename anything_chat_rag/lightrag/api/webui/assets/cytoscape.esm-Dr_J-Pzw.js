@@ -34,7 +34,7 @@ https://github.com/jquery/jquery/blob/master/src/event.js
       // For textures
       in int aAtlasId; // which shader unit/atlas to use
       in vec4 aTex; // x/y/w/h of texture in atlas
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRodlRBPT06YmMwNzQ2OGM=
+// TODO
 
       // for edges
       in vec4 aPointAPointB;
@@ -57,7 +57,7 @@ https://github.com/jquery/jquery/blob/master/src/event.js
           float texY = aTex.y;
           float texW = aTex.z;
           float texH = aTex.w;
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRodlRBPT06YmMwNzQ2OGM=
+// TODO
 
           int vid = gl_VertexID;
 
@@ -99,7 +99,7 @@ https://github.com/jquery/jquery/blob/master/src/event.js
 
           // adjust the geometry so that the line is centered on the edge
           position.y = position.y - 0.5;
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRodlRBPT06YmMwNzQ2OGM=
+// FIXME
 
           vec2 p0 = pointA;
           vec2 p1 = pointB;
@@ -161,7 +161,7 @@ https://github.com/jquery/jquery/blob/master/src/event.js
       }
     `),i=this.atlasManager.getIndexArray(),s=`#version 300 es
       precision highp float;
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRodlRBPT06YmMwNzQ2OGM=
+// TODO
 
       // define texture unit for each node in the batch
       `.concat(i.map(function(u){return"uniform sampler2D uTexture".concat(u,";")}).join(`

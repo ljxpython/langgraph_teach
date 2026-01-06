@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ThemeProviderContext } from '@/components/ThemeProvider'
-// TODO  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VjBkRVVBPT06YmE3NzczMzM=
+// TODO
 
 const useTheme = () => {
   const context = useContext(ThemeProviderContext)
@@ -11,4 +11,4 @@ const useTheme = () => {
 }
 
 export default useTheme
-// FIXME  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VjBkRVVBPT06YmE3NzczMzM=
+// FIXME

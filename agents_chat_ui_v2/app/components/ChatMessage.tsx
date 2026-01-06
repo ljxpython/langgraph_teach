@@ -1,7 +1,7 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRKYWNnPT06ODQ2MTFkNTE=
+// NOTE
 
 "use client";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRKYWNnPT06ODQ2MTFkNTE=
+// eslint-disable
 
 import React, { useMemo, useState, useCallback } from "react";
 import { SubAgentIndicator } from "@/app/components/SubAgentIndicator";
@@ -31,7 +31,6 @@ interface ChatMessageProps {
   onResumeInterrupt?: (value: any) => void;
   graphId?: string;
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRKYWNnPT06ODQ2MTFkNTE=
 
 export const ChatMessage = React.memo<ChatMessageProps>(
   ({
@@ -202,4 +201,3 @@ export const ChatMessage = React.memo<ChatMessageProps>(
 );
 
 ChatMessage.displayName = "ChatMessage";
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TkRKYWNnPT06ODQ2MTFkNTE=

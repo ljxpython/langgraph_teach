@@ -24,7 +24,7 @@ config.read("config.ini", "utf-8")
 class MilvusVectorDBStorage(BaseVectorStorage):
     def _create_schema_for_namespace(self) -> CollectionSchema:
         """Create schema based on the current instance's namespace"""
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc4eVFRPT06MzJkY2MzNzc=
+# pylint: disable
 
         # Get vector dimension from embedding_func
         dimension = self.embedding_func.embedding_dim
@@ -251,7 +251,7 @@ class MilvusVectorDBStorage(BaseVectorStorage):
                             f"[{self.workspace}] IndexParams method failed for src_id: {e}"
                         )
                         self._create_scalar_index_fallback("src_id", "INVERTED")
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc4eVFRPT06MzJkY2MzNzc=
+# pylint: disable
 
                     try:
                         tgt_id_index = self._get_index_params()
@@ -313,7 +313,7 @@ class MilvusVectorDBStorage(BaseVectorStorage):
             logger.warning(
                 f"[{self.workspace}] Failed to create some indexes for {self.namespace}: {e}"
             )
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc4eVFRPT06MzJkY2MzNzc=
+# pylint: disable
 
     def _get_required_fields_for_namespace(self) -> dict:
         """Get required core field definitions for current namespace"""
@@ -395,7 +395,7 @@ class MilvusVectorDBStorage(BaseVectorStorage):
         original_expected = expected_type
         existing_type = type_aliases.get(existing_type, existing_type)
         expected_type = type_aliases.get(expected_type, expected_type)
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc4eVFRPT06MzJkY2MzNzc=
+# pylint: disable
 
         if original_existing != existing_type or original_expected != expected_type:
             logger.debug(

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { cn } from '@/lib/utils'
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TjBGMVJBPT06YzY1YTNhODc=
+// NOTE
 
 const Table = React.forwardRef<HTMLTableElement, React.HTMLAttributes<HTMLTableElement>>(
   ({ className, ...props }, ref) => (
@@ -11,7 +11,7 @@ const Table = React.forwardRef<HTMLTableElement, React.HTMLAttributes<HTMLTableE
   )
 )
 Table.displayName = 'Table'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TjBGMVJBPT06YzY1YTNhODc=
+// NOTE
 
 const TableHeader = React.forwardRef<
   HTMLTableSectionElement,
@@ -40,7 +40,7 @@ const TableFooter = React.forwardRef<
   />
 ))
 TableFooter.displayName = 'TableFooter'
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TjBGMVJBPT06YzY1YTNhODc=
+// TODO
 
 const TableRow = React.forwardRef<HTMLTableRowElement, React.HTMLAttributes<HTMLTableRowElement>>(
   ({ className, ...props }, ref) => (
@@ -95,6 +95,6 @@ const TableCaption = React.forwardRef<
   <caption ref={ref} className={cn('text-muted-foreground mt-4 text-sm', className)} {...props} />
 ))
 TableCaption.displayName = 'TableCaption'
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TjBGMVJBPT06YzY1YTNhODc=
+// TODO
 
 export { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption }

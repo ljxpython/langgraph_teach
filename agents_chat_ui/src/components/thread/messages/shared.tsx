@@ -12,7 +12,7 @@ import { TooltipIconButton } from "../tooltip-icon-button";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWtKRllnPT06ZmQ3NTg1NDA=
+// eslint-disable
 
 function ContentCopyable({
   content,
@@ -66,7 +66,7 @@ function ContentCopyable({
     </TooltipIconButton>
   );
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWtKRllnPT06ZmQ3NTg1NDA=
+// NOTE
 
 export function BranchSwitcher({
   branch,
@@ -82,7 +82,7 @@ export function BranchSwitcher({
   // 暂时禁用分支切换功能
   return null;
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZWtKRllnPT06ZmQ3NTg1NDA=
+// FIXME
 
 export function CommandBar({
   content,

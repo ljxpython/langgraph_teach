@@ -7,7 +7,6 @@ of performance testing:
 - Result analysis
 - Report generation
 """
-# fmt: off  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002Y1ZJM2NnPT06NjBhMWQwYzI=
 
 from k6_agent.agents.script_generator import ScriptGeneratorAgent
 from k6_agent.agents.test_executor import TestExecutorAgent
@@ -21,4 +20,3 @@ __all__ = [
     "ReportGeneratorAgent",
 ]
 
-# pragma: no cover  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002Y1ZJM2NnPT06NjBhMWQwYzI=

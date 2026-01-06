@@ -3,7 +3,6 @@ import { ThreadActionsView } from "./components/thread-actions-view";
 import { useState } from "react";
 import { HumanInterrupt } from "@langchain/langgraph/prebuilt";
 import { useStreamContext } from "@/providers/Stream";
-// @ts-expect-error  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002YWpCbVdRPT06M2Y5MWRmNWQ=
 
 interface ThreadViewProps {
   interrupt: HumanInterrupt | HumanInterrupt[];
@@ -56,4 +55,3 @@ export function ThreadView({ interrupt }: ThreadViewProps) {
     </div>
   );
 }
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002YWpCbVdRPT06M2Y5MWRmNWQ=

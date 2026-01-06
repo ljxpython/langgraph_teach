@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRJNGFnPT06YzNkZDM2NTY=
+// NOTE
 
 "use client";
 
@@ -21,7 +21,7 @@ import type { TodoItem, FileItem } from "@/app/types/types";
 import { useChatContext } from "@/providers/ChatProvider";
 import { cn } from "@/lib/utils";
 import { FileViewDialog } from "@/app/components/FileViewDialog";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRJNGFnPT06YzNkZDM2NTY=
+// eslint-disable
 
 export function FilesPopover({
   files,
@@ -113,7 +113,7 @@ export function FilesPopover({
     </>
   );
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRJNGFnPT06YzNkZDM2NTY=
+// TODO
 
 export const TasksFilesSidebar = React.memo<{
   todos: TodoItem[];
@@ -268,4 +268,4 @@ export const TasksFilesSidebar = React.memo<{
 });
 
 TasksFilesSidebar.displayName = "TasksFilesSidebar";
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UlRJNGFnPT06YzNkZDM2NTY=
+// NOTE

@@ -6,7 +6,7 @@ import useLightragGraph from '@/hooks/useLightragGraph'
 import { useTranslation } from 'react-i18next'
 import { GitBranchPlus, Scissors } from 'lucide-react'
 import EditablePropertyRow from './EditablePropertyRow'
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVFeFJnPT06YWRhNGQwOTA=
+// eslint-disable
 
 /**
  * Component that view properties of elements in graph.
@@ -84,7 +84,7 @@ type NodeType = RawNodeType & {
     label: string
   }[]
 }
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVFeFJnPT06YWRhNGQwOTA=
+// eslint-disable
 
 type EdgeType = RawEdgeType & {
   sourceNode?: RawNodeType
@@ -137,7 +137,7 @@ const refineNodeProperties = (node: RawNodeType): NodeType => {
     relationships
   }
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVFeFJnPT06YWRhNGQwOTA=
+// eslint-disable
 
 const refineEdgeProperties = (edge: RawEdgeType): EdgeType => {
   const state = useGraphStore.getState()
@@ -358,7 +358,7 @@ const NodePropertiesView = ({ node }: { node: NodeType }) => {
     </div>
   )
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVFeFJnPT06YWRhNGQwOTA=
+// TODO
 
 const EdgePropertiesView = ({ edge }: { edge: EdgeType }) => {
   const { t } = useTranslation()

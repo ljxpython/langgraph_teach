@@ -7,7 +7,6 @@ def openai_complete_if_cache(
     model="gpt-4o", prompt=None, system_prompt=None, history_messages=[], **kwargs
 ) -> str:
     openai_client = OpenAI()
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YVdkRlJ3PT06NTEyYWY3NmM=
 
     messages = []
     if system_prompt:
@@ -22,7 +21,6 @@ def openai_complete_if_cache(
 
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YVdkRlJ3PT06NTEyYWY3NmM=
 
 
 def get_summary(context, tot_tokens=2000):
@@ -37,7 +35,7 @@ def get_summary(context, tot_tokens=2000):
 
     return summary
 
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YVdkRlJ3PT06NTEyYWY3NmM=
+# pylint: disable
 
 clses = ["agriculture"]
 for cls in clses:
@@ -47,7 +45,6 @@ for cls in clses:
     summaries = [get_summary(context) for context in unique_contexts]
 
     total_description = "\n\n".join(summaries)
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YVdkRlJ3PT06NTEyYWY3NmM=
 
     prompt = f"""
     Given the following description of a dataset:

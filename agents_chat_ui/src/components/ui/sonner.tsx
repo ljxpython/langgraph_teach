@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 import { Toaster as Sonner, ToasterProps } from "sonner";
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZURWS1pBPT06ZmZlMmE3Mzc=
+// NOTE
 
 const Toaster = ({ ...props }: ToasterProps) => {
   const { theme = "system" } = useTheme();
@@ -26,4 +26,4 @@ const Toaster = ({ ...props }: ToasterProps) => {
 };
 
 export { Toaster };
-// TODO  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZURWS1pBPT06ZmZlMmE3Mzc=
+// TODO

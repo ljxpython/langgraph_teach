@@ -1,11 +1,11 @@
 import { createContext, useEffect } from 'react'
 import { Theme, useSettingsStore } from '@/stores/settings'
-// TODO  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002YzBSc1p3PT06MDZmMzc5MzE=
+// TODO
 
 type ThemeProviderProps = {
   children: React.ReactNode
 }
-// FIXME  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002YzBSc1p3PT06MDZmMzc5MzE=
+// FIXME
 
 type ThemeProviderState = {
   theme: Theme
@@ -57,6 +57,6 @@ export default function ThemeProvider({ children, ...props }: ThemeProviderProps
     </ThemeProviderContext.Provider>
   )
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002YzBSc1p3PT06MDZmMzc5MzE=
+// NOTE
 
 export { ThemeProviderContext }

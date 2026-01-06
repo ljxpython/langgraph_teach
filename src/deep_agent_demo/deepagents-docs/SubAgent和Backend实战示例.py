@@ -62,7 +62,7 @@ def example_1_subagent_essence():
     subagent_graphs = {
         code_reviewer["name"]: actual_agent
     }
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UkZsMmF3PT06NWEwNTYwNGI=
+# pylint: disable
     
     print("\n3️⃣ 存储在 subagent_graphs 字典中:")
     print(f"   subagent_graphs = {list(subagent_graphs.keys())}")
@@ -120,7 +120,6 @@ def example_2_backend_abstraction():
     print("-" * 80)
     
     store = InMemoryStore()  # 生产环境可以用 PostgresStore
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UkZsMmF3PT06NWEwNTYwNGI=
     
     agent_prod = create_deep_agent(
         model="openai:gpt-4o-mini",
@@ -227,7 +226,6 @@ def example_3_complete_example():
     print("\n📁 文件操作能力:")
     print("   - 7 个文件工具 (ls, read, write, edit, glob, grep, execute)")
     print("   - 智能路由: /knowledge/ → 持久存储, 其他 → 临时存储")
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UkZsMmF3PT06NWEwNTYwNGI=
     
     print("\n🤖 子智能体能力:")
     print("   - file-analyzer: 分析文件")

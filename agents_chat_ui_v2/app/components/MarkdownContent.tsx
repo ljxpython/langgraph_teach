@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V1hGUFF3PT06MDQ1NTliNTc=
 
 "use client";
 
@@ -8,13 +7,13 @@ import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { cn } from "@/lib/utils";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V1hGUFF3PT06MDQ1NTliNTc=
+// eslint-disable
 
 interface MarkdownContentProps {
   content: string;
   className?: string;
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V1hGUFF3PT06MDQ1NTliNTc=
+// NOTE
 
 export const MarkdownContent = React.memo<MarkdownContentProps>(
   ({ content, className = "" }) => {
@@ -153,4 +152,4 @@ export const MarkdownContent = React.memo<MarkdownContentProps>(
 );
 
 MarkdownContent.displayName = "MarkdownContent";
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V1hGUFF3PT06MDQ1NTliNTc=
+// eslint-disable

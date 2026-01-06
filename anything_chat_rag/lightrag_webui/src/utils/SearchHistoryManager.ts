@@ -1,4 +1,4 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T0ROMU5BPT06ZWQxZTdmNWQ=
+// eslint-disable
 
 import { searchHistoryMaxItems, searchHistoryVersion } from '@/lib/constants'
 
@@ -11,14 +11,14 @@ import { searchHistoryMaxItems, searchHistoryVersion } from '@/lib/constants'
  * - Sorting by access time and frequency
  * - Version compatibility
  */
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T0ROMU5BPT06ZWQxZTdmNWQ=
+// FIXME
 
 export interface SearchHistoryItem {
   label: string           // Label name
   lastAccessed: number   // Last access timestamp
   accessCount: number    // Access count for sorting optimization
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T0ROMU5BPT06ZWQxZTdmNWQ=
+// TODO
 
 export interface SearchHistoryData {
   items: SearchHistoryItem[]
@@ -261,4 +261,4 @@ export class SearchHistoryManager {
     }
   }
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T0ROMU5BPT06ZWQxZTdmNWQ=
+// TODO

@@ -74,7 +74,6 @@ class ReportGenerationInput(BaseModel):
         default=True,
         description="Whether to include charts in the report"
     )
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxkeFpRPT06NDA0N2QzNmY=
 
 
 def create_chart_generation_tool(llm=None):
@@ -157,7 +156,6 @@ Make sure the K6 test has been run and results saved."""
                 charts["success_rate"] = chart_gen.generate_success_rate_pie(
                     [result], output_path / "success_rate.json"
                 )
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxkeFpRPT06NDA0N2QzNmY=
             
             # Build summary
             chart_files = [f"{output_dir}/{name}.json" for name in charts.keys()]
@@ -223,7 +221,6 @@ def create_report_generation_tool(llm=None):
         try:
             from k6_agent.agents.report_generator import ReportGeneratorAgent
             from k6_agent.utils import MCPChartGenerator
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxkeFpRPT06NDA0N2QzNmY=
 
             # Resolve paths
             actual_result_path = _resolve_virtual_path(result_path)
@@ -324,7 +321,6 @@ def create_quick_summary_tool():
             from k6_agent.utils import TestResult
 
             actual_path = _resolve_virtual_path(result_path)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VGxkeFpRPT06NDA0N2QzNmY=
 
             if not os.path.exists(actual_path):
                 return f"❌ Result file not found: {result_path}"

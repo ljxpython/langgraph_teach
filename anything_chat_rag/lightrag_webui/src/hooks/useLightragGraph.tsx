@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDA5QlZBPT06YjUzNzc3Mjg=
 
 import Graph, { UndirectedGraph } from 'graphology'
 import { useCallback, useEffect, useRef } from 'react'
@@ -25,7 +24,7 @@ const getNodeColorByType = (nodeType: string | undefined): string => {
 
   return color || DEFAULT_NODE_COLOR
 };
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDA5QlZBPT06YjUzNzc3Mjg=
+// TODO
 
 
 const validateGraph = (graph: RawGraph) => {
@@ -92,7 +91,6 @@ export type EdgeType = {
   color?: string
   hidden?: boolean
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDA5QlZBPT06YjUzNzc3Mjg=
 
 const fetchGraph = async (label: string, maxDepth: number, maxNodes: number) => {
   let rawData: any = null;
@@ -961,6 +959,6 @@ const useLightrangeGraph = () => {
 
   return { lightrageGraph, getNode, getEdge }
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZDA5QlZBPT06YjUzNzc3Mjg=
+// NOTE
 
 export default useLightrangeGraph

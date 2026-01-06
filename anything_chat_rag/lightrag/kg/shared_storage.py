@@ -75,7 +75,6 @@ _earliest_mp_cleanup_time: Optional[float] = None
 _last_mp_cleanup_time: Optional[float] = None
 
 _initialized = None
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VEU5cGFnPT06OGI2NDJmN2I=
 
 # Default workspace for backward compatibility
 _default_workspace: Optional[str] = None
@@ -96,7 +95,6 @@ _async_locks: Optional[Dict[str, asyncio.Lock]] = None
 
 _debug_n_locks_acquired: int = 0
 
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VEU5cGFnPT06OGI2NDJmN2I=
 
 def get_final_namespace(namespace: str, workspace: str | None = None):
     global _default_workspace
@@ -164,7 +162,6 @@ class UnifiedLock(Generic[T]):
                     level="DEBUG",
                     enable_output=self._enable_logging,
                 )
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VEU5cGFnPT06OGI2NDJmN2I=
 
             # Then acquire the main lock
             if self._is_async:
@@ -369,7 +366,7 @@ def _perform_lock_cleanup(
 
     if not (has_expired_locks and interval_satisfied):
         return 0, earliest_cleanup_time, last_cleanup_time
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VEU5cGFnPT06OGI2NDJmN2I=
+# pylint: disable
 
     try:
         cleaned_count = 0

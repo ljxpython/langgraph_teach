@@ -19,7 +19,7 @@ export type Email = {
   read?: boolean;
   status?: "in-queue" | "processing" | "hitl" | "done";
 };
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TVdwQ1RBPT06MzA4NWI2OWY=
+// TODO
 
 export interface ThreadValues {
   email: Email;
@@ -29,7 +29,7 @@ export interface ThreadValues {
     response: string;
   };
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TVdwQ1RBPT06MzA4NWI2OWY=
+// NOTE
 
 export type ThreadData<
   ThreadValues extends Record<string, any> = Record<string, any>,
@@ -49,7 +49,7 @@ export type ThreadData<
 export type ThreadStatusWithAll = ThreadStatus | "all";
 
 export type SubmitType = "accept" | "response" | "edit";
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TVdwQ1RBPT06MzA4NWI2OWY=
+// FIXME
 
 export interface AgentInbox {
   /**

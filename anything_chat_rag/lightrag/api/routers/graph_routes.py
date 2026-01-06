@@ -18,7 +18,6 @@ class EntityUpdateRequest(BaseModel):
     allow_rename: bool = False
     allow_merge: bool = False
 
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V1ZsTlZ3PT06ZjY1OGIzODc=
 
 class RelationUpdateRequest(BaseModel):
     source_id: str
@@ -40,7 +39,6 @@ class EntityMergeRequest(BaseModel):
         examples=["Elon Musk"],
     )
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V1ZsTlZ3PT06ZjY1OGIzODc=
 
 class EntityCreateRequest(BaseModel):
     entity_name: str = Field(
@@ -130,7 +128,6 @@ def create_graph_routes(rag, api_key: Optional[str] = None):
             raise HTTPException(
                 status_code=500, detail=f"Error getting popular labels: {str(e)}"
             )
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V1ZsTlZ3PT06ZjY1OGIzODc=
 
     @router.get("/graph/label/search", dependencies=[Depends(combined_auth)])
     async def search_labels(
@@ -384,7 +381,6 @@ def create_graph_routes(rag, api_key: Optional[str] = None):
             # Separate entity data from operation_summary for clean response
             entity_data = dict(result)
             entity_data.pop("operation_summary", None)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V1ZsTlZ3PT06ZjY1OGIzODc=
 
             # Generate appropriate response message based on merge status
             response_message = (

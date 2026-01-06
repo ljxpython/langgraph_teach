@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U0V0dk5nPT06ZjFhNjM1YzY=
+// NOTE
 
 import { useState, useCallback, useEffect} from 'react'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/Popover'
@@ -6,7 +6,7 @@ import Checkbox from '@/components/ui/Checkbox'
 import Button from '@/components/ui/Button'
 import Separator from '@/components/ui/Separator'
 import Input from '@/components/ui/Input'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U0V0dk5nPT06ZjFhNjM1YzY=
+// NOTE
 
 import { controlButtonVariant } from '@/lib/constants'
 import { useSettingsStore } from '@/stores/settings'
@@ -43,7 +43,7 @@ const LabeledCheckBox = ({
     </div>
   )
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U0V0dk5nPT06ZjFhNjM1YzY=
+// NOTE
 
 /**
  * Component that displays a number input with a label.
@@ -428,4 +428,4 @@ export default function Settings() {
     </>
   )
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U0V0dk5nPT06ZjFhNjM1YzY=
+// NOTE

@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { BranchSwitcher, CommandBar } from "./shared";
 import { MultimodalPreview } from "@/components/thread/MultimodalPreview";
 import { isBase64ContentBlock, isOptimizedContentBlock } from "@/lib/multimodal-utils";
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U0hOMGR3PT06N2QwZjY4MjQ=
+// FIXME
 
 function EditableContent({
   value,
@@ -34,7 +34,7 @@ function EditableContent({
     />
   );
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U0hOMGR3PT06N2QwZjY4MjQ=
+// TODO
 
 export function HumanMessage({
   message,
@@ -151,4 +151,4 @@ export function HumanMessage({
     </div>
   );
 }
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U0hOMGR3PT06N2QwZjY4MjQ=
+// eslint-disable

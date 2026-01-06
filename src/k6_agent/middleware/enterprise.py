@@ -13,7 +13,7 @@ import hashlib
 import json
 import logging
 import threading
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y3pCRFpRPT06ZDBkNTlmMTY=
+# pylint: disable
 
 logger = logging.getLogger(__name__)
 
@@ -102,7 +102,6 @@ class RateLimitingMiddleware:
         self._minute_counts: Dict[str, list] = defaultdict(list)
         self._hour_counts: Dict[str, list] = defaultdict(list)
         self._lock = threading.Lock()
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y3pCRFpRPT06ZDBkNTlmMTY=
     
     def check_rate_limit(self, user_id: str = "default") -> bool:
         """Check if a request is within rate limits.
@@ -134,7 +133,6 @@ class RateLimitingMiddleware:
             if len(self._hour_counts[user_id]) >= self.requests_per_hour:
                 logger.warning(f"Rate limit exceeded (per hour) for {user_id}")
                 return False
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y3pCRFpRPT06ZDBkNTlmMTY=
             
             # Record request
             self._minute_counts[user_id].append(now)
@@ -172,7 +170,6 @@ class AuditLoggingMiddleware:
         self.log_file = log_file
         self.entries: list = []
         self._lock = threading.Lock()
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y3pCRFpRPT06ZDBkNTlmMTY=
     
     def log(self, user_id: str, action: str, details: Dict[str, Any], result: str):
         """Log an audit entry."""

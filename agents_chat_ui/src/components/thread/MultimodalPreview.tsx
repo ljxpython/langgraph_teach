@@ -4,7 +4,6 @@ import type { Base64ContentBlock } from "@langchain/core/messages";
 import type { OptimizedContentBlock } from "@/lib/multimodal-utils";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WVZGTFJnPT06NDE4NWRkZjg=
 
 export interface MultimodalPreviewProps {
   block: Base64ContentBlock | OptimizedContentBlock;
@@ -13,7 +12,7 @@ export interface MultimodalPreviewProps {
   className?: string;
   size?: "sm" | "md" | "lg";
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WVZGTFJnPT06NDE4NWRkZjg=
+// FIXME
 
 export const MultimodalPreview: React.FC<MultimodalPreviewProps> = ({
   block,
@@ -155,4 +154,4 @@ export const MultimodalPreview: React.FC<MultimodalPreviewProps> = ({
     </div>
   );
 };
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WVZGTFJnPT06NDE4NWRkZjg=
+// TODO

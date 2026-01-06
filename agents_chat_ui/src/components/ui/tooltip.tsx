@@ -1,4 +1,4 @@
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002YjFSdFZBPT06M2U3NDcyZGI=
+// NOTE
 
 import * as React from "react";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
@@ -30,7 +30,7 @@ function Tooltip({
     </TooltipProvider>
   );
 }
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002YjFSdFZBPT06M2U3NDcyZGI=
+// eslint-disable
 
 function TooltipTrigger({
   ...props
@@ -42,7 +42,7 @@ function TooltipTrigger({
     />
   );
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002YjFSdFZBPT06M2U3NDcyZGI=
+// NOTE
 
 function TooltipContent({
   className,

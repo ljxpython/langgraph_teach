@@ -1,4 +1,4 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WlZsbVlRPT06NTQ1MTljNmY=
+// eslint-disable
 
 "use client";
 
@@ -16,7 +16,7 @@ interface ClientProviderProps {
   deploymentUrl: string;
   apiKey: string;
 }
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WlZsbVlRPT06NTQ1MTljNmY=
+// eslint-disable
 
 export function ClientProvider({
   children,

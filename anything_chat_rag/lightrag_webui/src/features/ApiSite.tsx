@@ -1,4 +1,4 @@
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WkVadFV3PT06MzIxY2U2NTg=
+// NOTE
 
 import { useState, useEffect } from 'react'
 import { useTabVisibility } from '@/contexts/useTabVisibility'
@@ -40,4 +40,4 @@ export default function ApiSite() {
     </div>
   )
 }
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WkVadFV3PT06MzIxY2U2NTg=
+// NOTE

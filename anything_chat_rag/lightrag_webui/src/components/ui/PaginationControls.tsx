@@ -1,4 +1,4 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBoRGJnPT06NzVlMmNiMTI=
+// eslint-disable
 
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -7,7 +7,7 @@ import Input from './Input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './Select'
 import { cn } from '@/lib/utils'
 import { ChevronLeftIcon, ChevronRightIcon, ChevronsLeftIcon, ChevronsRightIcon } from 'lucide-react'
-// TODO  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBoRGJnPT06NzVlMmNiMTI=
+// TODO
 
 export type PaginationControlsProps = {
   currentPage: number
@@ -20,7 +20,7 @@ export type PaginationControlsProps = {
   compact?: boolean
   className?: string
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBoRGJnPT06NzVlMmNiMTI=
+// eslint-disable
 
 const PAGE_SIZE_OPTIONS = [
   { value: 10, label: '10' },
@@ -261,4 +261,4 @@ export default function PaginationControls({
     </div>
   )
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VDBoRGJnPT06NzVlMmNiMTI=
+// TODO

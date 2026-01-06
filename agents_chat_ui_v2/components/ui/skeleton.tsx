@@ -1,4 +1,4 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WVhwR1FnPT06MzAzZmUwMDQ=
+// eslint-disable
 
 import { cn } from "@/lib/utils";
 
@@ -13,6 +13,6 @@ function Skeleton({
     />
   );
 }
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WVhwR1FnPT06MzAzZmUwMDQ=
+// NOTE
 
 export { Skeleton };

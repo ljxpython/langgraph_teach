@@ -25,7 +25,6 @@ load_dotenv(dotenv_path=".env", override=False)
 
 from lightrag import LightRAG
 from lightrag.utils import logger
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WkcxMGJBPT06NjJmNDYyNzM=
 
 # Import configuration and modules
 from raganything.config import RAGAnythingConfig
@@ -92,7 +91,6 @@ class RAGAnything(QueryMixin, ProcessorMixin, BatchMixin):
 
     parse_cache: Optional[Any] = field(default=None, init=False)
     """Parse result cache storage using LightRAG KV storage."""
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WkcxMGJBPT06NjJmNDYyNzM=
 
     _parser_installation_checked: bool = field(default=False, init=False)
     """Flag to track if parser installation has been checked."""
@@ -191,7 +189,6 @@ class RAGAnything(QueryMixin, ProcessorMixin, BatchMixin):
                 modal_caption_func=self.vision_model_func or self.llm_model_func,
                 context_extractor=self.context_extractor,
             )
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WkcxMGJBPT06NjJmNDYyNzM=
 
         if self.config.enable_table_processing:
             self.modal_processors["table"] = TableModalProcessor(
@@ -311,7 +308,6 @@ class RAGAnything(QueryMixin, ProcessorMixin, BatchMixin):
 
             # Merge user-provided lightrag_kwargs, which can override defaults
             lightrag_params.update(self.lightrag_kwargs)
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WkcxMGJBPT06NjJmNDYyNzM=
 
             # Log the parameters being used for initialization (excluding sensitive data)
             log_params = {

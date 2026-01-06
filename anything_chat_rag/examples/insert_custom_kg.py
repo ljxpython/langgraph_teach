@@ -6,10 +6,10 @@ from lightrag.llm.openai import gpt_4o_mini_complete
 # import nest_asyncio
 # nest_asyncio.apply()
 #########
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNwdk1RPT06YzU5NTk3ZDc=
+# pylint: disable
 
 WORKING_DIR = "./custom_kg"
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNwdk1RPT06YzU5NTk3ZDc=
+# pylint: disable
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
@@ -19,7 +19,6 @@ rag = LightRAG(
     llm_model_func=gpt_4o_mini_complete,  # Use gpt_4o_mini_complete LLM model
     # llm_model_func=gpt_4o_complete  # Optionally, use a stronger model
 )
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNwdk1RPT06YzU5NTk3ZDc=
 
 custom_kg = {
     "entities": [
@@ -114,6 +113,5 @@ custom_kg = {
         },
     ],
 }
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNwdk1RPT06YzU5NTk3ZDc=
 
 rag.insert_custom_kg(custom_kg)

@@ -63,7 +63,6 @@ class TestResult:
     thresholds_passed: List[str] = field(default_factory=list)
     thresholds_failed: List[str] = field(default_factory=list)
     custom_metrics: Dict[str, MetricSummary] = field(default_factory=dict)
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05SVVRPT06YWFkY2VhMGE=
     
     @property
     def passed(self) -> bool:
@@ -107,7 +106,6 @@ class ResultParserInput(BaseModel):
     """Input schema for result parsing."""
     result_path: str = Field(description="Path to K6 JSON result file")
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05SVVRPT06YWFkY2VhMGE=
 
 class MetricsAnalyzerInput(BaseModel):
     """Input schema for metrics analysis."""
@@ -261,7 +259,6 @@ def create_metrics_analyzer_tool():
             path = Path(result_path)
             if not path.exists():
                 return f"❌ Result file not found: {result_path}"
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05SVVRPT06YWFkY2VhMGE=
 
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -317,7 +314,6 @@ def create_metrics_analyzer_tool():
 
         except Exception as e:
             return f"❌ Error analyzing metrics: {str(e)}"
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZG05SVVRPT06YWFkY2VhMGE=
 
     return analyze_k6_metrics
 

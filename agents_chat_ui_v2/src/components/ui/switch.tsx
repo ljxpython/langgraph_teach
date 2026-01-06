@@ -1,10 +1,9 @@
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VGtsb2R3PT06YmFmYTAyZDg=
 
 "use client";
 
 import * as React from "react";
 import * as SwitchPrimitive from "@radix-ui/react-switch";
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VGtsb2R3PT06YmFmYTAyZDg=
+// eslint-disable
 
 import { cn } from "@/lib/utils";
 
@@ -54,6 +53,6 @@ function Switch({
     </SwitchPrimitive.Root>
   );
 }
-// FIXME  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VGtsb2R3PT06YmFmYTAyZDg=
+// FIXME
 
 export { Switch };

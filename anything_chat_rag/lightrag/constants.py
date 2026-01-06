@@ -8,7 +8,6 @@ consistency and makes maintenance easier.
 # Default values for server settings
 DEFAULT_WOKERS = 2
 DEFAULT_MAX_GRAPH_NODES = 1000
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YlVkSVZ3PT06NjdiODdhNTg=
 
 # Default values for extraction settings
 DEFAULT_SUMMARY_LANGUAGE = "English"  # Default language for document processing
@@ -53,7 +52,6 @@ DEFAULT_KG_CHUNK_PICK_METHOD = "VECTOR"
 
 # TODO: Deprated. All conversation_history messages is send to LLM.
 DEFAULT_HISTORY_TURNS = 0
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YlVkSVZ3PT06NjdiODdhNTg=
 
 # Rerank configuration defaults
 DEFAULT_MIN_RERANK_SCORE = 0.0
@@ -74,7 +72,6 @@ VALID_SOURCE_IDS_LIMIT_METHODS = {
 }
 # Maximum number of file paths stored in entity/relation file_path field (For displayed only, does not affect query performance)
 DEFAULT_MAX_FILE_PATHS = 100
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YlVkSVZ3PT06NjdiODdhNTg=
 
 # Field length of file_path in Milvus Schema for entity and relation (Should not be changed)
 # file_path must store all file paths up to the DEFAULT_MAX_FILE_PATHS limit within the metadata.
@@ -95,7 +92,7 @@ DEFAULT_EMBEDDING_BATCH_NUM = 10  # Default batch size for embedding computation
 
 # Gunicorn worker timeout
 DEFAULT_TIMEOUT = 300
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YlVkSVZ3PT06NjdiODdhNTg=
+# pylint: disable
 
 # Default llm and embedding timeout
 DEFAULT_LLM_TIMEOUT = 180

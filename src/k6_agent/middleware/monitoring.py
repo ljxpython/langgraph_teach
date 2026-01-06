@@ -11,7 +11,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VW05NGF3PT06NzYzNmRmYTk=
 
 @dataclass
 class PerformanceMetrics:
@@ -74,7 +73,6 @@ class PerformanceMonitoringMiddleware:
         
         if self.enable_detailed_logging:
             logger.info(f"Starting operation: {operation}")
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VW05NGF3PT06NzYzNmRmYTk=
         
         return metrics
     
@@ -109,7 +107,6 @@ class PerformanceMonitoringMiddleware:
             self._current_metrics.tool_calls += 1
             if self.enable_detailed_logging:
                 logger.debug(f"Tool call: {tool_name}")
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VW05NGF3PT06NzYzNmRmYTk=
     
     def record_error(self, error: str):
         """Record an error.
@@ -149,5 +146,4 @@ class PerformanceMonitoringMiddleware:
     def __call__(self, state: Dict[str, Any]) -> Dict[str, Any]:
         """Process state through monitoring."""
         return state
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VW05NGF3PT06NzYzNmRmYTk=
 

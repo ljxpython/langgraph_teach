@@ -1,7 +1,6 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U0ZOTVFnPT06NWY2ZmJkMDQ=
+// FIXME
 
 "use client";
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U0ZOTVFnPT06NWY2ZmJkMDQ=
 
 import { useCallback } from "react";
 import { useStream } from "@langchain/langgraph-sdk/react";
@@ -15,7 +14,6 @@ import type { UseStreamThread } from "@langchain/langgraph-sdk/react";
 import type { TodoItem } from "@/app/types/types";
 import { useClient } from "@/providers/ClientProvider";
 import { useQueryState } from "nuqs";
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U0ZOTVFnPT06NWY2ZmJkMDQ=
 
 export type StateType = {
   messages: Message[];
@@ -28,7 +26,7 @@ export type StateType = {
   };
   ui?: any;
 };
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U0ZOTVFnPT06NWY2ZmJkMDQ=
+// FIXME
 
 export function useChat({
   activeAssistant,

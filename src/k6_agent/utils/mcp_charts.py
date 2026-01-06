@@ -75,7 +75,7 @@ class MCPChartGenerator:
             })
             
             self.mcp_tools = asyncio.run(mcp_client.get_tools())
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TXpKTFZRPT06ZTJlNGI4MDQ=
+# pylint: disable
             
             self.agent = create_agent(
                 self.llm,
@@ -175,7 +175,6 @@ class MCPChartGenerator:
             },
             grid={"left": "3%", "right": "4%", "bottom": "15%", "containLabel": True},
         )
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TXpKTFZRPT06ZTJlNGI4MDQ=
         
         return self._generate_chart(spec, output_path)
 
@@ -473,7 +472,6 @@ class MCPChartGenerator:
                 "message": "Chart specification generated",
                 "chart_spec": chart_dict,
             }
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TXpKTFZRPT06ZTJlNGI4MDQ=
 
             # Use MCP agent if available
             if self.agent and self.use_mcp_client:
@@ -511,7 +509,7 @@ Use the appropriate MCP Chart Server tool (generate_{spec.type.value}_chart)."""
 
                 result["saved_path"] = str(output_path)
                 logger.info(f"Chart saved: {output_path}")
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TXpKTFZRPT06ZTJlNGI4MDQ=
+# pylint: disable
 
                 # Render as image if available
                 if self.renderer:

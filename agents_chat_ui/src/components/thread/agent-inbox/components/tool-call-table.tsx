@@ -1,6 +1,6 @@
 import { ToolCall } from "@langchain/core/messages/tool";
 import { unknownToPrettyDate } from "../utils";
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002YkdOSFNBPT06YjQ5MWM3MWU=
+// TODO
 
 export function ToolCallTable({ toolCall }: { toolCall: ToolCall }) {
   return (
@@ -50,4 +50,4 @@ export function ToolCallTable({ toolCall }: { toolCall: ToolCall }) {
     </div>
   );
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002YkdOSFNBPT06YjQ5MWM3MWU=
+// NOTE

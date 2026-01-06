@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog'
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UkcxUGRnPT06ODYwZWJmNmU=
+// NOTE
 
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/Button'
@@ -25,7 +25,6 @@ const AlertDialogOverlay = React.forwardRef<
   />
 ))
 AlertDialogOverlay.displayName = AlertDialogPrimitive.Overlay.displayName
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UkcxUGRnPT06ODYwZWJmNmU=
 
 const AlertDialogContent = React.forwardRef<
   React.ComponentRef<typeof AlertDialogPrimitive.Content>,
@@ -57,7 +56,7 @@ const AlertDialogFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDiv
   />
 )
 AlertDialogFooter.displayName = 'AlertDialogFooter'
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UkcxUGRnPT06ODYwZWJmNmU=
+// FIXME
 
 const AlertDialogTitle = React.forwardRef<
   React.ComponentRef<typeof AlertDialogPrimitive.Title>,
@@ -102,7 +101,7 @@ const AlertDialogCancel = React.forwardRef<
   />
 ))
 AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UkcxUGRnPT06ODYwZWJmNmU=
+// eslint-disable
 
 export {
   AlertDialog,

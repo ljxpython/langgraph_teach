@@ -1,6 +1,5 @@
 import { useSettingsStore } from '@/stores/settings'
 import { useTranslation } from 'react-i18next'
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002TVUweGN3PT06YjgxZjkxM2I=
 
 /**
  * Component that displays current values of important graph settings
@@ -18,6 +17,6 @@ const SettingsDisplay = () => {
     </div>
   )
 }
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002TVUweGN3PT06YjgxZjkxM2I=
+// NOTE
 
 export default SettingsDisplay

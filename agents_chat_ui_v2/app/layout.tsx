@@ -1,4 +1,4 @@
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YWs1a2J3PT06NmNkNTNhNjM=
+// NOTE
 
 import { Inter } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
@@ -6,7 +6,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YWs1a2J3PT06NmNkNTNhNjM=
+// eslint-disable
 
 export default function RootLayout({
   children,

@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZweWNnPT06Y2RiYWNkMmI=
 
 "use client";
 
@@ -9,14 +8,13 @@ import { CheckCircle, XCircle, Edit3, ChevronDown, ChevronUp } from "lucide-reac
 import { Interrupt } from "@langchain/langgraph-sdk";
 import { HumanInterrupt, HumanResponse } from "@/app/types/inbox";
 import { cn } from "@/lib/utils";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZweWNnPT06Y2RiYWNkMmI=
+// eslint-disable
 
 interface InterruptActionsProps {
   interrupt: Interrupt;
   onSubmit: (responses: HumanResponse[]) => void;
   isLoading?: boolean;
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZweWNnPT06Y2RiYWNkMmI=
 
 type DecisionMode = "idle" | "edit" | "reject";
 
@@ -25,7 +23,7 @@ interface InterruptDecision {
   editedArgs?: Record<string, any>;
   rejectMessage?: string;
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TkZweWNnPT06Y2RiYWNkMmI=
+// TODO
 
 /**
  * InterruptActions 组件

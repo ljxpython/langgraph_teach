@@ -1,5 +1,5 @@
 import type { Message } from "@langchain/langgraph-sdk";
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002T0hwWFJ3PT06MmI2OWJiODA=
+// NOTE
 
 /**
  * Extracts a string summary from a message's content, supporting multimodal (text, image, file, etc.).

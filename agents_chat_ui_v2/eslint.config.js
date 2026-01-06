@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002UldoSVdRPT06OTMzOWNiMjk=
+// FIXME
 
 import js from "@eslint/js";
 import globals from "globals";
@@ -33,4 +33,4 @@ export default tseslint.config(
     },
   }
 );
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002UldoSVdRPT06OTMzOWNiMjk=
+// NOTE

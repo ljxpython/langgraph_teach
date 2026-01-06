@@ -4,7 +4,6 @@ import jsonlines
 
 from openai import OpenAI
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VUdGd1VRPT06YWYyYmI4ZjU=
 
 def batch_eval(query_file, result1_file, result2_file, output_file_path):
     client = OpenAI()
@@ -13,7 +12,6 @@ def batch_eval(query_file, result1_file, result2_file, output_file_path):
         data = f.read()
 
     queries = re.findall(r"- Question \d+: (.+)", data)
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VUdGd1VRPT06YWYyYmI4ZjU=
 
     with open(result1_file, "r") as f:
         answers1 = json.load(f)
@@ -86,7 +84,6 @@ def batch_eval(query_file, result1_file, result2_file, output_file_path):
                 ],
             },
         }
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VUdGd1VRPT06YWYyYmI4ZjU=
 
         requests.append(request_data)
 
@@ -113,4 +110,3 @@ def batch_eval(query_file, result1_file, result2_file, output_file_path):
 
 if __name__ == "__main__":
     batch_eval()
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VUdGd1VRPT06YWYyYmI4ZjU=

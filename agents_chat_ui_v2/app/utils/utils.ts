@@ -1,4 +1,4 @@
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Tkc5VmF3PT06M2MxMDEyOTg=
+// TODO
 
 import { Message } from "@langchain/langgraph-sdk";
 import { type ClassValue, clsx } from "clsx";
@@ -31,7 +31,6 @@ export function extractStringFromMessageContent(message: Message): string {
         .join("")
     : "";
 }
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Tkc5VmF3PT06M2MxMDEyOTg=
 
 export function extractSubAgentContent(data: unknown): string {
   if (typeof data === "string") {
@@ -63,7 +62,7 @@ export function extractSubAgentContent(data: unknown): string {
   // Fallback for any other type
   return JSON.stringify(data, null, 2);
 }
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Tkc5VmF3PT06M2MxMDEyOTg=
+// NOTE
 
 export function isPreparingToCallTaskTool(messages: Message[]): boolean {
   const lastMessage = messages[messages.length - 1];
@@ -159,4 +158,4 @@ export function formatConversationForLLM(messages: Message[]): string {
   const formattedMessages = messages.map(formatMessageForLLM);
   return formattedMessages.join("\n\n---\n\n");
 }
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Tkc5VmF3PT06M2MxMDEyOTg=
+// TODO

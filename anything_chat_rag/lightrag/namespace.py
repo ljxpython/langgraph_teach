@@ -12,12 +12,11 @@ class NameSpace:
     KV_STORE_FULL_RELATIONS = "full_relations"
     KV_STORE_ENTITY_CHUNKS = "entity_chunks"
     KV_STORE_RELATION_CHUNKS = "relation_chunks"
-# pragma: no cover  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YUROQlpBPT06ZmIzOTM5MzU=
 
     VECTOR_STORE_ENTITIES = "entities"
     VECTOR_STORE_RELATIONSHIPS = "relationships"
     VECTOR_STORE_CHUNKS = "chunks"
-# pylint: disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YUROQlpBPT06ZmIzOTM5MzU=
+# pylint: disable
 
     GRAPH_STORE_CHUNK_ENTITY_RELATION = "chunk_entity_relation"
 

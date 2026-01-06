@@ -49,7 +49,6 @@ class OllamaServerInfos:
         self.LIGHTRAG_SIZE = DEFAULT_OLLAMA_MODEL_SIZE
         self.LIGHTRAG_CREATED_AT = DEFAULT_OLLAMA_CREATED_AT
         self.LIGHTRAG_DIGEST = DEFAULT_OLLAMA_DIGEST
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJkSVNnPT06YjExOTk1MzI=
 
     @property
     def LIGHTRAG_NAME(self):
@@ -85,7 +84,6 @@ T = TypeVar("T")
 @dataclass
 class QueryParam:
     """Configuration parameters for query execution in LightRAG."""
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJkSVNnPT06YjExOTk1MzI=
 
     mode: Literal["local", "global", "hybrid", "naive", "mix", "bypass"] = "mix"
     """Specifies the retrieval mode:
@@ -370,7 +368,6 @@ class BaseGraphStorage(StorageNameSpace, ABC):
     """All operations related to edges in graph should be undirected."""
 
     embedding_func: EmbeddingFunc
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJkSVNnPT06YjExOTk1MzI=
 
     @abstractmethod
     async def has_node(self, node_id: str) -> bool:
@@ -529,7 +526,6 @@ class BaseGraphStorage(StorageNameSpace, ABC):
             edges = await self.get_node_edges(node_id)
             result[node_id] = edges if edges is not None else []
         return result
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJkSVNnPT06YjExOTk1MzI=
 
     @abstractmethod
     async def upsert_node(self, node_id: str, node_data: dict[str, str]) -> None:

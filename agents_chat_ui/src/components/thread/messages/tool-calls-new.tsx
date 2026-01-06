@@ -155,7 +155,6 @@ function ImagePreviewModal({
     </div>
   );
 }
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJoT1J3PT06MmY1YTMyMzk=
 
 // Image Display Component
 function ImagePreview({ images }: { images: Array<{ data: string; type: string; original: string; isUrl: boolean }> }) {
@@ -241,7 +240,7 @@ function isValidToolCall(toolCall: any): toolCall is NonNullable<AIMessage["tool
          toolCall.name.trim() !== '' &&
          typeof toolCall.args === 'object';
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJoT1J3PT06MmY1YTMyMzk=
+// eslint-disable
 
 export const ToolCallBox = React.memo<ToolCallBoxProps>(({ toolCall, toolResult }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -395,7 +394,7 @@ export const ToolCallBox = React.memo<ToolCallBoxProps>(({ toolCall, toolResult 
 });
 
 ToolCallBox.displayName = "ToolCallBox";
-// TODO  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UzJoT1J3PT06MmY1YTMyMzk=
+// TODO
 
 export function ToolCalls({
   toolCalls,

@@ -41,7 +41,6 @@ if not pm.is_installed("google-api-core"):
 from google import genai  # type: ignore
 from google.genai import types  # type: ignore
 from google.api_core import exceptions as google_api_exceptions  # type: ignore
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZERGd2NBPT06MzM5NDEwYzk=
 
 DEFAULT_GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com"
 
@@ -128,7 +127,6 @@ def _build_generation_config(
 
     if not sanitized:
         return None
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZERGd2NBPT06MzM5NDEwYzk=
 
     return types.GenerateContentConfig(**sanitized)
 
@@ -258,7 +256,6 @@ async def gemini_complete_if_cache(
     # Convert timeout from seconds to milliseconds for Gemini API
     timeout_ms = timeout * 1000 if timeout else None
     client = _get_gemini_client(key, base_url, timeout_ms)
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZERGd2NBPT06MzM5NDEwYzk=
 
     history_block = _format_history_messages(history_messages)
     prompt_sections = []
@@ -305,7 +302,6 @@ async def gemini_complete_if_cache(
                     regular_text, thought_text = _extract_response_text(
                         chunk, extract_thoughts=True
                     )
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZERGd2NBPT06MzM5NDEwYzk=
 
                     if enable_cot:
                         # Process regular content

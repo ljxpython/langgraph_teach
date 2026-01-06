@@ -25,7 +25,6 @@ if os.path.exists(WORKING_DIR):
     import shutil
 
     shutil.rmtree(WORKING_DIR)
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJKVE13PT06NmY3NGU4ZjI=
 
 os.mkdir(WORKING_DIR)
 
@@ -71,13 +70,12 @@ async def embedding_func(texts: list[str]) -> np.ndarray:
 async def test_funcs():
     result = await llm_model_func("How are you?")
     print("Resposta do llm_model_func: ", result)
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJKVE13PT06NmY3NGU4ZjI=
+# pylint: disable
 
     result = await embedding_func(["How are you?"])
     print("Resultado do embedding_func: ", result.shape)
     print("Dimensão da embedding: ", result.shape[1])
 
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJKVE13PT06NmY3NGU4ZjI=
 
 asyncio.run(test_funcs())
 
@@ -114,7 +112,7 @@ def main():
 
     print("\nResult (Local):")
     print(rag.query(query_text, param=QueryParam(mode="local")))
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YjJKVE13PT06NmY3NGU4ZjI=
+# pylint: disable
 
     print("\nResult (Global):")
     print(rag.query(query_text, param=QueryParam(mode="global")))

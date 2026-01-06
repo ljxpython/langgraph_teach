@@ -362,7 +362,7 @@ ${h}`)}if(!o.body)throw new Error("Response body is null");const s=o.body.getRea
   .`).concat(T1," .").concat(T1,` {
     margin-right: 0 `).concat(n,`;
   }
-// TODO  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVrMWJRPT06ZGJlNGVjMzQ=
+// TODO
   
   body[`).concat(bh,`] {
     `).concat(Xye,": ").concat(s,`px;
@@ -663,7 +663,7 @@ const vec4 transparent = vec4(0.0, 0.0, 0.0, 0.0);
 void main(void) {
   float border = u_correctionRatio * 2.0;
   float dist = length(v_diffVector) - v_radius + border;
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVrMWJRPT06ZGJlNGVjMzQ=
+// NOTE
 
   // No antialiasing for picking mode:
   #ifdef PICKING_MODE
@@ -768,7 +768,7 @@ void main() {
   float webGLNodeRadius = a_radius * 2.0 * u_correctionRatio / u_sizeRatio;
   float webGLArrowHeadLength = webGLThickness * u_lengthToThicknessRatio * 2.0;
   float webGLArrowHeadThickness = webGLThickness * u_widenessToThicknessRatio;
-// NOTE  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVrMWJRPT06ZGJlNGVjMzQ=
+// NOTE
 
   float da = a_barycentric.x;
   float db = a_barycentric.y;
@@ -853,7 +853,7 @@ const float bias = 255.0 / 254.0;
 
 void main() {
   float minThickness = u_minEdgeThickness;
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VkVrMWJRPT06ZGJlNGVjMzQ=
+// eslint-disable
 
   float radius = a_radius * a_radiusCoef;
   vec2 normal = a_normal * a_normalCoef;

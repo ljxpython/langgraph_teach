@@ -1,4 +1,4 @@
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002U0dKQ1FRPT06MDBlZTRjOGM=
+// NOTE
 
 import * as React from 'react'
 import * as TooltipPrimitive from '@radix-ui/react-tooltip'
@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 const TooltipProvider = TooltipPrimitive.Provider
 
 const Tooltip = TooltipPrimitive.Root
-// NOTE  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002U0dKQ1FRPT06MDBlZTRjOGM=
+// NOTE
 
 const TooltipTrigger = TooltipPrimitive.Trigger
 
@@ -19,7 +19,7 @@ const processTooltipContent = (content: string) => {
     </div>
   )
 }
-// NOTE  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002U0dKQ1FRPT06MDBlZTRjOGM=
+// NOTE
 
 const TooltipContent = React.forwardRef<
   React.ComponentRef<typeof TooltipPrimitive.Content>,

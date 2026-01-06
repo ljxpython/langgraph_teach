@@ -1,11 +1,11 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YUZaQ2VRPT06MTQ2OTBhMjc=
+// eslint-disable
 
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import { createSelectors } from '@/lib/utils'
 import { defaultQueryLabel } from '@/lib/constants'
 import { Message, QueryRequest } from '@/api/lightrag'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YUZaQ2VRPT06MTQ2OTBhMjc=
+// NOTE
 
 type Theme = 'dark' | 'light' | 'system'
 type Language = 'en' | 'zh' | 'fr' | 'ar' | 'zh_TW'
@@ -86,7 +86,7 @@ interface SettingsState {
   searchLabelDropdownRefreshTrigger: number
   triggerSearchLabelDropdownRefresh: () => void
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YUZaQ2VRPT06MTQ2OTBhMjc=
+// TODO
 
 const useSettingsStoreBase = create<SettingsState>()(
   persist(
@@ -352,6 +352,6 @@ const useSettingsStoreBase = create<SettingsState>()(
 )
 
 const useSettingsStore = createSelectors(useSettingsStoreBase)
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YUZaQ2VRPT06MTQ2OTBhMjc=
+// NOTE
 
 export { useSettingsStore, type Theme }

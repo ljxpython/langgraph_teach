@@ -3,7 +3,6 @@ import json
 import glob
 import argparse
 
-# type: ignore  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VGxCcWJnPT06NDY2M2M1NTk=
 
 def extract_unique_contexts(input_directory, output_directory):
     os.makedirs(output_directory, exist_ok=True)
@@ -42,7 +41,6 @@ def extract_unique_contexts(input_directory, output_directory):
         except Exception as e:
             print(f"An error occurred while processing file {filename}: {e}")
             continue
-# fmt: off  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VGxCcWJnPT06NDY2M2M1NTk=
 
         unique_contexts_list = list(unique_contexts_dict.keys())
         print(
@@ -57,7 +55,7 @@ def extract_unique_contexts(input_directory, output_directory):
             print(f"An error occurred while saving to the file {output_filename}: {e}")
 
     print("All files have been processed.")
-# pylint: disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VGxCcWJnPT06NDY2M2M1NTk=
+# pylint: disable
 
 
 if __name__ == "__main__":

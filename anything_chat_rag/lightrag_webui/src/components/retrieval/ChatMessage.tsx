@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YWpsTlV3PT06Y2RjMTU5NGY=
 
 import { ReactNode, useEffect, useMemo, useRef, memo, useState } from 'react' // Import useMemo
 import { Message } from '@/api/lightrag'
@@ -29,7 +28,6 @@ interface KaTeXOptions {
   trust?: boolean;
   errorCallback?: (error: string, latex: string) => void;
 }
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YWpsTlV3PT06Y2RjMTU5NGY=
 
 export type MessageWithError = Message & {
   id: string // Unique identifier for stable React keys
@@ -46,7 +44,7 @@ export type MessageWithError = Message & {
    */
   latexRendered?: boolean
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YWpsTlV3PT06Y2RjMTU5NGY=
+// eslint-disable
 
 // Restore original component definition and export
 export const ChatMessage = ({
@@ -284,7 +282,6 @@ interface CodeHighlightProps {
   messageRole?: 'user' | 'assistant' // Message role for context-aware styling
 }
 
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YWpsTlV3PT06Y2RjMTU5NGY=
 
 
 // Check if it is a large JSON

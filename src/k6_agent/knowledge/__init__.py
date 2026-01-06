@@ -16,7 +16,7 @@ Example:
     >>> # Retrieve K6 best practices
     >>> results = await retriever.retrieve_k6_practices("load testing scenarios")
 """
-# pylint: disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002U3paaVpBPT06NGQwZTBlM2U=
+# pylint: disable
 
 from k6_agent.knowledge.client import KnowledgeClient, QueryMode, QueryRequest, QueryResponse
 from k6_agent.knowledge.retriever import (
@@ -44,4 +44,3 @@ __all__ = [
     "create_bottleneck_diagnosis_tool",
 ]
 
-# pragma: no cover  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002U3paaVpBPT06NGQwZTBlM2U=

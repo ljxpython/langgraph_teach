@@ -69,7 +69,6 @@ class JsonKVStorage(BaseKVStorage):
 
                     self._data.update(loaded_data)
                     data_count = len(loaded_data)
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WVcxS1VBPT06Y2YyMGIxMTM=
 
                     logger.info(
                         f"[{self.workspace}] Process {os.getpid()} KV load {self.namespace} with {data_count} records"
@@ -101,7 +100,6 @@ class JsonKVStorage(BaseKVStorage):
                     if cleaned_data is not None:
                         self._data.clear()
                         self._data.update(cleaned_data)
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WVcxS1VBPT06Y2YyMGIxMTM=
 
                 await clear_all_update_flags(self.namespace, workspace=self.workspace)
 
@@ -209,7 +207,7 @@ class JsonKVStorage(BaseKVStorage):
         """
         async with self._storage_lock:
             return len(self._data) == 0
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WVcxS1VBPT06Y2YyMGIxMTM=
+# pylint: disable
 
     async def drop(self) -> dict[str, str]:
         """Drop all data from storage and clean up resources
@@ -303,4 +301,3 @@ class JsonKVStorage(BaseKVStorage):
         """
         if self.namespace.endswith("_cache"):
             await self.index_done_callback()
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WVcxS1VBPT06Y2YyMGIxMTM=

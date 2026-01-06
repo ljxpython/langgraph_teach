@@ -3,7 +3,6 @@ import os
 from dataclasses import dataclass
 from typing import Any, final
 import numpy as np
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TlhCUFN3PT06MTIwZjZlNjA=
 
 from lightrag.base import BaseVectorStorage
 from lightrag.utils import logger
@@ -116,7 +115,6 @@ class ChromaVectorDBStorage(BaseVectorStorage):
 
         try:
             import time
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TlhCUFN3PT06MTIwZjZlNjA=
 
             current_time = int(time.time())
 
@@ -179,7 +177,6 @@ class ChromaVectorDBStorage(BaseVectorStorage):
                 n_results=top_k * 2,  # Request more results to allow for filtering
                 include=["metadatas", "distances", "documents"],
             )
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TlhCUFN3PT06MTIwZjZlNjA=
 
             # Filter results by cosine similarity threshold and take top k
             # We request 2x results initially to have enough after filtering
@@ -343,4 +340,3 @@ class ChromaVectorDBStorage(BaseVectorStorage):
         except Exception as e:
             logger.error(f"Error dropping ChromaDB collection {self.namespace}: {e}")
             return {"status": "error", "message": str(e)}
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TlhCUFN3PT06MTIwZjZlNjA=

@@ -91,7 +91,6 @@ try:
     from ragas.llms import LangchainLLMWrapper
     from langchain_openai import ChatOpenAI, OpenAIEmbeddings
     from tqdm.auto import tqdm
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TmpZeGFBPT06M2Q1YzExYmM=
 
     RAGAS_AVAILABLE = True
 
@@ -213,7 +212,6 @@ class RAGEvaluator:
 
         if test_dataset_path is None:
             test_dataset_path = Path(__file__).parent / "sample_dataset.json"
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TmpZeGFBPT06M2Q1YzExYmM=
 
         if rag_api_url is None:
             rag_api_url = os.getenv("LIGHTRAG_API_URL", "http://localhost:9621")
@@ -242,7 +240,6 @@ class RAGEvaluator:
         logger.info("Evaluation Models:")
         logger.info("  • LLM Model:            %s", self.eval_model)
         logger.info("  • Embedding Model:      %s", self.eval_embedding_model)
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TmpZeGFBPT06M2Q1YzExYmM=
 
         # Display LLM endpoint
         if self.eval_llm_base_url:
@@ -533,7 +530,6 @@ class RAGEvaluator:
 
                     # Update progress counter
                     progress_counter["completed"] += 1
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TmpZeGFBPT06M2Q1YzExYmM=
 
                     return result
 

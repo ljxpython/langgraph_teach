@@ -1,4 +1,4 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZEdkcGJnPT06NDM4MTcyZDM=
+// eslint-disable
 
 import * as React from 'react'
 import * as ProgressPrimitive from '@radix-ui/react-progress'
@@ -21,6 +21,6 @@ const Progress = React.forwardRef<
   </ProgressPrimitive.Root>
 ))
 Progress.displayName = ProgressPrimitive.Root.displayName
-// NOTE  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZEdkcGJnPT06NDM4MTcyZDM=
+// NOTE
 
 export default Progress

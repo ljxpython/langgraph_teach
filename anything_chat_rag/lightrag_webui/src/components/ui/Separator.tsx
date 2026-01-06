@@ -1,4 +1,4 @@
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002WVUwemR3PT06ZjkwNDI4MDY=
+// FIXME
 
 import * as React from 'react'
 import * as SeparatorPrimitive from '@radix-ui/react-separator'
@@ -22,6 +22,6 @@ const Separator = React.forwardRef<
   />
 ))
 Separator.displayName = SeparatorPrimitive.Root.displayName
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002WVUwemR3PT06ZjkwNDI4MDY=
+// eslint-disable
 
 export default Separator

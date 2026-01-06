@@ -105,7 +105,6 @@ class BatchParser:
             | self.parser.TEXT_FORMATS
             | {".pdf"}
         )
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U1cxSlp3PT06Njk3YjNiN2M=
 
     def filter_supported_files(
         self, file_paths: List[str], recursive: bool = True
@@ -225,7 +224,6 @@ class BatchParser:
 
         # Filter to supported files
         supported_files = self.filter_supported_files(file_paths, recursive)
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U1cxSlp3PT06Njk3YjNiN2M=
 
         if not supported_files:
             self.logger.warning("No supported files found to process")
@@ -277,7 +275,6 @@ class BatchParser:
                     future_to_file, timeout=self.timeout_per_file
                 ):
                     success, file_path, error_msg = future.result()
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U1cxSlp3PT06Njk3YjNiN2M=
 
                     if success:
                         successful_files.append(file_path)
@@ -319,7 +316,7 @@ class BatchParser:
         self.logger.info(result.summary())
 
         return result
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U1cxSlp3PT06Njk3YjNiN2M=
+# pylint: disable
 
     async def process_batch_async(
         self,

@@ -3,7 +3,6 @@
 This module provides the report generator sub-agent that specializes
 in creating professional performance test reports with MCP chart integration.
 """
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YVc5VFF3PT06ZGE2N2MxMzE=
 
 from typing import Optional, List, Dict, Any
 from dataclasses import dataclass
@@ -120,7 +119,6 @@ class ReportGeneratorAgent:
         http_req_failed = metrics.get("http_req_failed", {}).get("values", {})
         data_received = metrics.get("data_received", {}).get("values", {})
         data_sent = metrics.get("data_sent", {}).get("values", {})
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YVc5VFF3PT06ZGE2N2MxMzE=
 
         # Calculate derived metrics
         total_requests = int(http_reqs.get("count", 0))
@@ -305,7 +303,6 @@ class ReportGeneratorAgent:
         """Generate thresholds section HTML."""
         if not thresholds:
             return ""
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YVc5VFF3PT06ZGE2N2MxMzE=
 
         rows = ""
         for name, result in thresholds.items():
@@ -358,7 +355,7 @@ class ReportGeneratorAgent:
             path = Path(output_path)
         else:
             path = self.output_dir / f"report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YVc5VFF3PT06ZGE2N2MxMzE=
+# pylint: disable
         
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(report, indent=2), encoding="utf-8")

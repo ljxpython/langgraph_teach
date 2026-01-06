@@ -44,7 +44,6 @@ class ContextConfig:
         if self.filter_content_types is None:
             self.filter_content_types = ["text"]
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YmtsdFFnPT06YzlmZTgzNTk=
 
 class ContextExtractor:
     """Universal context extractor supporting multiple content source formats"""
@@ -153,7 +152,7 @@ class ContextExtractor:
         for item in content_list:
             item_page = item.get("page_idx", 0)
             item_type = item.get("type", "")
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YmtsdFFnPT06YzlmZTgzNTk=
+# pylint: disable
 
             # Check if item is within context window and matches filter criteria
             if (
@@ -294,7 +293,6 @@ class ContextExtractor:
 
         start_idx = max(0, current_index - window_size)
         end_idx = min(len(text_chunks), current_index + window_size + 1)
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YmtsdFFnPT06YzlmZTgzNTk=
 
         context_texts = []
         for i in range(start_idx, end_idx):
@@ -350,7 +348,6 @@ class ContextExtractor:
             # Try to end at a sentence boundary
             last_period = truncated.rfind(".")
             last_newline = truncated.rfind("\n")
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YmtsdFFnPT06YzlmZTgzNTk=
 
             if last_period > len(truncated) * 0.8:
                 return truncated[: last_period + 1]

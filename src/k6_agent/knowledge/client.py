@@ -19,7 +19,6 @@ from enum import Enum
 from typing import Optional, List, Dict, Any
 import httpx
 import logging
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WSWF3PT06Y2IwMWU1OWQ=
 
 logger = logging.getLogger(__name__)
 
@@ -82,7 +81,6 @@ class Entity:
     file_path: str
     reference_id: str
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WSWF3PT06Y2IwMWU1OWQ=
 
 @dataclass
 class Relationship:
@@ -160,7 +158,6 @@ class QueryResponse:
             data=query_data,
             metadata=metadata,
         )
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WSWF3PT06Y2IwMWU1OWQ=
 
 
 class KnowledgeClient:
@@ -316,7 +313,6 @@ class KnowledgeClient:
 
     async def __aenter__(self):
         return self
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VG1WSWF3PT06Y2IwMWU1OWQ=
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         await self.close()

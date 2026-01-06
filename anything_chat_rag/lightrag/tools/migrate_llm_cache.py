@@ -63,7 +63,6 @@ DEFAULT_BATCH_SIZE = 1000
 
 # Default count batch size for efficient counting
 DEFAULT_COUNT_BATCH_SIZE = 1000
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZwcWJ3PT06MWU1NjQ4YjQ=
 
 # ANSI color codes for terminal output
 BOLD_CYAN = "\033[1;36m"
@@ -181,7 +180,6 @@ class MigrationTool:
             print(
                 f"⚠️  Warning: Missing environment variables: {', '.join(missing_vars)}"
             )
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZwcWJ3PT06MWU1NjQ4YjQ=
 
             # Check if config.ini has configuration
             has_config = self.check_config_ini_for_storage(storage_name)
@@ -238,7 +236,6 @@ class MigrationTool:
             return JsonKVStorage
         elif storage_name == "RedisKVStorage":
             from lightrag.kg.redis_impl import RedisKVStorage
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZwcWJ3PT06MWU1NjQ4YjQ=
 
             return RedisKVStorage
         elif storage_name == "PGKVStorage":
@@ -384,7 +381,7 @@ class MigrationTool:
                     await asyncio.sleep(0)
 
         return cache_data
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZFZwcWJ3PT06MWU1NjQ4YjQ=
+# pylint: disable
 
     async def get_default_caches_pg(
         self, storage, batch_size: int = 1000

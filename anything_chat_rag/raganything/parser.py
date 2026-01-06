@@ -60,7 +60,6 @@ class Parser:
     def __init__(self) -> None:
         """Initialize the base parser."""
         pass
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dGNFNRPT06OTVlNDY4ZWE=
 
     @staticmethod
     def convert_office_to_pdf(
@@ -105,7 +104,6 @@ class Parser:
 
                 # Try LibreOffice commands in order of preference
                 commands_to_try = ["libreoffice", "soffice"]
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dGNFNRPT06OTVlNDY4ZWE=
 
                 conversion_successful = False
                 for cmd in commands_to_try:
@@ -318,7 +316,6 @@ class Parser:
                                 from reportlab.pdfbase.cidfonts import (
                                     UnicodeCIDFont,
                                 )
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dGNFNRPT06OTVlNDY4ZWE=
 
                                 pdfmetrics.registerFont(UnicodeCIDFont(font_name))
                                 normal_style.fontName = font_name
@@ -402,7 +399,6 @@ class Parser:
                         # Create paragraph
                         story.append(Paragraph(safe_line, normal_style))
                         story.append(Spacer(1, 3))
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U0dGNFNRPT06OTVlNDY4ZWE=
 
                     logging.info(f"Added {line_count} lines to PDF")
 

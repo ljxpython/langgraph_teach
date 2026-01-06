@@ -1,4 +1,3 @@
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YTNsT1F3PT06NjEyNmZjMjA=
 
 "use client";
 
@@ -23,7 +22,7 @@ export function ChatProvider({
   const chat = useChat({ activeAssistant, onHistoryRevalidate, thread });
   return <ChatContext.Provider value={chat}>{children}</ChatContext.Provider>;
 }
-// FIXME  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YTNsT1F3PT06NjEyNmZjMjA=
+// FIXME
 
 export type ChatContextType = ReturnType<typeof useChat>;
 

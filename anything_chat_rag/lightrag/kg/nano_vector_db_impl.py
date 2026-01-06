@@ -72,7 +72,6 @@ class NanoVectorDBStorage(BaseVectorStorage):
         self._storage_lock = get_namespace_lock(
             self.namespace, workspace=self.workspace
         )
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVdacldBPT06ZmZhN2E3MGM=
 
     async def _get_client(self):
         """Check if the storage should be reloaded"""
@@ -175,7 +174,6 @@ class NanoVectorDBStorage(BaseVectorStorage):
     async def client_storage(self):
         client = await self._get_client()
         return getattr(client, "_NanoVectorDB__storage")
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVdacldBPT06ZmZhN2E3MGM=
 
     async def delete(self, ids: list[str]):
         """Delete vectors with specified IDs
@@ -220,7 +218,6 @@ class NanoVectorDBStorage(BaseVectorStorage):
             logger.debug(
                 f"[{self.workspace}] Attempting to delete entity {entity_name} with ID {entity_id}"
             )
-# pragma: no cover  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVdacldBPT06ZmZhN2E3MGM=
 
             # Check if the entity exists
             client = await self._get_client()
@@ -410,7 +407,6 @@ class NanoVectorDBStorage(BaseVectorStorage):
                 # delete _client_file_name
                 if os.path.exists(self._client_file_name):
                     os.remove(self._client_file_name)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZVdacldBPT06ZmZhN2E3MGM=
 
                 self._client = NanoVectorDB(
                     self.embedding_func.embedding_dim,

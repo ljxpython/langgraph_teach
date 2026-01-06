@@ -98,7 +98,7 @@ class NetworkXStorage(BaseGraphStorage):
     async def has_node(self, node_id: str) -> bool:
         graph = await self._get_graph()
         return graph.has_node(node_id)
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YmpWRGFRPT06M2M2OTE4Nzg=
+# pylint: disable
 
     async def has_edge(self, source_node_id: str, target_node_id: str) -> bool:
         graph = await self._get_graph()
@@ -129,7 +129,6 @@ class NetworkXStorage(BaseGraphStorage):
         if graph.has_node(source_node_id):
             return list(graph.edges(source_node_id))
         return None
-# noqa  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YmpWRGFRPT06M2M2OTE4Nzg=
 
     async def upsert_node(self, node_id: str, node_data: dict[str, str]) -> None:
         """
@@ -266,7 +265,6 @@ class NetworkXStorage(BaseGraphStorage):
             # Skip if no match
             if query_lower not in node_lower:
                 continue
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YmpWRGFRPT06M2M2OTE4Nzg=
 
             # Calculate relevance score
             # Exact match gets highest score
@@ -364,7 +362,6 @@ class NetworkXStorage(BaseGraphStorage):
             while queue and len(bfs_nodes) < max_nodes:
                 # Get the current depth from the first node in queue
                 current_depth = queue[0][1]
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YmpWRGFRPT06M2M2OTE4Nzg=
 
                 # Collect all nodes at the current depth
                 current_level_nodes = []

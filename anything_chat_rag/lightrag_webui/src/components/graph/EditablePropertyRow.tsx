@@ -1,4 +1,4 @@
-// NOTE  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5kSlN3PT06YjNhYWU4NWI=
+// NOTE
 
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -10,7 +10,6 @@ import { SearchHistoryManager } from '@/utils/SearchHistoryManager'
 import { PropertyName, EditIcon, PropertyValue } from './PropertyRowComponents'
 import PropertyEditDialog from './PropertyEditDialog'
 import MergeDialog from './MergeDialog'
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5kSlN3PT06YjNhYWU4NWI=
 
 /**
  * Interface for the EditablePropertyRow component props
@@ -30,7 +29,7 @@ interface EditablePropertyRowProps {
   isEditable?: boolean         // Whether this property can be edited
   tooltip?: string             // Optional tooltip to display on hover
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5kSlN3PT06YjNhYWU4NWI=
+// TODO
 
 /**
  * EditablePropertyRow component that supports editing property values
@@ -290,4 +289,4 @@ const EditablePropertyRow = ({
 }
 
 export default EditablePropertyRow
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VW5kSlN3PT06YjNhYWU4NWI=
+// NOTE

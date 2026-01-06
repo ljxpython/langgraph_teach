@@ -50,7 +50,7 @@ class BedrockRateLimitError(BedrockError):
 class BedrockConnectionError(BedrockError):
     """Error for network and connection issues"""
 
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002U1ZkYVN3PT06NTZjNjNiMGY=
+# pylint: disable
 
 class BedrockTimeoutError(BedrockError):
     """Error for timeout issues"""
@@ -131,7 +131,6 @@ def _handle_bedrock_exception(e: Exception, operation: str = "Bedrock API") -> N
     else:
         logging.error(f"{operation} unexpected error: {error_message}")
         raise BedrockError(f"Unexpected error: {error_message}")
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002U1ZkYVN3PT06NTZjNjNiMGY=
 
 
 @retry(
@@ -232,7 +231,6 @@ async def bedrock_complete_if_cache(
         # Define the generator function that will manage the client lifecycle
         async def stream_generator():
             nonlocal client
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002U1ZkYVN3PT06NTZjNjNiMGY=
 
             # Create the client outside the generator to ensure it stays open
             client = await session.client(
@@ -412,7 +410,6 @@ async def bedrock_embed(
                         )
 
                         response_body = await response.get("body").json()
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002U1ZkYVN3PT06NTZjNjNiMGY=
 
                         # Validate response structure
                         if not response_body or "embedding" not in response_body:

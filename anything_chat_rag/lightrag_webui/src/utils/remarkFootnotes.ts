@@ -1,9 +1,9 @@
-// FIXME  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002UlVKQ1VBPT06MzNmZTdkOTE=
+// FIXME
 
 import { visit } from 'unist-util-visit'
 import type { Plugin } from 'unified'
 import type { Root, Text } from 'mdast'
-// NOTE  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002UlVKQ1VBPT06MzNmZTdkOTE=
+// NOTE
 
 // Simple footnote plugin for remark - only renders inline citations
 export const remarkFootnotes: Plugin<[], Root> = () => {
@@ -66,4 +66,4 @@ export const remarkFootnotes: Plugin<[], Root> = () => {
     })
   }
 }
-// TODO  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002UlVKQ1VBPT06MzNmZTdkOTE=
+// TODO

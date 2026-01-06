@@ -1,4 +1,4 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJveGVBPT06ZWI2ZjlhMDU=
+// FIXME
 
 const DEFAULT_NODE_COLOR = '#5D6D7E'
 
@@ -143,7 +143,7 @@ const TYPE_SYNONYMS: Record<string, string> = {
   地理: 'location',
   地域: 'location'
 }
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJveGVBPT06ZWI2ZjlhMDU=
+// eslint-disable
 
 const NODE_TYPE_COLORS: Record<string, string> = {
   person: '#4169E1',
@@ -176,7 +176,7 @@ const EXTENDED_COLORS = [
 ]
 
 const PREDEFINED_COLOR_SET = new Set(Object.values(NODE_TYPE_COLORS))
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJveGVBPT06ZWI2ZjlhMDU=
+// FIXME
 
 interface ResolveNodeColorResult {
   color: string
@@ -230,4 +230,4 @@ export const resolveNodeColor = (
 }
 
 export { DEFAULT_NODE_COLOR }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TjJveGVBPT06ZWI2ZjlhMDU=
+// NOTE

@@ -1,4 +1,4 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002V25GMWNBPT06ODBiMjdiYjA=
+// FIXME
 
 "use client";
 
@@ -21,7 +21,7 @@ import type { TodoItem, FileItem } from "@/app/types/types";
 import { useChatContext } from "@/providers/ChatProvider";
 import { cn } from "@/lib/utils";
 import { FileViewDialog } from "@/app/components/FileViewDialog";
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002V25GMWNBPT06ODBiMjdiYjA=
+// NOTE
 
 export function FilesPopover({
   files,
@@ -113,7 +113,7 @@ export function FilesPopover({
     </>
   );
 }
-// FIXME  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002V25GMWNBPT06ODBiMjdiYjA=
+// FIXME
 
 export const TasksFilesSidebar = React.memo<{
   todos: TodoItem[];
@@ -266,6 +266,5 @@ export const TasksFilesSidebar = React.memo<{
     </div>
   );
 });
-// @ts-expect-error  My80OmFIVnBZMlhtblk3a3ZiUG1yS002V25GMWNBPT06ODBiMjdiYjA=
 
 TasksFilesSidebar.displayName = "TasksFilesSidebar";

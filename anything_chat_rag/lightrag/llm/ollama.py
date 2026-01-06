@@ -3,7 +3,7 @@ import os
 import re
 
 import pipmaster as pm
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMk53PT06YWNkY2Y0MzE=
+# pylint: disable
 
 # install specific modules
 if not pm.is_installed("ollama"):
@@ -51,7 +51,6 @@ def _coerce_host_for_cloud_model(host: Optional[str], model: object) -> Optional
         return _OLLAMA_CLOUD_HOST
     return host
 
-# fmt: off  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMk53PT06YWNkY2Y0MzE=
 
 @retry(
     stop=stop_after_attempt(3),
@@ -118,7 +117,6 @@ async def _ollama_model_if_cache(
                         logger.debug("Successfully closed Ollama client for streaming")
                     except Exception as close_error:
                         logger.warning(f"Failed to close Ollama client: {close_error}")
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMk53PT06YWNkY2Y0MzE=
 
             return inner()
         else:
@@ -191,7 +189,7 @@ async def ollama_embed(texts: list[str], embed_model, **kwargs) -> np.ndarray:
     timeout = kwargs.pop("timeout", None)
 
     host = _coerce_host_for_cloud_model(host, embed_model)
-# pylint: disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMk53PT06YWNkY2Y0MzE=
+# pylint: disable
 
     ollama_client = ollama.AsyncClient(host=host, timeout=timeout, headers=headers)
     try:

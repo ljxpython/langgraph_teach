@@ -1,9 +1,7 @@
 "use client";
-// @ts-expect-error  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002VldkeU1BPT06ZDc4MjA1MjA=
 
 import * as React from "react";
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
-// @ts-expect-error  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002VldkeU1BPT06ZDc4MjA1MjA=
 
 import { cn } from "@/lib/utils";
 
@@ -58,4 +56,3 @@ function ScrollBar({
 }
 
 export { ScrollArea, ScrollBar };
-// @ts-expect-error  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002VldkeU1BPT06ZDc4MjA1MjA=

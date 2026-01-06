@@ -22,7 +22,6 @@ async def llm_model_func(
         **kwargs,
     )
 
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YzNkaldRPT06M2M5NWE1MDE=
 
 async def embedding_func(texts: list[str]) -> np.ndarray:
     return await openai_embed(
@@ -45,7 +44,6 @@ def extract_queries(file_path):
     queries = re.findall(r"- Question \d+: (.+)", data)
 
     return queries
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YzNkaldRPT06M2M5NWE1MDE=
 
 
 async def process_query(query_text, rag_instance, query_param):
@@ -72,7 +70,6 @@ def run_queries_and_save_to_json(
             result, error = loop.run_until_complete(
                 process_query(query_text, rag_instance, query_param)
             )
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YzNkaldRPT06M2M5NWE1MDE=
 
             if result:
                 if not first_entry:
@@ -84,7 +81,6 @@ def run_queries_and_save_to_json(
                 err_file.write("\n")
 
         result_file.write("\n]")
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YzNkaldRPT06M2M5NWE1MDE=
 
 
 if __name__ == "__main__":

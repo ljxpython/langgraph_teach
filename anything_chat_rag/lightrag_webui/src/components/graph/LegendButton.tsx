@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button'
 import { controlButtonVariant } from '@/lib/constants'
 import { useSettingsStore } from '@/stores/settings'
 import { useTranslation } from 'react-i18next'
-// NOTE  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002VmxOcWR3PT06NWEwMGExOTQ=
+// NOTE
 
 /**
  * Component that toggles legend visibility.
@@ -29,6 +29,6 @@ const LegendButton = () => {
     </Button>
   )
 }
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002VmxOcWR3PT06NWEwMGExOTQ=
+// eslint-disable
 
 export default LegendButton

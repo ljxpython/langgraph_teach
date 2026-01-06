@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UVZWelF3PT06MDVhMTgwNjI=
 
 import { useState, useCallback } from 'react'
 import { FileRejection } from 'react-dropzone'
@@ -15,11 +14,10 @@ import FileUploader from '@/components/ui/FileUploader'
 import { toast } from 'sonner'
 import { errorMessage } from '@/lib/utils'
 import { uploadDocument } from '@/api/lightrag'
-// @ts-expect-error  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UVZWelF3PT06MDVhMTgwNjI=
 
 import { UploadIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UVZWelF3PT06MDVhMTgwNjI=
+// eslint-disable
 
 interface UploadDocumentsDialogProps {
   onDocumentsUploaded?: () => Promise<void>
@@ -222,4 +220,4 @@ export default function UploadDocumentsDialog({ onDocumentsUploaded }: UploadDoc
     </Dialog>
   )
 }
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UVZWelF3PT06MDVhMTgwNjI=
+// FIXME

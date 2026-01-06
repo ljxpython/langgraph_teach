@@ -1,7 +1,6 @@
 import os
 import asyncio
 import nest_asyncio
-# fmt: off  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UVdoc09RPT06ZmMzOWExMGQ=
 
 from lightrag import LightRAG, QueryParam
 from lightrag.llm import (
@@ -63,7 +62,7 @@ async def indexing_embedding_func(texts: list[str]) -> np.ndarray:
         encode="float",
     )
 
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UVdoc09RPT06ZmMzOWExMGQ=
+# pylint: disable
 
 async def query_embedding_func(texts: list[str]) -> np.ndarray:
     return await nvidia_openai_embed(
@@ -118,9 +117,8 @@ async def initialize_rag():
 
     await rag.initialize_storages()  # Auto-initializes pipeline_status
     return rag
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UVdoc09RPT06ZmMzOWExMGQ=
+# pylint: disable
 
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UVdoc09RPT06ZmMzOWExMGQ=
 
 async def main():
     try:

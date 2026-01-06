@@ -19,7 +19,6 @@ os.environ["OPENAI_API_KEY"] = "sk-"
 os.environ["MONGO_URI"] = "mongodb://0.0.0.0:27017/?directConnection=true"
 os.environ["MONGO_DATABASE"] = "LightRAG"
 os.environ["MONGO_KG_COLLECTION"] = "MDB_KG"
-# pragma: no cover  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YkdvMU9BPT06ZWE0NzY4ZWM=
 
 # Embedding Configuration and Functions
 EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "text-embedding-3-large")
@@ -32,7 +31,6 @@ async def embedding_func(texts: list[str]) -> np.ndarray:
         model=EMBEDDING_MODEL,
     )
 
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YkdvMU9BPT06ZWE0NzY4ZWM=
 
 async def get_embedding_dimension():
     test_text = ["This is a test sentence."]
@@ -53,7 +51,6 @@ async def create_embedding_function_instance():
 
 async def initialize_rag():
     embedding_func_instance = await create_embedding_function_instance()
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YkdvMU9BPT06ZWE0NzY4ZWM=
 
     rag = LightRAG(
         working_dir=WORKING_DIR,
@@ -101,7 +98,6 @@ def main():
             "What are the top themes in this story?", param=QueryParam(mode="hybrid")
         )
     )
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YkdvMU9BPT06ZWE0NzY4ZWM=
 
 
 if __name__ == "__main__":

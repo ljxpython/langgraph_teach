@@ -41,7 +41,6 @@ class Node3D:
         self.size = size
         self.idx = idx
 
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WlhGTFZnPT06NWM0MDc4OGQ=
 
 class GraphViewer:
     """Main class for 3D graph visualization"""
@@ -142,7 +141,6 @@ class GraphViewer:
             or imgui.is_any_item_focused()
         ):
             return
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WlhGTFZnPT06NWM0MDc4OGQ=
 
         io = imgui.get_io()
         mouse_pos = (io.mouse_pos.x, io.mouse_pos.y)
@@ -170,7 +168,6 @@ class GraphViewer:
 
             self.yaw += dx
             self.pitch += dy
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WlhGTFZnPT06NWM0MDc4OGQ=
 
             # Limit pitch to avoid flipping
             self.pitch = np.clip(self.pitch, -89.0, 89.0)
@@ -534,7 +531,6 @@ class GraphViewer:
             self.show_load_error = True
             self.error_message = traceback.format_exc()
             print(self.error_message)
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WlhGTFZnPT06NWM0MDc4OGQ=
 
     def calculate_layout(self):
         """Calculate 3D layout for the graph"""

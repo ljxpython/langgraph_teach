@@ -14,7 +14,7 @@ export interface SubAgent {
   output?: Record<string, unknown>;
   status: "pending" | "active" | "completed" | "error";
 }
-// FIXME  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002UzJKelVBPT06ODhjNDY5YzE=
+// FIXME
 
 export interface FileItem {
   path: string;
@@ -27,7 +27,7 @@ export interface TodoItem {
   status: "pending" | "in_progress" | "completed";
   updatedAt?: Date;
 }
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002UzJKelVBPT06ODhjNDY5YzE=
+// TODO
 
 export interface Thread {
   id: string;
@@ -41,7 +41,7 @@ export interface InterruptData {
   ns?: string[];
   scope?: string;
 }
-// eslint-disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002UzJKelVBPT06ODhjNDY5YzE=
+// eslint-disable
 
 export interface ActionRequest {
   name: string;

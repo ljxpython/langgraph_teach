@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import * as TabsPrimitive from "@radix-ui/react-tabs";
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002Y25aQlN3PT06MzgzOTA0ZWY=
+// NOTE
 
 import { cn } from "@/lib/utils";
 
@@ -18,7 +18,7 @@ function Tabs({
     />
   );
 }
-// TODO  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002Y25aQlN3PT06MzgzOTA0ZWY=
+// TODO
 
 function TabsList({
   className,
@@ -51,7 +51,7 @@ function TabsTrigger({
     />
   );
 }
-// eslint-disable  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002Y25aQlN3PT06MzgzOTA0ZWY=
+// eslint-disable
 
 function TabsContent({
   className,

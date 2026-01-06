@@ -9,7 +9,7 @@ export interface HumanInterruptConfig {
   allow_edit: boolean;
   allow_accept: boolean;
 }
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNOVE53PT06NGJjNzY1YjA=
+// FIXME
 
 /**
  * 代理向人工发出的操作请求。
@@ -19,7 +19,7 @@ export interface ActionRequest {
   action: string;
   args: Record<string, any>;
 }
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNOVE53PT06NGJjNzY1YjA=
+// NOTE
 
 /**
  * 表示代理流程中的人工中断。
@@ -65,7 +65,7 @@ export interface GenericThreadData<
   status: "idle" | "busy" | "error" | "human_response_needed";
   interrupts?: undefined;
 }
-// TODO  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNOVE53PT06NGJjNzY1YjA=
+// TODO
 
 /**
  * 中断状态的线程数据。
@@ -90,7 +90,7 @@ export type ThreadData<T extends Record<string, any> = Record<string, any>> =
  * 带有特殊"all"选项的线程状态，用于过滤。
  */
 export type ThreadStatusWithAll = EnhancedThreadStatus | "all";
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002UzNOVE53PT06NGJjNzY1YjA=
+// NOTE
 
 /**
  * 代理收件箱配置。

@@ -1,5 +1,4 @@
 import pipmaster as pm
-# noqa  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002YW1rMll3PT06NDQ5MGZkMGE=
 
 if not pm.is_installed("pyvis"):
     pm.install("pyvis")
@@ -19,7 +18,6 @@ net = Network(height="100vh", notebook=True)
 # Convert NetworkX graph to Pyvis network
 net.from_nx(G)
 
-# noqa  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002YW1rMll3PT06NDQ5MGZkMGE=
 
 # Add colors and title to nodes
 for node in net.nodes:

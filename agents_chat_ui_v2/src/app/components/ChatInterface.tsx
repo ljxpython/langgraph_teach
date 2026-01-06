@@ -1,7 +1,7 @@
-// FIXME  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y20wM2FRPT06ZDhiY2VlNjg=
+// FIXME
 
 "use client";
-// eslint-disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y20wM2FRPT06ZDhiY2VlNjg=
+// eslint-disable
 
 import React, {
   useState,
@@ -63,7 +63,7 @@ const getStatusIcon = (status: TodoItem["status"], className?: string) => {
       );
   }
 };
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y20wM2FRPT06ZDhiY2VlNjg=
+// eslint-disable
 
 export const ChatInterface = React.memo<ChatInterfaceProps>(({ assistant }) => {
   const [metaOpen, setMetaOpen] = useState<"tasks" | "files" | null>(null);
@@ -547,4 +547,4 @@ export const ChatInterface = React.memo<ChatInterfaceProps>(({ assistant }) => {
 });
 
 ChatInterface.displayName = "ChatInterface";
-// eslint-disable  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y20wM2FRPT06ZDhiY2VlNjg=
+// eslint-disable

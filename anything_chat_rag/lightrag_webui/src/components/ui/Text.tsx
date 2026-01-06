@@ -1,6 +1,6 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/Tooltip'
 import { cn } from '@/lib/utils'
-// FIXME  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002T0hGcFVBPT06M2M1ZjBlNTc=
+// FIXME
 
 const Text = ({
   text,
@@ -48,4 +48,3 @@ const Text = ({
 }
 
 export default Text
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002T0hGcFVBPT06M2M1ZjBlNTc=

@@ -22,7 +22,6 @@ account_id = "YOUR_ACCOUNT ID"  # This is unique to your Cloudflare account
 
 # Authomatically changes
 api_base_url = f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/"
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Vm5CWVdnPT06ZjQwYWQ5N2E=
 
 
 # choose an embedding model
@@ -131,7 +130,6 @@ class CloudflareWorker:
 
 def configure_logging():
     """Configure logging for the application"""
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Vm5CWVdnPT06ZjQwYWQ5N2E=
 
     # Reset any existing handlers to ensure clean configuration
     for logger_name in ["uvicorn", "uvicorn.access", "uvicorn.error", "lightrag"]:
@@ -197,7 +195,6 @@ def configure_logging():
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Vm5CWVdnPT06ZjQwYWQ5N2E=
 
 
 async def initialize_rag():
@@ -230,7 +227,6 @@ async def initialize_rag():
 async def print_stream(stream):
     async for chunk in stream:
         print(chunk, end="", flush=True)
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Vm5CWVdnPT06ZjQwYWQ5N2E=
 
 
 async def main():

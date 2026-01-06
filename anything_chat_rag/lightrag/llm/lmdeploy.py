@@ -3,7 +3,6 @@ import pipmaster as pm  # Pipmaster for dynamic library install
 # install specific modules
 if not pm.is_installed("lmdeploy"):
     pm.install("lmdeploy[all]")
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002TVZKU1NRPT06ZjgzNTAzNDQ=
 
 from lightrag.exceptions import (
     APIConnectionError,
@@ -20,7 +19,7 @@ from tenacity import (
 
 from functools import lru_cache
 
-# pylint: disable  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002TVZKU1NRPT06ZjgzNTAzNDQ=
+# pylint: disable
 
 @lru_cache(maxsize=1)
 def initialize_lmdeploy_pipeline(
@@ -121,7 +120,7 @@ async def lmdeploy_model_if_cache(
     else:
         do_sample = True
         gen_params.update(do_sample=do_sample)
-# pylint: disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002TVZKU1NRPT06ZjgzNTAzNDQ=
+# pylint: disable
 
     lmdeploy_pipe = initialize_lmdeploy_pipeline(
         model=model,
@@ -138,7 +137,6 @@ async def lmdeploy_model_if_cache(
 
     messages.extend(history_messages)
     messages.append({"role": "user", "content": prompt})
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002TVZKU1NRPT06ZjgzNTAzNDQ=
 
     gen_config = GenerationConfig(
         skip_special_tokens=skip_special_tokens,

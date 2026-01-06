@@ -1,10 +1,10 @@
-// NOTE  MC8zOmFIVnBZMlhtblk3a3ZiUG1yS002WTI1c01RPT06ZjVlODhiY2E=
+// NOTE
 
 "use client";
 
 import * as React from "react";
 import * as SwitchPrimitive from "@radix-ui/react-switch";
-// eslint-disable  MS8zOmFIVnBZMlhtblk3a3ZiUG1yS002WTI1c01RPT06ZjVlODhiY2E=
+// eslint-disable
 
 import { cn } from "@/lib/utils";
 
@@ -54,6 +54,6 @@ function Switch({
     </SwitchPrimitive.Root>
   );
 }
-// TODO  Mi8zOmFIVnBZMlhtblk3a3ZiUG1yS002WTI1c01RPT06ZjVlODhiY2E=
+// TODO
 
 export { Switch };

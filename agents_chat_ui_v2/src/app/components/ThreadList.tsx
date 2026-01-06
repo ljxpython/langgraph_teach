@@ -1,4 +1,4 @@
-// eslint-disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dnMFJRPT06OTY4MWY0N2I=
+// eslint-disable
 
 "use client";
 
@@ -25,7 +25,7 @@ import { useThreads } from "@/app/hooks/useThreads";
 import { useClient } from "@/providers/ClientProvider";
 
 type StatusFilter = "all" | "idle" | "busy" | "interrupted" | "error";
-// FIXME  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dnMFJRPT06OTY4MWY0N2I=
+// FIXME
 
 const GROUP_LABELS = {
   interrupted: "需要关注",
@@ -91,7 +91,6 @@ function ErrorState({ message }: { message: string }) {
     </div>
   );
 }
-// @ts-expect-error  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dnMFJRPT06OTY4MWY0N2I=
 
 function LoadingState() {
   return (
@@ -121,7 +120,7 @@ interface ThreadListProps {
   onClose?: () => void;
   onInterruptCountChange?: (count: number) => void;
 }
-// NOTE  My80OmFIVnBZMlhtblk3a3ZiUG1yS002Y1dnMFJRPT06OTY4MWY0N2I=
+// NOTE
 
 export function ThreadList({
   onThreadSelect,

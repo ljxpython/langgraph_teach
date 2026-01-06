@@ -1,11 +1,11 @@
-// eslint-disable  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZWxWelRnPT06NGQwZTUwYTU=
+// eslint-disable
 
 import Button from '@/components/ui/Button'
 import { useCallback } from 'react'
 import { controlButtonVariant } from '@/lib/constants'
 import { useTranslation } from 'react-i18next'
 import { useSettingsStore } from '@/stores/settings'
-// eslint-disable  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZWxWelRnPT06NGQwZTUwYTU=
+// eslint-disable
 
 /**
  * Component that toggles the language between English and Chinese.

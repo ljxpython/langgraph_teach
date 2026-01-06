@@ -9,7 +9,6 @@ from llama_index.llms.litellm import LiteLLM
 from llama_index.embeddings.litellm import LiteLLMEmbedding
 import asyncio
 import nest_asyncio
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFwR2JBPT06MGZiN2JkNjk=
 
 nest_asyncio.apply()
 
@@ -85,7 +84,6 @@ async def embedding_func(texts):
     except Exception as e:
         print(f"Embedding failed: {str(e)}")
         raise
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFwR2JBPT06MGZiN2JkNjk=
 
 
 # Get embedding dimension
@@ -99,7 +97,6 @@ async def get_embedding_dim():
 
 async def initialize_rag():
     embedding_dimension = await get_embedding_dim()
-# type: ignore  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFwR2JBPT06MGZiN2JkNjk=
 
     rag = LightRAG(
         working_dir=WORKING_DIR,
@@ -122,7 +119,6 @@ def main():
     # Insert example text
     with open("./book.txt", "r", encoding="utf-8") as f:
         rag.insert(f.read())
-# type: ignore  My80OmFIVnBZMlhtblk3a3ZiUG1yS002VjFwR2JBPT06MGZiN2JkNjk=
 
     # Test different query modes
     print("\nNaive Search:")

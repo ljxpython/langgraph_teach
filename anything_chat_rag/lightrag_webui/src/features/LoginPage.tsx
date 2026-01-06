@@ -1,4 +1,3 @@
-// @ts-expect-error  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMll3PT06OGVhMzIzNTU=
 
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -12,7 +11,7 @@ import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
 import { ZapIcon } from 'lucide-react'
 import AppSettings from '@/components/AppSettings'
-// NOTE  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMll3PT06OGVhMzIzNTU=
+// NOTE
 
 const LoginPage = () => {
   const navigate = useNavigate()
@@ -209,7 +208,7 @@ const LoginPage = () => {
     </div>
   )
 }
-// eslint-disable  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMll3PT06OGVhMzIzNTU=
+// eslint-disable
 
 export default LoginPage
-// FIXME  My80OmFIVnBZMlhtblk3a3ZiUG1yS002YXpKMll3PT06OGVhMzIzNTU=
+// FIXME

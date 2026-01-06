@@ -161,7 +161,7 @@ def chunking_by_token_size(
             )
     return results
 
-# pylint: disable  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc1T1lRPT06OTY1ZmE3YjQ=
+# pylint: disable
 
 async def _handle_entity_relation_summary(
     description_type: str,
@@ -290,7 +290,6 @@ async def _handle_entity_relation_summary(
                 )
                 new_summaries.append(summary)
                 llm_was_used = True  # Mark that LLM was used in reduce phase
-# pragma: no cover  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc1T1lRPT06OTY1ZmE3YjQ=
 
         # Update current list with new summaries for next iteration
         current_list = new_summaries
@@ -396,7 +395,6 @@ async def _handle_single_entity_extraction(
         entity_name = sanitize_and_normalize_extracted_text(
             record_attributes[1], remove_inner_quotes=True
         )
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc1T1lRPT06OTY1ZmE3YjQ=
 
         # Validate entity name after all cleaning steps
         if not entity_name or not entity_name.strip():
@@ -502,7 +500,6 @@ async def _handle_single_relationship_extraction(
 
         # Process relationship description with same cleaning pipeline
         edge_description = sanitize_and_normalize_extracted_text(record_attributes[4])
-# fmt: off  My80OmFIVnBZMlhtblk3a3ZiUG1yS002ZUc1T1lRPT06OTY1ZmE3YjQ=
 
         edge_source_id = chunk_key
         weight = (

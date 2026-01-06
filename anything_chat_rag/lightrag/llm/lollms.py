@@ -25,7 +25,6 @@ from lightrag.exceptions import (
 
 from typing import Union, List
 import numpy as np
-# type: ignore  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002WW1oSFpBPT06NjAyNzc3MzI=
 
 from lightrag.utils import (
     wrap_embedding_func_with_attrs,
@@ -53,7 +52,6 @@ async def lollms_model_if_cache(
         from lightrag.utils import logger
 
         logger.debug("enable_cot=True is not supported for lollms and will be ignored.")
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002WW1oSFpBPT06NjAyNzc3MzI=
 
     stream = True if kwargs.get("stream") else False
     api_key = kwargs.pop("api_key", None)
@@ -106,7 +104,6 @@ async def lollms_model_if_cache(
                 f"{base_url}/lollms_generate", json=request_data
             ) as response:
                 return await response.text()
-# fmt: off  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002WW1oSFpBPT06NjAyNzc3MzI=
 
 
 async def lollms_model_complete(
@@ -124,7 +121,6 @@ async def lollms_model_complete(
 
     # Get model name from config
     model_name = kwargs["hashing_kv"].global_config["llm_model_name"]
-# pragma: no cover  My80OmFIVnBZMlhtblk3a3ZiUG1yS002WW1oSFpBPT06NjAyNzc3MzI=
 
     # If keyword extraction is needed, we might need to modify the prompt
     # or add specific parameters for JSON output (if lollms supports it)

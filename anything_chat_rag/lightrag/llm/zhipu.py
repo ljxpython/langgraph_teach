@@ -29,14 +29,12 @@ from lightrag.utils import (
     wrap_embedding_func_with_attrs,
     logger,
 )
-# noqa  MC80OmFIVnBZMlhtblk3a3ZiUG1yS002T1hCaWRnPT06NmM0MjFhNzg=
 
 from lightrag.types import GPTKeywordExtractionFormat
 
 import numpy as np
 from typing import Union, List, Optional, Dict
 
-# type: ignore  MS80OmFIVnBZMlhtblk3a3ZiUG1yS002T1hCaWRnPT06NmM0MjFhNzg=
 
 @retry(
     stop=stop_after_attempt(3),
@@ -93,7 +91,6 @@ async def zhipu_complete_if_cache(
     }
 
     response = client.chat.completions.create(model=model, messages=messages, **kwargs)
-# noqa  Mi80OmFIVnBZMlhtblk3a3ZiUG1yS002T1hCaWRnPT06NmM0MjFhNzg=
 
     return response.choices[0].message.content
 
@@ -158,7 +155,6 @@ async def zhipu_complete(
                         )
                     except json.JSONDecodeError:
                         pass
-# noqa  My80OmFIVnBZMlhtblk3a3ZiUG1yS002T1hCaWRnPT06NmM0MjFhNzg=
 
                 # If all parsing fails, log warning and return empty format
                 logger.warning(

@@ -6,7 +6,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./tooltip";
-// @ts-expect-error  MC8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZEVKQlpnPT06MDM5MjhlZWM=
 
 interface TooltipIconButtonProps {
   icon: React.ReactNode;
@@ -41,4 +40,3 @@ export function TooltipIconButton({
     </TooltipProvider>
   );
 }
-// @ts-expect-error  MS8yOmFIVnBZMlhtblk3a3ZiUG1yS002ZEVKQlpnPT06MDM5MjhlZWM=
