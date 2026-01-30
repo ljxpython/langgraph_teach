@@ -133,6 +133,7 @@
   实战示例补充：
   - 📁 Docker 部署示例（前后端同栈）：`src/docker_sdk_use/`（文档见 `src/docker_sdk_use/README.md`）
   - 📁 LangGraph SDK 系统学习计划：`src/docker_sdk_use/sdk_use/`（文档见 `src/docker_sdk_use/sdk_use/README.md`）
+  - 📁 LangGraph API 单容器部署：`src/docker_single/`（文档见 `src/docker_single/README.md`，适合仅部署 API，外部自建 Redis/PostgreSQL）
 
 部署要点：
 - **环境准备**：使用 `langgraph dockerfile` 生成部署镜像，配置 `.env` 环境变量
