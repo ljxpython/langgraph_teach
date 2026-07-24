@@ -384,6 +384,7 @@ src/data/memory_checkpoints.sqlite-shm
 src/data/memory_checkpoints.sqlite-wal
 
 src/deep_agent_demo/backends_demo/src
+deepagent_src/backend_teach/*.sqlite
 
 # Next.js build cache
 .next/

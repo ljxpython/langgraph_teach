@@ -119,6 +119,21 @@
   - 综合集成示例：`integrated_agent_demo/agent.py`（本地运行），`integrated_agent_demo/agent_api.py`（LangGraph API 部署，使用平台持久化）
 - 🎯 学习目标：掌握 Deep Agent 的规划/文件系统/子智能体/持久化路由组合，以及 MCP 搜索（需 `zhipu_search_mcp_url` 环境变量）与 `HumanMessage.pretty_print` 对话打印。
 
+补充教学材料：
+- 📁 系统化教学目录：`deepagent_src/`
+- 📁 Backends 教学：`deepagent_src/backend_teach/`
+  - 覆盖 `StateBackend`、`FilesystemBackend`、`CompositeBackend`、`StoreBackend`、权限控制和本地 shell 后端。
+  - 讲义位于 `deepagent_src/backend_teach/docs/`。
+- 📁 Skills 教学：`deepagent_src/skills_teach/`
+  - 覆盖 skill 目录结构、渐进式加载、支持资源、后端加载、权限/子智能体排查和综合案例。
+  - 讲义位于 `deepagent_src/skills_teach/docs/`。
+- 📁 Memory 教学：`deepagent_src/memory_teach/`
+  - 覆盖长期 memory 加载、用户/智能体作用域、只读策略、后台整理、多用户生产设计和真实 Agent 综合案例。
+  - 讲义位于 `deepagent_src/memory_teach/docs/`。
+- 🛠️ 输出调试工具：`deepagent_src/agent_output.py`
+  - 提供 `pretty_print_messages()`、`invoke_and_pretty_print()`、`stream_messages()`、`stream_messages_and_updates()`、`stream_debug_trace()` 等方法。
+  - `stream_debug_trace()` 会连续输出模型正文，同时打印 `HumanMessage`、`AIMessage`、`AIMessageChunk`、`ToolMessage`、工具调用和节点更新，适合后续真实 Agent 教学验证。
+
 ### 第十阶段：生产部署与容器化
 **LangGraph/LangSmith 独立部署与运维**
 - 📁 项目路径：根目录部署配置（`docker-compose.langgraph.yml`、`docker-compose.lb.yml`）
