@@ -1,0 +1,9 @@
+{
+  "system_prompt_suffix": "When asked for config profile status, answer exactly CONFIG_PROFILE_ACTIVE.",
+  "excluded_tools": [
+    "execute"
+  ],
+  "general_purpose_subagent": {
+    "enabled": false
+  }
+}

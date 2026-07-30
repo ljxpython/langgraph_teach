@@ -120,7 +120,7 @@
 - 🎯 学习目标：掌握 Deep Agent 的规划/文件系统/子智能体/持久化路由组合，以及 MCP 搜索（需 `zhipu_search_mcp_url` 环境变量）与 `HumanMessage.pretty_print` 对话打印。
 
 补充教学材料：
-- 📁 系统化教学目录：`deepagent_src/`
+- 📁 系统化教学目录：`deepagent_src/`（总索引见 `deepagent_src/README.md`）
 - 📁 Backends 教学：`deepagent_src/backend_teach/`
   - 覆盖 `StateBackend`、`FilesystemBackend`、`CompositeBackend`、`StoreBackend`、权限控制和本地 shell 后端。
   - 讲义位于 `deepagent_src/backend_teach/docs/`。
@@ -130,6 +130,10 @@
 - 📁 Memory 教学：`deepagent_src/memory_teach/`
   - 覆盖长期 memory 加载、用户/智能体作用域、只读策略、后台整理、多用户生产设计和真实 Agent 综合案例。
   - 讲义位于 `deepagent_src/memory_teach/docs/`。
+- 📁 Deep Agents 前后端与进阶教学：`deepagent_src/frontend_teach/`、`deepagent_src/middleware_teach/`、`deepagent_src/advanced_teach/`
+  - 覆盖前端 stream/HITL/headless tools/generative UI、middleware 生命周期/工具拦截/state schema、模型能力注册表和运行时路由。
+- 📁 Deep Agents 能力专题：`deepagent_src/context_engineering_teach/`、`deepagent_src/subagents_teach/`、`deepagent_src/human_loop_teach/`、`deepagent_src/profiles_teach/`、`deepagent_src/a2a_teach/`
+  - 覆盖上下文工程、子智能体、人类介入、profiles 裁剪和 A2A 真实调用。
 - 🛠️ 输出调试工具：`deepagent_src/agent_output.py`
   - 提供 `pretty_print_messages()`、`invoke_and_pretty_print()`、`stream_messages()`、`stream_messages_and_updates()`、`stream_debug_trace()` 等方法。
   - `stream_debug_trace()` 会连续输出模型正文，同时打印 `HumanMessage`、`AIMessage`、`AIMessageChunk`、`ToolMessage`、工具调用和节点更新，适合后续真实 Agent 教学验证。

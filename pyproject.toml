@@ -5,8 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "a2a-sdk>=1.1.2",
+    "ag-ui-langgraph>=0.0.42",
     "bs4>=0.0.2",
-    "deepagents>=0.2.8",
+    "copilotkit>=0.1.94",
+    "deepagents[quickjs]==0.7.0b2",
     "docling; sys_platform != 'darwin' or platform_machine != 'x86_64'",
     "dotenv>=0.9.9",
     "fastapi>=0.115.0",

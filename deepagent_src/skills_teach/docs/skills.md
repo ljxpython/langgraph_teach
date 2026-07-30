@@ -28,6 +28,14 @@
 
 目标：理解生产环境如何限制 skill 可见性、写权限、人工审批，以及自定义 subagent 为什么不会自动继承主 Agent 的 skills。
 
+### 06 综合案例
+
+目标：把 discovery、支持资源、backend、权限和 subagent 串成完整调用链。
+
+### 07 多目录加载多个 Skills
+
+目标：通过 `CompositeBackend` 从两个独立物理目录发现 Skills，并用真实模型在同一任务中加载两份完整指令。
+
 ## 推荐学习顺序
 
 1. 先把一个已有 skill 放到 backend 能看到的 `/skills/` 路径下。
@@ -50,3 +58,4 @@
 - [04 不同后端下使用 skills](04_backend_loading.md)
 - [05 权限、子 Agent 与排错](05_permissions_subagents_troubleshooting.md)
 - [06 综合案例：把 skills 串起来](06_comprehensive_case.md)
+- [07 多目录加载多个 Skills](07_multi_source_skills.md)

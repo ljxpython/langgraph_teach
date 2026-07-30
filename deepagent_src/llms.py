@@ -5,7 +5,8 @@ load_dotenv()
 from langchain.chat_models import init_chat_model
 from langchain_deepseek.chat_models import ChatDeepSeek
 from langchain_openai.chat_models import ChatOpenAI
-
+os.environ["LANGSMITH_TRACING"] = "false"
+os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
 
 def get_default_model():
@@ -18,11 +19,12 @@ def get_doubao_model():
         base_url="https://ark.cn-beijing.volces.com/api/v3",
     )
 
-def get_gpt_model():
+def get_gpt_model(*, disable_tool_streaming: bool = False):
     return ChatOpenAI(
         model='gpt-5.5',
         api_key=os.getenv("CHATGPT_API_KEY"),
         base_url=os.getenv("CHATGPT_API_URL"),
+        disable_streaming="tool_calling" if disable_tool_streaming else False,
     )
 gpt_model= get_gpt_model()
 

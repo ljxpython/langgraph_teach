@@ -1,0 +1,1 @@
+"""Middleware teaching examples."""

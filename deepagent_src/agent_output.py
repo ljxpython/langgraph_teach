@@ -16,8 +16,13 @@ def invoke_and_pretty_print(
     graph: Any,
     inputs: dict[str, Any],
     config: dict[str, Any] | None = None,
+    *,
+    context: Any | None = None,
 ) -> dict[str, Any]:
-    state = graph.invoke(inputs, config)
+    if context is None:
+        state = graph.invoke(inputs, config)
+    else:
+        state = graph.invoke(inputs, config, context=context)
     pretty_print_messages(state["messages"])
     return state
 

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["../.."],
+  "graphs": {
+    "frontend_agent": "./deepagent_src/frontend_teach/agent.py:agent",
+    "subagent_stream_agent": "./deepagent_src/frontend_teach/agent.py:subagent_stream_agent",
+    "todo_agent": "./deepagent_src/frontend_teach/agent.py:todo_agent",
+    "sandbox_agent": "./deepagent_src/frontend_teach/agent.py:sandbox_agent",
+    "hitl_agent": "./deepagent_src/frontend_teach/agent.py:hitl_agent",
+    "dynamic_tools_agent": "./deepagent_src/frontend_teach/agent.py:dynamic_tools_agent",
+    "mcp_skills_factory_agent": "./deepagent_src/frontend_teach/agent.py:mcp_skills_factory_agent",
+    "mcp_skills_isolated_agent": "./deepagent_src/frontend_teach/agent.py:mcp_skills_isolated_agent",
+    "mcp_skills_static_agent": "./deepagent_src/frontend_teach/agent.py:mcp_skills_static_agent",
+    "graph_execution": "./deepagent_src/frontend_teach/langgraph_graphs.py:graph_execution",
+    "custom_stream_channels": "./deepagent_src/frontend_teach/langgraph_graphs.py:custom_stream_channels",
+    "markdown_messages": "./deepagent_src/frontend_teach/langgraph_graphs.py:markdown_messages",
+    "tool_calling": "./deepagent_src/frontend_teach/langgraph_graphs.py:tool_calling",
+    "openui_integration": "./deepagent_src/frontend_teach/langgraph_graphs.py:openui_integration",
+    "headless_tools": "./deepagent_src/frontend_teach/langgraph_graphs.py:headless_tools",
+    "custom_hitl": "./deepagent_src/frontend_teach/langgraph_graphs.py:custom_hitl",
+    "branching_chat": "./deepagent_src/frontend_teach/langgraph_graphs.py:branching_chat",
+    "reasoning_tokens": "./deepagent_src/frontend_teach/langgraph_graphs.py:reasoning_tokens",
+    "structured_output": "./deepagent_src/frontend_teach/langgraph_graphs.py:structured_output",
+    "message_queues": "./deepagent_src/frontend_teach/langgraph_graphs.py:message_queues",
+    "join_rejoin": "./deepagent_src/frontend_teach/langgraph_graphs.py:join_rejoin",
+    "time_travel": "./deepagent_src/frontend_teach/langgraph_graphs.py:time_travel",
+    "generative_ui": "./deepagent_src/frontend_teach/langgraph_graphs.py:generative_ui"
+  },
+  "http": {
+    "app": "./deepagent_src/frontend_teach/sandbox_api.py:app"
+  },
+  "env": "../.env",
+  "python_version": "3.13",
+  "pip_installer": "uv"
+}
